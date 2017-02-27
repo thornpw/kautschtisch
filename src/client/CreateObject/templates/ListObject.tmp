@@ -1,0 +1,249 @@
+import React from 'react'
+import { Link } from 'react-router'
+import { Grid,Row,Col,Panel,ButtonToolbar,ButtonGroup,Button,Table,Pagination,Form,FormGroup,FormControl,ControlLabel } from 'react-bootstrap';
+
+import sprintf from 'sprintf'
+import vsprintf from 'sprintf'
+
+const <%= object_name %>_initial_offset = 0;
+const <%= object_name %>_initial_limit = 2;
+var <%= object_name %>_filter = ''
+
+var <%= object_name %>_offset = <%= object_name %>_initial_offset;
+var <%= object_name %>_limit = <%= object_name %>_initial_limit;
+
+function get_<%= object_name %>_initial_offset() {
+  return <%= object_name %>_initial_offset;
+}
+
+function get_<%= object_name %>_offset() {
+  return <%= object_name %>_offset;
+}
+
+function set_<%= object_name %>_offset(value) {
+  <%= object_name %>_offset=parseInt(value);
+}
+
+function get_<%= object_name %>_initial_limit() {
+  return <%= object_name %>_initial_limit;
+}
+
+function get_<%= object_name %>_limit() {
+  return <%= object_name %>_limit;
+}
+
+function set_<%= object_name %>_limit(value) {
+  <%= object_name %>_limit=parseInt(value);
+}
+
+function get_<%= object_name %>_filter() {
+  return <%= object_name %>_filter;
+}
+
+function set_<%= object_name %>_filter(value) {
+  <%= object_name %>_filter=value;
+}
+
+export {
+  get_<%= object_name %>_initial_offset,
+  get_<%= object_name %>_offset,
+  get_<%= object_name %>_initial_limit,
+  get_<%= object_name %>_limit,
+  set_<%= object_name %>_offset,
+  set_<%= object_name %>_limit,
+  get_<%= object_name %>_filter,
+  set_<%= object_name %>_filter
+};
+
+
+// <%= object_name_upper %>
+// -----------------------------------------------------------------------------
+var <%= object_name_upper %> = React.createClass({
+    render: function() {
+        return (
+          <tr className="<%= object_name %>">
+          <td className="border">
+            <button className='button-cancel' onClick={this.props.handleDelete.bind(null,this.props.<%= object_name %>.id)}>Delete</button>
+          </td>
+          <td width="100%" className="border">
+              <Link to={'/Edit<%= object_name_upper %>/' + this.props.<%= object_name %>.id}> {this.props.<%= object_name %>.name}</Link>
+            </td>
+          </tr>
+        );
+    }
+});
+
+// <%= object_name_upper %> List
+// -----------------------------------------------------------------------------
+export default React.createClass({
+  getInitialState: function() {
+    return {
+      <%= object_name %>s: [],
+      max_page:0,
+      actual_page:0,
+      total_rows:0,
+      new_filter:''
+    };
+  },
+  onFilterChange: function(e) {
+    this.setState({offset:0});
+    set_<%= object_name %>_offset(0);
+    set_<%= object_name %>_filter(this.state.new_filter);
+    this.load_number_of_<%= object_name %>s();
+    this.load_<%= object_name %>s();
+  },
+  onFilterClear: function(e) {
+    this.setState({offset:0,new_filter:''});
+    set_<%= object_name %>_offset(0);
+    set_<%= object_name %>_filter('');
+    this.load_number_of_<%= object_name %>s();
+    this.load_<%= object_name %>s();
+  },
+  onNewFilterChange: function(e) {
+    this.setState({new_filter: e.target.value});
+  },
+  load_number_of_<%= object_name %>s() {
+    $.ajax({
+      url: encodeURI(sprintf('/api/<%= object_name %>/count/%s',this.get_filter())),
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        this.setState({total_rows: parseInt(data[0].number),max_page:Math.floor(parseInt(data[0].number) / get_<%= object_name %>_limit())});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
+  get_filter: function() {
+    var _filter = get_<%= object_name %>_filter();
+
+    if(_filter == '') {
+      return '<EMPTY>';
+    } else {
+      return _filter;
+    }
+  },
+  load_<%= object_name %>s: function() {
+    $.ajax({
+      url: sprintf("/api/<%= object_name %>/%s/%s/%s",get_<%= object_name %>_offset(),get_<%= object_name %>_limit(),this.get_filter()),
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        this.setState({<%= object_name %>s: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+    this.setState({actual_page:Math.floor(get_<%= object_name %>_offset() / get_<%= object_name %>_limit())})
+  },
+  componentWillReceiveProps: function(nextProps) {
+    if(!(get_<%= object_name %>_filter == this.state.new_filter)) {
+        this.setState({new_filter:get_<%= object_name %>_filter()});
+        this.load_number_of_<%= object_name %>s();
+        this.load_<%= object_name %>s();
+    }
+
+    if(!(nextProps.params.offset==this.props.params.offset)) {
+      set_<%= object_name %>_offset(nextProps.params.offset);
+      this.load_number_of_<%= object_name %>s();
+      this.load_<%= object_name %>s();
+    }
+  },
+  componentDidMount: function() {
+    this.load_number_of_<%= object_name %>s();
+    this.load_<%= object_name %>s();
+  },
+  create<%= object_name_upper %>: function(items){
+      var output = [];
+      for(var i = 0; i < items.length; i++) {
+        output.push(<<%= object_name_upper %> key={i} <%= object_name %>={items[i]} handleDelete={this.handleDelete}/>);
+      }
+      return output;
+  },
+  handleSelect(eventKey) {
+    this.setState({
+      activePage: eventKey
+    });
+    set_<%= object_name %>_offset((parseInt(eventKey)-1)*get_<%= object_name %>_limit());
+    this.load_number_of_<%= object_name %>s();
+    this.load_<%= object_name %>s();
+  },
+  handleDelete: function(id_to_delete) {
+    $.ajax({
+      url: "/api/db<%= object_name_upper %>/" + id_to_delete,
+      dataType: 'json',
+      type: 'DELETE',
+      cache: false,
+      success: function(data) {
+        this.load_number_of_<%= object_name %>s();
+        this.load_<%= object_name %>s();
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error("/api/<%= object_name %>/", status, err.toString());
+      }.bind(this)
+    });
+  },
+  render: function() {
+    return (
+      <div>
+      <Panel header="<%= object_name_upper %>s">
+        <Table striped bordered hover>
+          <thead>
+            <tr>
+              <th></th>
+              <th>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Name</td>
+                      <td width="4px"></td>
+                      <td>
+                          <FormControl type="text" placeholder="Search for" onChange={this.onNewFilterChange} value = {this.state.new_filter}/>
+                      </td>
+                      <td width="4px"></td>
+                      <td>
+                        <Button onClick={this.onFilterChange}>Search</Button>
+                      </td>
+                      <td width="4px"></td>
+                      <td>
+                        <Button onClick={this.onFilterClear}>Clear</Button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.create<%= object_name_upper %>(this.state.<%= object_name %>s)}
+          </tbody>
+        </Table>
+        <ul className="pagination">
+          <Pagination
+            prev
+            next
+            first
+            last
+            ellipsis
+            boundaryLinks
+            items={Math.ceil(this.state.total_rows / get_<%= object_name %>_limit())}
+            maxButtons={5}
+            activePage={this.state.activePage}
+            onSelect={this.handleSelect}
+          />
+        </ul>
+        <div className="form-group">
+          &nbsp;
+        </div>
+        <ButtonToolbar>
+          <ButtonGroup>
+            <Link to='/Add<%= object_name_upper %>'><Button type="submit">Add new <%= object_name %></Button></Link>
+          </ButtonGroup>
+        </ButtonToolbar>
+      </Panel>
+      </div>
+    );
+  }
+});

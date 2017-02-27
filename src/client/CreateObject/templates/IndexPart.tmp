@@ -1,0 +1,7 @@
+import Add<%= object_name_upper %> from './<%= object_name_upper %>/Add<%= object_name_upper %>'
+import Edit<%= object_name_upper %> from './<%= object_name_upper %>/Edit<%= object_name_upper %>'
+import List<%= object_name_upper %>s from './<%= object_name_upper %>/List<%= object_name_upper %>s'
+
+      <Route path="/List<%= object_name_upper %>s/:offset" component={List<%= object_name_upper %>s}/>
+      <Route path="/Add<%= object_name_upper %>" component={Add<%= object_name_upper %>}/>
+      <Route path="/Edit<%= object_name_upper %>/:id" component={Edit<%= object_name_upper %>}/>

@@ -1,0 +1,9 @@
+import { get_<%= object_name %>_initial_offset,set_<%= object_name %>_filter } from './../<%= object_name_upper %>/List<%= object_name_upper %>s';
+
+
+function clear_<%= object_name %>_filter() {
+  set_<%= object_name %>_filter('');
+}
+
+
+          <Button><Link onClick={clear_<%= object_name %>_filter} to={sprintf('/List<%= object_name_upper %>s/%s',get_<%= object_name %>_initial_offset())}><%= object_name_upper %></Link></Button>
