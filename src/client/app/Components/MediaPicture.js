@@ -12,7 +12,7 @@ var MediaPicture = React.createClass({
   handleDelete: function(id_to_delete) {
     console.log("handleDelete")
     $.ajax({
-      url: "/api/db/KPicture/" + id_to_delete,
+      url: "http://localhost:3300/api/db/KPicture/" + id_to_delete,
       dataType: 'json',
       type: 'DELETE',
       cache: false,

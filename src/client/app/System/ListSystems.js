@@ -104,7 +104,7 @@ export default React.createClass({
   },
   load_number_of_systems() {
     $.ajax({
-      url: encodeURI(sprintf('/api/system/count/%s',this.get_filter())),
+      url: encodeURI(sprintf('http://localhost:3300/api/system/count/%s',this.get_filter())),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -126,7 +126,7 @@ export default React.createClass({
   },
   load_systems: function() {
     $.ajax({
-      url: sprintf("/api/system/%s/%s/%s",get_system_offset(),get_system_limit(),this.get_filter()),
+      url: sprintf("http://localhost:3300/api/system/%s/%s/%s",get_system_offset(),get_system_limit(),this.get_filter()),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -172,7 +172,7 @@ export default React.createClass({
   },
   handleDelete: function(id_to_delete) {
     $.ajax({
-      url: "/api/db/KSystem/" + id_to_delete,
+      url: "http://localhost:3300/api/db/KSystem/" + id_to_delete,
       dataType: 'json',
       type: 'DELETE',
       cache: false,

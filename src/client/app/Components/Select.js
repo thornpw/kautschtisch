@@ -4,11 +4,11 @@ const Selection = React.createClass({
     getInitialState: function() {
         return {
             childSelectValue: undefined,
-            url: "http://localhost:3000/api/" + this.props.target + "/search/" + this.props.filters +"/"
+            url: "http://localhost:3300/api/" + this.props.target + "/search/" + this.props.filters +"/"
         }
     },
     componentWillReceiveProps: function(nextProps) {
-      this.setState({'url': "http://localhost:3000/api/" + this.props.target + "/search/" + this.props.filters +"/"})
+      this.setState({'url': "http://localhost:3300/api/" + this.props.target + "/search/" + this.props.filters +"/"})
     },
     changeHandler: function(e) {
         this.setState({

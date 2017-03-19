@@ -123,14 +123,14 @@ const PagedMediaTable = React.createClass({
   doRedraw() {
     console.log("get number of game pictures")
     $.ajax({
-      url: encodeURI(sprintf('/api/picture/count/%s',this.get_load_filter())),
+      url: encodeURI(sprintf('http://localhost:3300/api/picture/count/%s',this.get_load_filter())),
       dataType: 'json',
       cache: false,
       success: function(data) {
         this.setState({total_rows: parseInt(data[0].number),max_page:Math.floor(parseInt(data[0].number) / this.props.get_limit())});
         console.log("get game pictures")
         $.ajax({
-          url: sprintf("/api/picture/%s/%s/%s",this.props.get_offset(),this.props.get_limit(),this.get_load_filter()),
+          url: sprintf("http://localhost:3300/api/picture/%s/%s/%s",this.props.get_offset(),this.props.get_limit(),this.get_load_filter()),
           dataType: 'json',
           cache: false,
           success: function(data) {

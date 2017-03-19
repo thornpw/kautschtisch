@@ -25,7 +25,7 @@ export default React.createClass({
     // send new system to the db
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/system',
+      url: 'http://localhost:3300/api/system',
       dataType: 'json',
       type: 'POST',
       data: _new,

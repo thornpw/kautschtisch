@@ -7,58 +7,58 @@ import Selection from "../Components/Select.js"
 import sprintf from 'sprintf'
 import vsprintf from 'sprintf'
 
-import { get_publisher_offset } from './ListPublishers';
+import { get_organisation_offset,get_organisation_limit,get_organisation_filter } from './ListOrganisations';
 
 export default React.createClass({
   getInitialState: function() {
-    return {name: '',name_publisher:''};
+    return {Name: '',name_organisation:''};
   },
   onNameChange: function(e) {
-    this.setState({name: e.target.value});
+    this.setState({Name: e.target.value});
   },
   handleAdd: function(e) {
     e.preventDefault();
-    // add new publisher to memory
+    // add new organisation to memory
     // -------------------------------------------------------------------------
-    var _new = {'name':this.state.name}
+    var _new = {'Name':this.state.Name}
 
-    // send new publisher to the db
+    // send new organisation to the db
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/publisher',
+      url: 'http://localhost:3300/api/organisation',
       dataType: 'json',
       type: 'POST',
       data: _new,
       success: function(data) {
-        this.setState({'name':''});
-        window.location.replace(sprintf("/#/ListPublishers/%s",get_publisher_offset()));
+        this.setState({'Name':''});
+        window.location.replace(sprintf("/#/ListOrganisations/%s/%s/%s",get_organisation_offset(),get_organisation_limit(),get_organisation_filter()));
       }.bind(this),
       error: function(xhr, status, err) {
-        console.error('/api/publisher', status, err.toString());
+        console.error('/api/organisation', status, err.toString());
       }.bind(this)
     });
   },
   render: function() {
     return (
       <div>
-        <Panel header="Add new publisher">
+        <Panel header="Add new organisation">
           <Form onSubmit={this.handleAdd} horizontal>
-            <FormGroup controlId="name">
+            <FormGroup controlId="Name">
               <Col componentClass={ControlLabel} sm={2}>
                 Name
               </Col>
               <Col sm={10}>
-                <FormControl onChange={this.onNameChange} value= {this.state.name}  />
+                <FormControl onChange={this.onNameChange} value= {this.state.Name}  />
               </Col>
             </FormGroup>
             <FormGroup>
               <Col smOffset={2} sm={10}>
                 <ButtonToolbar>
                   <ButtonGroup>
-                    <Button type="submit" bsStyle="success">Ok</Button>
+                    <Button type="submit" bsStyle="success"><img src="media/gfx/ok.png"/></Button>
                   </ButtonGroup>
                   <ButtonGroup>
-                    <Link to={sprintf('/ListPublishers/%s',get_publisher_offset())}><Button>Cancel</Button></Link>
+                    <Link to={sprintf("/ListOrganisations/%s/%s/%s",get_organisation_offset(),get_organisation_limit(),get_organisation_filter())}><Button><img src="media/gfx/cancel.png"/></Button></Link>
                   </ButtonGroup>
                 </ButtonToolbar>
               </Col>

@@ -11,7 +11,7 @@ export default React.createClass({
               <Navbar.Brand>Kautschtisch</Navbar.Brand>
             </Navbar.Header>
             <Nav pullRight>
-              <NavItem eventKey={1}>v0.2.3</NavItem>
+              <NavItem eventKey={1}>v0.3</NavItem>
             </Nav>
           </Navbar>
       </div>

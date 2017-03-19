@@ -8,7 +8,7 @@ import Selection from "../Components/Select.js"
 import sprintf from 'sprintf'
 import vsprintf from 'sprintf'
 
-import { get_publisher_offset } from './ListPublishers';
+import { get_organisation_offset,get_organisation_limit,get_organisation_filter } from './ListOrganisations';
 
 function logChange(val) {
     console.log("Selected: " + val);
@@ -16,71 +16,73 @@ function logChange(val) {
 
 export default React.createClass({
   getInitialState: function() {
-    return {name: ''};
+    return {Name: ''};
   },
   componentDidMount: function() {
-    this.loadPublisher();
+    this.loadOrganisation();
   },
   onNameChange: function(e) {
-    this.setState({name: e.target.value});
+    this.setState({Name: e.target.value});
   },
-  loadPublisher: function() {
-    // load new publisher from the DB
+  loadOrganisation: function() {
+    // load new organisation from the DB
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/db/KPublisher/'+this.props.params.id,
+      url: "http://localhost:3300/api/db/KOrganisation/'"+this.props.params.uid +"'",
       dataType: 'json',
       type: 'GET',
       success: function(data) {
-        this.setState({'name':data[0].name});
+        this.setState({'Name':data.data[0].Name});
       }.bind(this),
       error: function(xhr, status, err) {
-        console.error('/api/publisher', status, err.toString());
+        console.error('/api/organisation', status, err.toString());
       }.bind(this)
     });
   },
   handleEdit: function() {
-    // edit publisher
+    // edit organisation
     // -------------------------------------------------------------------------
-    var _edit = {"name":this.state.name}
-    var _id = this.props.params.id;
+    var _edit = {"Name":this.state.Name}
+    var _uid = this.props.params.uid;
 
     $.ajax({
-      url: '/api/publisher/'+_id,
-      contentType: 'application/json; charset=UTF-8',
+      url: "http://localhost:3300/api/organisation/'" + _uid + "'",
+      dataType: 'json',
+      //contentType: 'application/json; charset=UTF-8',
       type: 'PUT',
-      data: JSON.stringify(_edit),
+      data: _edit,
+      //data: JSON.stringify(_edit),
       success: function(data) {
         console.log("ok")
-        window.location.replace(sprintf("/#/ListPublishers/%s",get_publisher_offset()));
+        window.location.replace(sprintf("/#/ListOrganisations/%s/%s/%s",get_organisation_offset(),get_organisation_limit(),get_organisation_filter()));
       },
       error: function(xhr, status, err) {
         console.log(status,xhr,err);
-        console.error('/api/publisher', status, err.toString());
+        console.error('/api/organisation', status, err.toString());
       }
     });
   },
   render: function() {
     return (
       <div>
-        <Panel header="Edit publisher">
+        <Panel header="Edit organisation">
           <Form horizontal>
-            <FormGroup controlId="name">
+            <FormGroup controlId="Name">
               <Col componentClass={ControlLabel} sm={2}>
                 Name
               </Col>
               <Col sm={10}>
-                <FormControl onChange={this.onNameChange} value= {this.state.name}  />
+                <FormControl onChange={this.onNameChange} value= {this.state.Name}  />
               </Col>
             </FormGroup>
             <FormGroup>
               <Col smOffset={2} sm={10}>
                 <ButtonToolbar>
                   <ButtonGroup>
-                    <Button onClick={this.handleEdit}>Ok</Button>
+                    <Button onClick={this.handleEdit} bsStyle="success"><img src="media/gfx/ok.png"/></Button>
                   </ButtonGroup>
                   <ButtonGroup>
-                    <Link to={sprintf('/ListPublishers/%s',get_publisher_offset())}><Button>Cancel</Button></Link>
+                    <Link to={sprintf("/ListOrganisations/%s/%s/%s",get_organisation_offset(),get_organisation_limit(),get_organisation_filter())}><Button><img src="media/gfx/cancel.png"/></Button></Link>
                   </ButtonGroup>
                 </ButtonToolbar>
               </Col>

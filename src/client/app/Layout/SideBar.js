@@ -9,7 +9,7 @@ import { get_engine_initial_offset,set_engine_filter} from './../Engine/ListEngi
 import { get_game_pictures_initial_offset,set_game_pictures_filter } from './../Engine/EditEngine';
 import { get_system_initial_offset,set_system_filter } from './../System/ListSystems';
 import { get_engine_configuration_initial_offset,set_engine_configuration_filter } from './../Engine_configuration/ListEngine_configurations';
-import { get_publisher_initial_offset,set_publisher_filter } from './../Publisher/ListPublishers';
+import { get_organisation_initial_offset,get_organisation_initial_limit,get_organisation_initial_filter_string,set_organisation_filter } from './../Organisation/ListOrganisations';
 import { get_tag_initial_offset,set_tag_filter } from './../Tag/ListTags';
 import { get_tag_category_initial_offset,set_tag_category_name_filter,set_tag_category_description_filter } from './../Tag_category/ListTag_categorys';
 import { get_engine_file_initial_offset,set_engine_file_filter } from './../Engine_file/ListEngine_files';
@@ -29,8 +29,8 @@ function clear_engine_configuration_filter() {
   set_engine_configuration_filter('');
 }
 
-function clear_publisher_filter() {
-  set_publisher_filter('');
+function clear_organisation_filter() {
+  set_organisation_filter('');
 }
 
 function clear_tag_filter() {
@@ -91,9 +91,9 @@ export default React.createClass({
               <ListGroupItem><Link onClick={clear_engine_file_filter} to={sprintf('/ListEngine_files/%s',get_engine_file_initial_offset())}>Engine file</Link></ListGroupItem>
             </ListGroup>
           </Panel>
-          <Panel header="Creators" eventKey="5">
+          <Panel header="Organisations" eventKey="5">
             <ListGroup fill>
-              <ListGroupItem><Link onClick={clear_publisher_filter} to={sprintf('/ListPublishers/%s',get_publisher_initial_offset())}>Publisher</Link></ListGroupItem>
+              <ListGroupItem><Link onClick={clear_organisation_filter} to={sprintf('/ListOrganisations/%s/%s/%s',get_organisation_initial_offset(),get_organisation_initial_limit(),get_organisation_initial_filter_string())}>Organisation</Link></ListGroupItem>
             </ListGroup>
           </Panel>
         </PanelGroup>

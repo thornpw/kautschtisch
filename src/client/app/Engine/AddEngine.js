@@ -31,13 +31,13 @@ export default React.createClass({
     // send new Engine to the db
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/engine',
+      url: 'http://localhost:3300/api/engine',
       dataType: 'json',
       type: 'POST',
       data: _new,
       success: function(data) {
         this.setState({'name':'','executable':'','id_system':''});
-        window.location.replace(sprintf("/#/ListEngines/%s",get_engine_offset()));
+        window.location.replace(sprintf("http://localhost:3300/#/ListEngines/%s",get_engine_offset()));
       }.bind(this),
       error: function(xhr, status, err) {
         console.error('/api/engine', status, err.toString());
@@ -70,7 +70,7 @@ export default React.createClass({
                 System
               </Col>
               <Col sm={4}>
-                <Link to={sprintf('/EditSystem/%s',this.state.id_system)}>
+                <Link to={sprintf('http://localhost:3300/EditSystem/%s',this.state.id_system)}>
                   <FormControl disabled onChange={this.onExecutableChange} value = {this.state.name_system} />
                 </Link>
               </Col>
@@ -85,8 +85,8 @@ export default React.createClass({
                     <Button type="submit" bsStyle="success"><img src="media/gfx/ok.png"/></Button>
                   </ButtonGroup>
                   <ButtonGroup>
-                    <Link to={sprintf('/ListEngines/%s',get_engine_offset())}><Button><img src="media/gfx/cancel.png"/></Button></Link>
-                  </ButtonGroup>              
+                    <Link to={sprintf('http://localhost:3300/ListEngines/%s',get_engine_offset())}><Button><img src="media/gfx/cancel.png"/></Button></Link>
+                  </ButtonGroup>
                 </ButtonToolbar>
               </Col>
             </FormGroup>

@@ -25,7 +25,7 @@ export default React.createClass({
     // send new game to the db
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/game',
+      url: 'http://localhost:3300/api/game',
       dataType: 'json',
       type: 'POST',
       data: _new,

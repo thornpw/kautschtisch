@@ -28,14 +28,14 @@ export default React.createClass({
     // load new engine_file from the DB
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/db/KEngine_file/'+this.props.params.id,
+      url: 'http://localhost:3300/api/db/KEngine_file/'+this.props.params.id,
       dataType: 'json',
       type: 'GET',
       success: function(data) {
         this.setState({'name':data[0].name});
       }.bind(this),
       error: function(xhr, status, err) {
-        console.error('/api/engine_file', status, err.toString());
+        console.error('http://localhost:3300/api/engine_file', status, err.toString());
       }.bind(this)
     });
   },
@@ -46,7 +46,7 @@ export default React.createClass({
     var _id = this.props.params.id;
 
     $.ajax({
-      url: '/api/engine_file/'+_id,
+      url: 'http://localhost:3300/api/engine_file/'+_id,
       contentType: 'application/json; charset=UTF-8',
       type: 'PUT',
       data: JSON.stringify(_edit),

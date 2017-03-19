@@ -65,7 +65,7 @@ export default React.createClass({
     // get uuid via rest call
     // -------------------------------------------------------------------------
     $.ajax({
-      url: encodeURI(sprintf('/api/uuid')),
+      url: encodeURI(sprintf('http://localhost:3300/api/uuid')),
       dataType: 'json',
       type: 'GET',
       cache: false,
@@ -83,7 +83,7 @@ export default React.createClass({
         // post picture data
         // ---------------------------------------------------------------------
         $.ajax({
-          url: '/api/picture/',
+          url: 'http://localhost:3300/api/picture/',
           data: _edit,
           dataType: 'json',
           type: 'POST',
@@ -91,7 +91,7 @@ export default React.createClass({
             // post picture file
             // -----------------------------------------------------------------
             $.ajax({
-              url: '/api/picture/upload/'+ _uuid,
+              url: 'http://localhost:3300/api/picture/upload/'+ _uuid,
               data: photo,
               cache: false,
               contentType: false,
@@ -108,13 +108,13 @@ export default React.createClass({
                 this.props.doParentRedraw();
                }.bind(this),
               error: function(xhr,status,err) {
-                console.error('/api/picture 1', status, err.toString());
+                console.error('http://localhost:3300/api/picture 1', status, err.toString());
                 // window.location.replace(sprintf("/#/ListEngines/0")); // %s ,getOffet()
               }.bind(this)
             });
           }.bind(this),
           error: function(xhr,status,err) {
-            console.error('/api/picture 1', status, err.toString());
+            console.error('http://localhost:3300/api/picture 1', status, err.toString());
             // window.location.replace(sprintf("/#/ListEngines/0")); // %s ,getOffet()
           }.bind(this)
         });

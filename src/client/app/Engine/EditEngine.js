@@ -98,7 +98,7 @@ export default React.createClass({
     // load new Engine from the DB
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/db/KEngine/'+this.props.params.id,
+      url: 'http://localhost:3300/api/db/KEngine/'+this.props.params.id,
       dataType: 'json',
       type: 'GET',
       success: function(data) {
@@ -114,14 +114,14 @@ export default React.createClass({
           this.setState({name_system:''});
         } else {
           $.ajax({
-            url: '/api/db/KSystem/'+this.state.id_system,
+            url: 'http://localhost:3300/api/db/KSystem/'+this.state.id_system,
             dataType: 'json',
             type: 'GET',
             success: function(data) {
               this.setState({'name_system':data[0].name});
             }.bind(this),
             error: function(xhr, status, err) {
-              console.error('/api/system', status, err.toString());
+              console.error('http://localhost:3300/api/system', status, err.toString());
             }.bind(this)
           });
         };
@@ -130,7 +130,7 @@ export default React.createClass({
           this.setState({name_default_engine_configuration:''});
         } else {
           $.ajax({
-            url: '/api/db/KEngine_configuration/'+this.state.id_default_engine_configuration,
+            url: 'http://localhost:3300/api/db/KEngine_configuration/'+this.state.id_default_engine_configuration,
             dataType: 'json',
             type: 'GET',
             success: function(data) {
@@ -148,7 +148,7 @@ export default React.createClass({
 
       }.bind(this),
       error: function(xhr, status, err) {
-        console.error('/api/engine', status, err.toString());
+        console.error('http://localhost:3300/api/engine', status, err.toString());
       }.bind(this)
     });
   },
@@ -158,7 +158,7 @@ export default React.createClass({
     // send new Engine to the db
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/uuid',
+      url: 'http://localhost:3300/api/uuid',
       dataType: 'json',
       type: 'GET',
       success: function(data) {
@@ -179,14 +179,14 @@ export default React.createClass({
         };
 
         $.ajax({
-          url: '/api/engine/'+this.props.params.id,
+          url: 'http://localhost:3300/api/engine/'+this.props.params.id,
           type: 'PUT',
           data: JSON.stringify(_edit),
           contentType : 'application/json',
           dataType: 'json',
           success: function(data) {
             $.ajax({
-                url: '/api/engine/upload/'+_uuid,
+                url: 'http://localhost:3300/api/engine/upload/'+_uuid,
                 data: this.state.uploadedFile,
                 cache: false,
                 contentType: false,
@@ -194,7 +194,7 @@ export default React.createClass({
                 type: 'POST',
                 success: function(data){
                   console.log("ok");
-                  window.location.replace(sprintf("/#/ListEngines/%s",get_engine_offset()));
+                  window.location.replace(sprintf("http://localhost:3300/#/ListEngines/%s",get_engine_offset()));
                 }.bind(this),
                 error: function(xhr,status,err) {
                   console.error('/api/engine 1', status, err.toString());
@@ -248,7 +248,7 @@ export default React.createClass({
                     System
                   </Col>
                   <Col sm={4}>
-                    <Link to={sprintf('/EditSystem/%s',this.state.id_system)}>
+                    <Link to={sprintf('http://localhost:3300/EditSystem/%s',this.state.id_system)}>
                       <FormControl disabled value = {this.state.name_system} />
                     </Link>
                   </Col>
@@ -261,7 +261,7 @@ export default React.createClass({
                     Default configuration
                   </Col>
                   <Col sm={4}>
-                    <Link to={sprintf('/EditEngine_configuration/%s',this.state.id_default_engine_configuration)}>
+                    <Link to={sprintf('http://localhost:3300/EditEngine_configuration/%s',this.state.id_default_engine_configuration)}>
                       <FormControl disabled value = {this.state.name_default_engine_configuration} />
                     </Link>
                   </Col>
@@ -322,7 +322,7 @@ export default React.createClass({
                         <Button onClick={this.handleEdit} bsStyle="success"><img src="media/gfx/ok.png"/></Button>
                       </ButtonGroup>
                       <ButtonGroup>
-                        <Link to={sprintf('/ListEngines/%s',get_engine_offset())}><Button><img src="media/gfx/cancel.png"/></Button></Link>
+                        <Link to={sprintf('http://localhost:3300/ListEngines/%s',get_engine_offset())}><Button><img src="media/gfx/cancel.png"/></Button></Link>
                       </ButtonGroup>
                     </ButtonToolbar>
                   </Col>

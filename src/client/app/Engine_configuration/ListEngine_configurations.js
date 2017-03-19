@@ -104,7 +104,7 @@ export default React.createClass({
   },
   load_number_of_engine_configurations() {
     $.ajax({
-      url: encodeURI(sprintf('/api/engine_configuration/count/%s',this.get_filter())),
+      url: encodeURI(sprintf('http://localhost:3300/api/engine_configuration/count/%s',this.get_filter())),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -126,7 +126,7 @@ export default React.createClass({
   },
   load_engine_configurations: function() {
     $.ajax({
-      url: sprintf("/api/engine_configuration/%s/%s/%s",get_engine_configuration_offset(),get_engine_configuration_limit(),this.get_filter()),
+      url: sprintf("http://localhost:3300/api/engine_configuration/%s/%s/%s",get_engine_configuration_offset(),get_engine_configuration_limit(),this.get_filter()),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -172,7 +172,7 @@ export default React.createClass({
   },
   handleDelete: function(id_to_delete) {
     $.ajax({
-      url: "/api/db/KEngine_configuration/" + id_to_delete,
+      url: "http://localhost:3300/api/db/KEngine_configuration/" + id_to_delete,
       dataType: 'json',
       type: 'DELETE',
       cache: false,
@@ -181,7 +181,7 @@ export default React.createClass({
         this.load_engine_configurations();
       }.bind(this),
       error: function(xhr, status, err) {
-        console.error("/api/engine_configuration/", status, err.toString());
+        console.error("http://localhost:3300/api/engine_configuration/", status, err.toString());
       }.bind(this)
     });
   },

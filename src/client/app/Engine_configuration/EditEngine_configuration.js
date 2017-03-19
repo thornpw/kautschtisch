@@ -28,14 +28,14 @@ export default React.createClass({
     // load new engine_configuration from the DB
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/db/KEngine_configuration/'+this.props.params.id,
+      url: 'http://localhost:3300/api/db/KEngine_configuration/'+this.props.params.id,
       dataType: 'json',
       type: 'GET',
       success: function(data) {
         this.setState({'name':data[0].name});
       }.bind(this),
       error: function(xhr, status, err) {
-        console.error('/api/engine_configuration', status, err.toString());
+        console.error('http://localhost:3300/api/engine_configuration', status, err.toString());
       }.bind(this)
     });
   },
@@ -46,7 +46,7 @@ export default React.createClass({
     var _id = this.props.params.id;
 
     $.ajax({
-      url: '/api/engine_configuration/'+_id,
+      url: 'http://localhost:3300/api/engine_configuration/'+_id,
       contentType: 'application/json; charset=UTF-8',
       type: 'PUT',
       data: JSON.stringify(_edit),
@@ -56,7 +56,7 @@ export default React.createClass({
       },
       error: function(xhr, status, err) {
         console.log(status,xhr,err);
-        console.error('/api/engine_configuration', status, err.toString());
+        console.error('http://localhost:3300/api/engine_configuration', status, err.toString());
       }
     });
   },
@@ -80,7 +80,7 @@ export default React.createClass({
                     <Button onClick={this.handleEdit}>Ok</Button>
                   </ButtonGroup>
                   <ButtonGroup>
-                    <Link to={sprintf('/ListEngine_configurations/%s',get_engine_configuration_offset())}><Button>Cancel</Button></Link>
+                    <Link to={sprintf('http://localhost:3300/ListEngine_configurations/%s',get_engine_configuration_offset())}><Button>Cancel</Button></Link>
                   </ButtonGroup>
                 </ButtonToolbar>
               </Col>

@@ -34,7 +34,7 @@ export default React.createClass({
         window.location.replace(sprintf("/#/ListEngine_configurations/%s",get_engine_configuration_offset()));
       }.bind(this),
       error: function(xhr, status, err) {
-        console.error('/api/engine_configuration', status, err.toString());
+        console.error('http://localhost:3300/api/engine_configuration', status, err.toString());
       }.bind(this)
     });
   },

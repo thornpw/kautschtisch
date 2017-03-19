@@ -28,7 +28,7 @@ export default React.createClass({
     // load new game_file from the DB
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/KGame_file/'+this.props.params.id,
+      url: 'http://localhost:3300/api/KGame_file/'+this.props.params.id,
       dataType: 'json',
       type: 'GET',
       success: function(data) {
@@ -46,13 +46,13 @@ export default React.createClass({
     var _id = this.props.params.id;
 
     $.ajax({
-      url: '/api/game_file/'+_id,
+      url: 'http://localhost:3300/api/game_file/'+_id,
       contentType: 'application/json; charset=UTF-8',
       type: 'PUT',
       data: JSON.stringify(_edit),
       success: function(data) {
         console.log("ok")
-        window.location.replace(sprintf("/#/ListGame_files/%s",get_game_file_offset()));
+        window.location.replace(sprintf("http://localhost:3300/#/ListGame_files/%s",get_game_file_offset()));
       },
       error: function(xhr, status, err) {
         console.log(status,xhr,err);
@@ -80,7 +80,7 @@ export default React.createClass({
                     <Button onClick={this.handleEdit}>Ok</Button>
                   </ButtonGroup>
                   <ButtonGroup>
-                    <Link to={sprintf('/ListGame_files/%s',get_game_file_offset())}><Button>Cancel</Button></Link>
+                    <Link to={sprintf('http://localhost:3300/ListGame_files/%s',get_game_file_offset())}><Button>Cancel</Button></Link>
                   </ButtonGroup>
                 </ButtonToolbar>
               </Col>

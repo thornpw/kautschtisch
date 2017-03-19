@@ -25,13 +25,13 @@ export default React.createClass({
     // send new game_file to the db
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/game_file',
+      url: 'http://localhost:3300/api/game_file',
       dataType: 'json',
       type: 'POST',
       data: _new,
       success: function(data) {
         this.setState({'name':''});
-        window.location.replace(sprintf("/#/ListGame_files/%s",get_game_file_offset()));
+        window.location.replace(sprintf("http://localhost:3300/#/ListGame_files/%s",get_game_file_offset()));
       }.bind(this),
       error: function(xhr, status, err) {
         console.error('/api/game_file', status, err.toString());

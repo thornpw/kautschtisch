@@ -28,7 +28,7 @@ export default React.createClass({
     // load new tag from the DB
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/db/KTag/'+this.props.params.id,
+      url: 'http://localhost:3300/api/db/KTag/'+this.props.params.id,
       dataType: 'json',
       type: 'GET',
       success: function(data) {
@@ -46,7 +46,7 @@ export default React.createClass({
     var _id = this.props.params.id;
 
     $.ajax({
-      url: '/api/tag/'+_id,
+      url: 'http://localhost:3300/api/tag/'+_id,
       contentType: 'application/json; charset=UTF-8',
       type: 'PUT',
       data: JSON.stringify(_edit),

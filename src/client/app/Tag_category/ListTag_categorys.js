@@ -142,7 +142,7 @@ export default React.createClass({
   },
   load_number_of_tag_categorys() {
     $.ajax({
-      url: encodeURI(sprintf('/api/tag_category_count/|/%s',this.get_combined_filter())),
+      url: encodeURI(sprintf('http://localhost:3300/api/tag_category_count/|/%s',this.get_combined_filter())),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -200,7 +200,7 @@ export default React.createClass({
   },
   load_tag_categorys: function() {
     $.ajax({
-      url: sprintf("/api/tag_category/%s/%s/|/%s",get_tag_category_offset(),get_tag_category_limit(),this.get_combined_filter()),
+      url: sprintf("http://localhost:3300/api/tag_category/%s/%s/|/%s",get_tag_category_offset(),get_tag_category_limit(),this.get_combined_filter()),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -246,7 +246,7 @@ export default React.createClass({
   },
   handleDelete: function(id_to_delete) {
     $.ajax({
-      url: "/api/db/KTag_category/" + id_to_delete,
+      url: "http://localhost:3300/api/db/KTag_category/" + id_to_delete,
       dataType: 'json',
       type: 'DELETE',
       cache: false,

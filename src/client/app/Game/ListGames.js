@@ -104,7 +104,7 @@ export default React.createClass({
   },
   load_number_of_games() {
     $.ajax({
-      url: encodeURI(sprintf('/api/game/count/%s',this.get_filter())),
+      url: encodeURI(sprintf('http://localhost:3300/api/game/count/%s',this.get_filter())),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -126,7 +126,7 @@ export default React.createClass({
   },
   load_games: function() {
     $.ajax({
-      url: sprintf("/api/game/%s/%s/%s",get_game_offset(),get_game_limit(),this.get_filter()),
+      url: sprintf("http://localhost:3300/api/game/%s/%s/%s",get_game_offset(),get_game_limit(),this.get_filter()),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -172,7 +172,7 @@ export default React.createClass({
   },
   handleDelete: function(id_to_delete) {
     $.ajax({
-      url: "/api/db/KGame/" + id_to_delete,
+      url: "http://localhost:3300/api/db/KGame/" + id_to_delete,
       dataType: 'json',
       type: 'DELETE',
       cache: false,

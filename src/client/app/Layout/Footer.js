@@ -8,7 +8,7 @@ export default React.createClass({
           <tbody>
             <tr>
               <td>
-                <center><p>(c)Pionierwerk 2016</p></center>
+                <center><p>(c)Pionierwerk 2016-2017</p></center>
               </td>
             </tr>
           </tbody>

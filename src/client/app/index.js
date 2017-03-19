@@ -17,9 +17,9 @@ import AddEngine_configuration from './Engine_configuration/AddEngine_configurat
 import EditEngine_configuration from './Engine_configuration/EditEngine_configuration'
 import ListEngine_configurations from './Engine_configuration/ListEngine_configurations'
 
-import AddPublisher from './Publisher/AddPublisher'
-import EditPublisher from './Publisher/EditPublisher'
-import ListPublishers from './Publisher/ListPublishers'
+import AddOrganisation from './Organisation/AddOrganisation'
+import EditOrganisation from './Organisation/EditOrganisation'
+import ListOrganisations from './Organisation/ListOrganisations'
 
 import AddTag from './Tag/AddTag'
 import EditTag from './Tag/EditTag'
@@ -56,9 +56,9 @@ render((
       <Route path="/AddEngine_configuration" component={AddEngine_configuration}/>
       <Route path="/EditEngine_configuration/:id" component={EditEngine_configuration}/>
 
-      <Route path="/ListPublishers/:offset" component={ListPublishers}/>
-      <Route path="/AddPublisher" component={AddPublisher}/>
-      <Route path="/EditPublisher/:id" component={EditPublisher}/>
+      <Route path="/ListOrganisations/:offset/:limit(/:filter)" component={ListOrganisations}/>
+      <Route path="/AddOrganisation" component={AddOrganisation}/>
+      <Route path="/EditOrganisation/:uid" component={EditOrganisation}/>
 
       <Route path="/ListTags/:offset" component={ListTags}/>
       <Route path="/AddTag" component={AddTag}/>

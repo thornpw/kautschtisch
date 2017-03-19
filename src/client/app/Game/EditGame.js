@@ -32,14 +32,14 @@ export default React.createClass({
     // load new game from the DB
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/db/KGame/'+this.props.params.id,
+      url: 'http://localhost:3300/api/db/KGame/'+this.props.params.id,
       dataType: 'json',
       type: 'GET',
       success: function(data) {
         this.setState({'id_game': data[0].id,'name':data[0].name});
       }.bind(this),
       error: function(xhr, status, err) {
-        console.error('/api/game', status, err.toString());
+        console.error('http://localhost:3300/api/game', status, err.toString());
       }.bind(this)
     });
   },
@@ -50,7 +50,7 @@ export default React.createClass({
     var _id = this.props.params.id;
 
     $.ajax({
-      url: '/api/game/'+_id,
+      url: 'http://localhost:3300/api/game/'+_id,
       contentType: 'application/json; charset=UTF-8',
       type: 'PUT',
       data: JSON.stringify(_edit),

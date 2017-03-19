@@ -104,7 +104,7 @@ export default React.createClass({
   },
   load_number_of_tags() {
     $.ajax({
-      url: encodeURI(sprintf('/api/tag/count/%s',this.get_filter())),
+      url: encodeURI(sprintf('http://localhost:3300/api/tag/count/%s',this.get_filter())),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -126,7 +126,7 @@ export default React.createClass({
   },
   load_tags: function() {
     $.ajax({
-      url: sprintf("/api/tag/%s/%s/%s",get_tag_offset(),get_tag_limit(),this.get_filter()),
+      url: sprintf("http://localhost:3300/api/tag/%s/%s/%s",get_tag_offset(),get_tag_limit(),this.get_filter()),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -172,7 +172,7 @@ export default React.createClass({
   },
   handleDelete: function(id_to_delete) {
     $.ajax({
-      url: "/api/db/KTag/" + id_to_delete,
+      url: "http://localhost:3300/api/db/KTag/" + id_to_delete,
       dataType: 'json',
       type: 'DELETE',
       cache: false,

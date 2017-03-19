@@ -105,7 +105,7 @@ export default React.createClass({
   },
   load_number_of_engines() {
     $.ajax({
-      url: encodeURI(sprintf('/api/engine/count/%s',this.get_filter())),
+      url: encodeURI(sprintf('http://localhost:3300/api/engine/count/%s',this.get_filter())),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -127,7 +127,7 @@ export default React.createClass({
   },
   load_engines: function() {
     $.ajax({
-      url: sprintf("/api/engine/%s/%s/%s",get_engine_offset(),get_engine_limit(),this.get_filter()),
+      url: sprintf("http://localhost:3300/api/engine/%s/%s/%s",get_engine_offset(),get_engine_limit(),this.get_filter()),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -173,7 +173,7 @@ export default React.createClass({
   },
   handleDelete: function(id_to_delete) {
     $.ajax({
-      url: "/api/db/KEngine/" + id_to_delete,
+      url: "http://localhost:3300/api/db/KEngine/" + id_to_delete,
       dataType: 'json',
       type: 'DELETE',
       cache: false,

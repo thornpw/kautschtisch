@@ -25,7 +25,7 @@ export default React.createClass({
     // send new tag to the db
     // -------------------------------------------------------------------------
     $.ajax({
-      url: '/api/tag',
+      url: 'http://localhost:3300/api/tag',
       dataType: 'json',
       type: 'POST',
       data: _new,

@@ -110,7 +110,7 @@ export default React.createClass({
   },
   load_number_of_game2tags(id_game) {
     $.ajax({
-      url: encodeURI(sprintf('/api/game2tag/count/%s/%s',id_game,this.get_filter())),
+      url: encodeURI(sprintf('http://localhost:3300/api/game2tag/count/%s/%s',id_game,this.get_filter())),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -132,7 +132,7 @@ export default React.createClass({
   },
   load_game2tags: function(id_game) {
     $.ajax({
-      url: sprintf("/api/game2tag/%s/%s/%s/%s",get_game2tag_offset(),get_game2tag_limit(),id_game,this.get_filter()),
+      url: sprintf("http://localhost:3300/api/game2tag/%s/%s/%s/%s",get_game2tag_offset(),get_game2tag_limit(),id_game,this.get_filter()),
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -175,7 +175,7 @@ export default React.createClass({
   },
   handleDelete: function(id_to_delete) {
     $.ajax({
-      url: "/api/db/KGame2Tag/" + id_to_delete,
+      url: "http://localhost:3300/api/db/KGame2Tag/" + id_to_delete,
       dataType: 'json',
       type: 'DELETE',
       cache: false,
@@ -192,7 +192,7 @@ export default React.createClass({
     var _new = {'id_game':this.props.id_game,'id_tag':this.state.id_tag};
 
     $.ajax({
-      url: "/api/game2tag",
+      url: "http://localhost:3300/api/game2tag",
       dataType: 'json',
       type: 'POST',
       cache: false,
@@ -203,7 +203,7 @@ export default React.createClass({
         this.setState({'name_tag':''})
       }.bind(this),
       error: function(xhr, status, err) {
-        console.error("/api/game2tag/", status, err.toString());
+        console.error("http://localhost:3300/api/game2tag/", status, err.toString());
       }.bind(this)
     });
   },
@@ -211,7 +211,7 @@ export default React.createClass({
     var _new_tag= {'name':this.state.new_tag};
 
     $.ajax({
-      url: "/api/tag",
+      url: "http://localhost:3300/api/tag",
       dataType: 'json',
       type: 'POST',
       cache: false,
@@ -220,7 +220,7 @@ export default React.createClass({
         var _new_game2tag = {'id_game':this.props.id_game,'id_tag':data.id};
 
         $.ajax({
-          url: "/api/game2tag",
+          url: "http://localhost:3300/api/game2tag",
           dataType: 'json',
           type: 'POST',
           cache: false,
