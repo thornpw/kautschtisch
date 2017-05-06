@@ -207,7 +207,6 @@ engine_configurationsearchroute.get(function(req,res,next){
             if(rows.length < 1) {
               return res.json({'msg':'engine_configuration not found'});
             }
-            console.log(rows);
             res.json(rows);
         });
     });

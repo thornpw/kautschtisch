@@ -194,8 +194,6 @@ export default React.createClass({
       filter = '|';
     }
 
-    console.log("filti:" + filter)
-
     return filter;
   },
   load_tag_categorys: function() {

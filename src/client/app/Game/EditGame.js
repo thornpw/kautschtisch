@@ -55,7 +55,6 @@ export default React.createClass({
       type: 'PUT',
       data: JSON.stringify(_edit),
       success: function(data) {
-        console.log("ok")
         window.location.replace(sprintf("/#/ListGames/%s",get_game_offset()));
       },
       error: function(xhr, status, err) {

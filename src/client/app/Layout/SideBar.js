@@ -9,7 +9,7 @@ import { get_engine_initial_offset,set_engine_filter} from './../Engine/ListEngi
 import { get_game_pictures_initial_offset,set_game_pictures_filter } from './../Engine/EditEngine';
 import { get_system_initial_offset,set_system_filter } from './../System/ListSystems';
 import { get_engine_configuration_initial_offset,set_engine_configuration_filter } from './../Engine_configuration/ListEngine_configurations';
-import { get_organisation_initial_offset,get_organisation_initial_limit,get_organisation_initial_filter_string,set_organisation_filter } from './../Organisation/ListOrganisations';
+
 import { get_tag_initial_offset,set_tag_filter } from './../Tag/ListTags';
 import { get_tag_category_initial_offset,set_tag_category_name_filter,set_tag_category_description_filter } from './../Tag_category/ListTag_categorys';
 import { get_engine_file_initial_offset,set_engine_file_filter } from './../Engine_file/ListEngine_files';
@@ -27,10 +27,6 @@ function clear_system_filter() {
 
 function clear_engine_configuration_filter() {
   set_engine_configuration_filter('');
-}
-
-function clear_organisation_filter() {
-  set_organisation_filter('');
 }
 
 function clear_tag_filter() {
@@ -93,7 +89,14 @@ export default React.createClass({
           </Panel>
           <Panel header="Organisations" eventKey="5">
             <ListGroup fill>
-              <ListGroupItem><Link onClick={clear_organisation_filter} to={sprintf('/ListOrganisations/%s/%s/%s',get_organisation_initial_offset(),get_organisation_initial_limit(),get_organisation_initial_filter_string())}>Organisation</Link></ListGroupItem>
+              <ListGroupItem><Link to={'/ListOrganisations/1'}>Organisation</Link></ListGroupItem>
+            </ListGroup>
+          </Panel>
+          <Panel header="Media" eventKey="6">
+            <ListGroup fill>
+              <ListGroupItem><Link to={'/ListPictures/1'}>Pictures</Link></ListGroupItem>
+              <ListGroupItem><Link to={'/ListLinks/1'}>Links</Link></ListGroupItem>
+              <ListGroupItem><Link to={'/ListFiles/1'}>Files</Link></ListGroupItem>
             </ListGroup>
           </Panel>
         </PanelGroup>

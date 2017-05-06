@@ -10,10 +10,6 @@ import vsprintf from 'sprintf'
 
 import { get_tag_category_offset } from './ListTag_categorys';
 
-function logChange(val) {
-    console.log("Selected: " + val);
-}
-
 export default React.createClass({
   getInitialState: function() {
     return {name: '',description: ''};
@@ -54,7 +50,6 @@ export default React.createClass({
       type: 'PUT',
       data: JSON.stringify(_edit),
       success: function(data) {
-        console.log("ok")
         window.location.replace(sprintf("/#/ListTag_categorys/%s",get_tag_category_offset()));
       },
       error: function(xhr, status, err) {

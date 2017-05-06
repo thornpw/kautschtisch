@@ -193,14 +193,12 @@ export default React.createClass({
                 processData: false,
                 type: 'POST',
                 success: function(data){
-                  console.log("ok");
                   window.location.replace(sprintf("http://localhost:3300/#/ListEngines/%s",get_engine_offset()));
                 }.bind(this),
                 error: function(xhr,status,err) {
                   console.error('/api/engine 1', status, err.toString());
                 }.bind(this)
               });
-              console.log("ok");
               window.location.replace(sprintf("/#/ListEngines/%s",get_engine_offset()));
           }.bind(this),
           error: function(xhr, status, err) {
@@ -333,7 +331,7 @@ export default React.createClass({
             <br/>
             <PagedMediaTable
               uid_object = {"0001:" + this.props.params.id.toString()}
-              row_type = "MediaPicture"
+              row_type = "ContextPicture"
               get_initial_offset={get_game_pictures_initial_offset}
               get_offset={get_game_pictures_offset}
               set_offset={set_game_pictures_offset}

@@ -1,0 +1,8 @@
+-- Get all Supported Media Tags of a given object type that are allowed to have
+-- multiple entries or not used so far
+select *
+from KSupportedObjectMediaTag smt
+join KTag t on smt.TagUID = t.UID
+where (not exists (select 1 from KObject2MediaTag o2mt where smt.TagUID = o2mt.TagUID)
+or smt.IsMulti=1)
+and smt.ObjectUID='0002'

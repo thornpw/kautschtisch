@@ -21,6 +21,18 @@ import AddOrganisation from './Organisation/AddOrganisation'
 import EditOrganisation from './Organisation/EditOrganisation'
 import ListOrganisations from './Organisation/ListOrganisations'
 
+import AddPicture from './Picture/AddPicture'
+import EditPicture from './Picture/EditPicture'
+import ListPictures from './Picture/ListPictures'
+
+import AddLink from './Link/AddLink'
+import EditLink from './Link/EditLink'
+import ListLinks from './Link/ListLinks'
+
+import AddFile from './File/AddFile'
+import EditFile from './File/EditFile'
+import ListFiles from './File/ListFiles'
+
 import AddTag from './Tag/AddTag'
 import EditTag from './Tag/EditTag'
 import ListTags from './Tag/ListTags'
@@ -56,9 +68,21 @@ render((
       <Route path="/AddEngine_configuration" component={AddEngine_configuration}/>
       <Route path="/EditEngine_configuration/:id" component={EditEngine_configuration}/>
 
-      <Route path="/ListOrganisations/:offset/:limit(/:filter)" component={ListOrganisations}/>
+      <Route path="/ListOrganisations/:redraw" component={ListOrganisations}/>
       <Route path="/AddOrganisation" component={AddOrganisation}/>
       <Route path="/EditOrganisation/:uid" component={EditOrganisation}/>
+
+      <Route path="/ListPictures/:redraw" component={ListPictures}/>
+      <Route path="/AddPicture" component={AddPicture}/>
+      <Route path="/EditPicture/:uid" component={EditPicture}/>
+
+      <Route path="/ListLinks/:redraw" component={ListLinks}/>
+      <Route path="/AddLink" component={AddLink}/>
+      <Route path="/EditLink/:uid" component={EditLink}/>
+
+      <Route path="/ListFiles/:redraw" component={ListFiles}/>
+      <Route path="/AddFile" component={AddFile}/>
+      <Route path="/EditFile/:uid" component={EditFile}/>
 
       <Route path="/ListTags/:offset" component={ListTags}/>
       <Route path="/AddTag" component={AddTag}/>

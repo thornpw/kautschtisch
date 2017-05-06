@@ -51,7 +51,6 @@ export default React.createClass({
       type: 'PUT',
       data: JSON.stringify(_edit),
       success: function(data) {
-        console.log("ok")
         window.location.replace(sprintf("http://localhost:3300/#/ListGame_files/%s",get_game_file_offset()));
       },
       error: function(xhr, status, err) {

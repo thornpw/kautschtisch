@@ -10,10 +10,6 @@ import vsprintf from 'sprintf'
 
 import { get_engine_file_offset } from './ListEngine_files';
 
-function logChange(val) {
-    console.log("Selected: " + val);
-}
-
 export default React.createClass({
   getInitialState: function() {
     return {name: ''};
@@ -51,7 +47,6 @@ export default React.createClass({
       type: 'PUT',
       data: JSON.stringify(_edit),
       success: function(data) {
-        console.log("ok")
         window.location.replace(sprintf("/#/ListEngine_files/%s",get_engine_file_offset()));
       },
       error: function(xhr, status, err) {
