@@ -6,11 +6,21 @@ import { Button,ButtonGroup,ButtonToolbar,Form,FormGroup,FormControl,Table,Pagin
 import { Selection } from "./Select"
 import { TaggedPicture } from "./Pictures/TaggedPicture"
 import { TaggedLink } from "./Links/TaggedLink"
+import { TaggedFile } from "./Files/TaggedFile"
 import { ContextPicture } from "./Pictures/ContextPicture"
-import { URLLink } from "./Links/URLLink"
+import { ContextFile } from "./Files/ContextFile"
+import { ContextLink } from "./Links/ContextLink"
 
 import sprintf from 'sprintf'
 import vsprintf from 'sprintf'
+import { ObjectList } from "./Lists/ObjectList"
+import { ListColumn } from "./Lists/ListColumn"
+import { buildConditionFromFilters } from "../Utils/filter_utils"
+
+import { createStore } from 'redux'
+import { addPagination,setNewFilter,setFilter,clearFilter,changeOffset,setAmountOfRows,resetContextPagination } from '../Redux/actions/pagination_actions'
+import { r_pagination } from '../Redux/reducers/pagination_reducers'
+import { pagination_store} from '../Redux/store/pagination_store'
 
 // Paged media table
 // =============================================================================
@@ -34,7 +44,7 @@ import vsprintf from 'sprintf'
 //
 // Model (state)
 // *****************************************************************************
-// row_datas
+// data
 // max_page
 // actual_page
 // total_rows
@@ -52,165 +62,114 @@ import vsprintf from 'sprintf'
 // 1.1 Only a class is used as input in the props
 // =============================================================================
 
-// PagedMediaTable component
-// =============================================================================
-const PagedMediaTable = React.createClass({
-  // array for dynamic row data components
-  // the calling component give in the string and the array return the component
-  // *****************************************************************************
-  MediaComponents: {
-    "ContextPicture":ContextPicture,
-    "URLLink":URLLink
-  },
-  TaggedComponents: {
-    "TaggedPicture":TaggedPicture,
-    "TaggedLink":TaggedLink
-  },
-  getInitialState: function() {
-    return {
-      row_datas: [],
+// array for dynamic row data components
+// the calling component give in the string and the array return the component
+// *****************************************************************************
+var MediaComponents = {
+  "ContextPicture":ContextPicture,
+  "ContextLink":ContextLink,
+  "ContextFile":ContextFile
+}
+
+var TaggedComponents = {
+  "TaggedPicture":TaggedPicture,
+  "TaggedLink":TaggedLink,
+  "TaggedFile":TaggedFile
+}
+
+export class PagedMediaTable extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      data: [],
       max_page:0,
       actual_page:0,
       total_rows:0,
       new_filter:'',
       offset:0,
-    };
-  },
-  onFilterChange: function(e) {
-    this.setState({offset:0});
-    this.props.object_pagignation.set_offset(0);
-    this.props.object_pagignation.set_filter(this.state.new_filter);
-    this.doRedraw()
-  },
-  onFilterClear: function(e) {
-    this.setState({offset:0, new_filter:''});
-    this.props.object_pagignation.set_offset(0);
-    this.props.object_pagignation.set_filter('');
-    this.doRedraw();
-  },
-  onNewFilterChange: function(e) {
-    this.setState({new_filter: e.target.value});
-  },
-  // called in the load functions
-  get_load_filter: function() {
-    var _filter = this.props.object_pagignation.get_filter();
+    }
 
-    if(_filter == '') {
-      return "'°'";
-    } else {
-      return "'°"+_filter+"°'";
-    }
-  },
-  componentWillReceiveProps: function(nextProps) {
-    if(!(this.props.object_pagignation.get_filter() == this.state.new_filter)) {
-        this.setState({new_filter:this.props.object_pagignation.get_filter()});
-        this.doRedraw(this);
-    }
-    if(!(nextProps.object_pagignation.get_offset()==this.props.object_pagignation.get_offset())) {
-      this.props.object_pagignation.set_offset(nextProps.get_offset());
-      this.doRedraw(this)
-    }
-  },
-  componentDidMount: function() {
-    this.doRedraw()
-  },
-  createRows: function(items){
-      var output = [];
-      var DynamicComponent = this.MediaComponents[this.props.row_type];
-      for(var i = 0; i < items.length; i++) {
-        output.push(<DynamicComponent key={i} data={items[i]} table="KObject2MediaTag" update_parent_data={this.doRedraw}/>);
-      }
-      return output;
-  },
-  createTaggedComponent: function() {
+    this.redux_state = pagination_store.getState().paginations[this.props.object_type]
+  }
+
+  componentDidMount() {
+    pagination_store.dispatch(resetContextPagination())
+    this.load_data()
+  }
+
+  createRows(){
     var output = [];
-    var DynamicComponent = this.TaggedComponents[this.props.tagged_component];
-    output.push(<DynamicComponent key={0} doParentRedraw={this.doRedraw} uid_object={this.props.uid_object} object_filter={this.props.object_filter} media_type={this.props.media_type}/>);
+    var items = this.state.data
+    var DynamicComponent = MediaComponents[this.props.row_type];
+
+    for(var i = 0; i < items.length; i++) {
+      output.push(<DynamicComponent key={i} data={items[i]} doParentReload={this.load_data}/>);
+    }
     return output;
-  },
-  handleSelect(eventKey) {
-    this.props.object_pagignation.set_active_page(eventKey)
-    this.props.object_pagignation.set_offset( (parseInt(eventKey) -1 ) * this.props.object_pagignation.get_limit());
-    this.doRedraw(this)
-  },
-  doRedraw() {
+  }
+
+  createHeader() {
+    var output = [];
+    for(var column=0;column < this.redux_state.column_has_filter.length;column++)
+    {
+      if(!this.redux_state.column_has_filter[column]) {
+        output.push(
+        <th key={column}>
+              <table >
+                <tbody>
+                  <tr>
+                    <td>{this.redux_state.filter_columns_displaynames[column]}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </th>
+        );
+      } else {
+        output.push(<ListColumn key={column} object_type={this.props.object_type} column_number={column} display_name={this.redux_state.filter_columns_displaynames[column]} update_data={this.load_data.bind(this)}/>);
+      }
+    }
+    return output;
+  }
+
+  createTaggedComponent() {
+    var output = [];
+    var DynamicComponent = TaggedComponents[this.props.tagged_component];
+    output.push(<DynamicComponent key={0} doParentReload={this.load_data.bind(this)} uid_object={this.props.uid_object} object_filter={this.props.object_filter} media_type={this.props.media_type}/>);
+    return output;
+  }
+
+  load_data() {
     var _uid_object = "'" + this.props.uid_object + "'"
+    console.log(this.redux_state.filters)
     $.ajax({
-      url: encodeURI(sprintf("http://localhost:3300/api/db/search/%s?offset=%s&limit=%s&filter=where|Name|like|%s;and|ObjectUID|eq|%s",this.props.view_name,this.props.object_pagignation.get_offset(),this.props.object_pagignation.get_limit(),this.get_load_filter(),_uid_object)),
+      url: encodeURI(sprintf("http://localhost:3300/api/db/search/%s?offset=%s&limit=%s%s;and|ObjectUID|eq|%s",this.props.view_name,this.redux_state.offset,this.redux_state.limit,buildConditionFromFilters(this.redux_state.filters,this.redux_state.filter_columns),_uid_object)),
       dataType: 'json',
       cache: false,
       success: function(data) {
-        this.setState({total_rows: parseInt(data.amount),max_page:Math.floor(parseInt(data.amount) / this.props.object_pagignation.get_limit())});
-        this.setState({row_datas: data.data, actual_page:Math.floor(this.props.object_pagignation.get_offset() / this.props.object_pagignation.get_limit())})
+        console.log(data.amount)
+        pagination_store.dispatch(setAmountOfRows(this.props.object_type,data.amount))
+        this.setState({data: data.data})
       }.bind(this),
       error: function(xhr, status, err) {
         console.error("PagedMediaTable", status, err.toString());
       }.bind(this)
-    });
-  },
-  render: function() {
-    <div/>
-  },
-  render2: function() {
-    let {imagePreviewUrl} = this.state;
-    let $imagePreview = null;
-    if (imagePreviewUrl) {
-      $imagePreview = (<Thumbnail src={imagePreviewUrl} />);
-    }
+    })
+  }
+
+  render() {
     return (
       <div>
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th></th>
-              <th>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>Name</td>
-                      <td width="4px"></td>
-                      <td>
-                          <FormControl type="text" placeholder="Search for" onChange={this.onNewFilterChange} value = {this.state.new_filter}/>
-                      </td>
-                      <td width="4px"></td>
-                      <td>
-                        <Button onClick={this.onFilterChange}><img src="media/gfx/search.png"/></Button>
-                      </td>
-                      <td width="4px"></td>
-                      <td>
-                        <Button onClick={this.onFilterClear}><img src="media/gfx/clear_filter.png"/></Button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.createRows(this.state.row_datas)}
-          </tbody>
-        </Table>
-        <ul className="pagination">
-          <Pagination
-            prev
-            next
-            first
-            last
-            ellipsis
-            boundaryLinks
-            items={Math.ceil(this.state.total_rows / this.props.object_pagignation.get_limit())}
-            maxButtons={this.props.max_buttons}
-            activePage={this.props.object_pagignation.get_active_page()}
-            onSelect={this.handleSelect}
-          />
-        </ul>
-        <div className="form-group">
-          &nbsp;
-        </div>
+        <ObjectList
+          add_link=""
+          createObject={this.createRows.bind(this)}
+          object_type={this.props.object_type}
+          update_data={this.load_data.bind(this)}
+        >
+        {this.createHeader()}
+        </ObjectList>
         {this.createTaggedComponent()}
       </div>
-    );
+    )
   }
-});
-
-module.exports = PagedMediaTable;
+}

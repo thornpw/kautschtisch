@@ -50,20 +50,20 @@ class ListFiles extends React.Component {
       var items = this.state.data
 
       for(var i = 0; i < items.length; i++) {
-        output.push(<File key={i} data={items[i]} update_parent_data={this.load_data.bind(this)}/>);
+        output.push(<File key={i} data={items[i]} doParentReload={this.load_data.bind(this)}/>);
       }
       return output;
   }
 
   componentWillReceiveProps(nextProps) {
-    if(nextProps.params != undefined && nextProps.params.redraw == 1) {
+    if(nextProps.params != undefined && nextProps.params.reload == 1) {
       pagination_store.dispatch(resetPagination(this.object_type))
       this.load_data()
     }
   }
 
   componentDidMount() {
-    if(this.props.params != undefined && this.props.params.redraw == 1) {
+    if(this.props.params != undefined && this.props.params.reload == 1) {
       pagination_store.dispatch(resetPagination(this.object_type))
     }
     this.load_data()
@@ -80,15 +80,6 @@ class ListFiles extends React.Component {
             update_data={this.load_data.bind(this)}
           >
             <ListColumn object_type='files' column_number={0} display_name="Name" update_data={this.load_data.bind(this)}/>
-            <th>
-              <table width="500px">
-                <tbody>
-                  <tr>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </th>
           </ObjectList>
         </Panel>
       </div>

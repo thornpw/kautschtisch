@@ -19,8 +19,8 @@ import vsprintf from 'sprintf'
 // data                 the attributes from the parent
 // -Name                the name of the link
 // -URL                 the link URL
-// -uid                 the UID of the link. Used to delete it
-// update_parent_data   call function to load links in the parent component
+// -UID                 the UID of the link. Used to delete it
+// doParentReload       call function to load links in the parent component
 //
 // Model (state)
 // *****************************************************************************
@@ -41,12 +41,12 @@ export class URLLink extends React.Component {
 
   handleDelete() {
     $.ajax({
-      url: sprintf("http://localhost:3300/api/db/%s/%s",this.props.table,this.props.data.UID),
+      url: sprintf("http://localhost:3300/api/db/KLink/%s",this.props.data.UID),
       dataType: 'json',
       type: 'DELETE',
       cache: false,
       success: function(data) {
-        this.props.update_parent_data();
+        this.props.doParentReload();
       }.bind(this),
       error: function(xhr, status, err) {
         console.error("URLLink 1", status, err.toString());

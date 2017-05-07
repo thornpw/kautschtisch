@@ -25,7 +25,7 @@ var http = require('http');
 //                      syntax:     ({column name}|{filter value}[|])*
 //                      no filter:  '-'
 //                      example:    id_tag_category|8
-// doParentReadraw:     function to redraw parent
+// doParentReload:      function to reload parent
 //
 // Model (state)
 // *****************************************************************************
@@ -128,7 +128,7 @@ export class TaggedPicture extends React.Component {
                     this.setState({
                       File: undefined
                     })
-                    this.props.doParentRedraw();
+                    this.props.doParentReload();
                   }.bind(this),
                   error: function(xhr,status,err) {
                     console.error('http://localhost:3300/api/picture 1', status, err.toString());
@@ -172,8 +172,8 @@ export class TaggedPicture extends React.Component {
             <td>
               {
                 this.state.uid_tag != '' && this.state.Name != '' && this.state.File != undefined && this.state.File.size > 0 ?
-                  <Button bsStyle="success" onClick={this.handleAdd}><img src="media/gfx/add.png"/></Button>
-                  : <Button bsStyle="success" onClick={this.handleAdd} disabled><img src="media/gfx/add.png"/></Button>
+                  <Button bsStyle="success" onClick={this.handleAdd.bind(this)}><img src="media/gfx/add.png"/></Button>
+                  : <Button bsStyle="success" onClick={this.handleAdd.bind(this)} disabled><img src="media/gfx/add.png"/></Button>
               }
             </td>
             <td>
@@ -193,7 +193,7 @@ export class TaggedPicture extends React.Component {
                           media_type={this.props.media_type}
                           display_column="Name"
                           value="a"
-                          change_function={this.onTagChange}/>
+                          change_function={this.onTagChange.bind(this)}/>
                       </Col>
                     </td>
                   </tr>
@@ -202,7 +202,7 @@ export class TaggedPicture extends React.Component {
                     <td>
                       <Col sm={10}>
                         <Form horizontal>
-                          <PictureProperties update_parent={this.update_parent} data={this.state}/>
+                          <PictureProperties update_parent={this.update_parent.bind(this)} data={this.state}/>
                         </Form>
                       </Col>
                     </td>

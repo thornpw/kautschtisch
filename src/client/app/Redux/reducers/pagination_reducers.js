@@ -78,9 +78,9 @@ function r_pagination(state = {}, action){
 
       for (var elem in context_paginations) {
         console.log("clear:"+elem)
-        _state.paginations[paginations[elem]].offset = _state.paginations[paginations[elem]].initial_offset
-        _state.paginations[paginations[elem]].active_page=1
-        _state.paginations[paginations[elem]].filters = _state.paginations[paginations[elem]].initial_filters
+        _state.paginations[context_paginations[elem]].offset = _state.paginations[context_paginations[elem]].initial_offset
+        _state.paginations[context_paginations[elem]].active_page=1
+        _state.paginations[context_paginations[elem]].filters = _state.paginations[context_paginations[elem]].initial_filters
       }
 
       return Object.assign({}, state, {

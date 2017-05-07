@@ -25,7 +25,7 @@ var http = require('http');
 //                      syntax:     ({column name}|{filter value}[|])*
 //                      no filter:  '-'
 //                      example:    id_tag_category|8
-// doParentReadraw:     function to redraw parent
+// doParentReload       reload the parent data
 //
 // Model (state)
 // *****************************************************************************
@@ -113,7 +113,7 @@ export class TaggedLink extends React.Component {
               IsPicture: false,
               IsVideo:  false
             })
-            this.props.doParentRedraw();
+            this.props.doParentReload();
           }.bind(this),
           error: function(xhr,status,err) {
             console.error('http://localhost:3300/api/link 1', status, err.toString());

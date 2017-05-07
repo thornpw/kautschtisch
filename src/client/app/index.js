@@ -68,19 +68,19 @@ render((
       <Route path="/AddEngine_configuration" component={AddEngine_configuration}/>
       <Route path="/EditEngine_configuration/:id" component={EditEngine_configuration}/>
 
-      <Route path="/ListOrganisations/:redraw" component={ListOrganisations}/>
+      <Route path="/ListOrganisations/:reload" component={ListOrganisations}/>
       <Route path="/AddOrganisation" component={AddOrganisation}/>
       <Route path="/EditOrganisation/:uid" component={EditOrganisation}/>
 
-      <Route path="/ListPictures/:redraw" component={ListPictures}/>
+      <Route path="/ListPictures/:reload" component={ListPictures}/>
       <Route path="/AddPicture" component={AddPicture}/>
       <Route path="/EditPicture/:uid" component={EditPicture}/>
 
-      <Route path="/ListLinks/:redraw" component={ListLinks}/>
+      <Route path="/ListLinks/:reload" component={ListLinks}/>
       <Route path="/AddLink" component={AddLink}/>
       <Route path="/EditLink/:uid" component={EditLink}/>
 
-      <Route path="/ListFiles/:redraw" component={ListFiles}/>
+      <Route path="/ListFiles/:reload" component={ListFiles}/>
       <Route path="/AddFile" component={AddFile}/>
       <Route path="/EditFile/:uid" component={EditFile}/>
 

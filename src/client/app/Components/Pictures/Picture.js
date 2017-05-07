@@ -19,7 +19,7 @@ import vsprintf from 'sprintf'
 // -Name                the name of the picture
 // -uid                 the UID of the picture. Used to delete it
 // -FileUUID            UUID of the picture
-// -update_parent_data  call function to load pictures in the parent component
+// doParentReload       call function to load pictures in the parent component
 //
 // Model (state)
 // *****************************************************************************
@@ -45,7 +45,7 @@ export class Picture extends React.Component {
       type: 'DELETE',
       cache: false,
       success: function(data) {
-        this.props.update_parent_data();
+        this.props.doParentReload();
       }.bind(this),
       error: function(xhr, status, err) {
         console.error("Picture 1", status, err.toString());

@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import { Button,ButtonGroup,ButtonToolbar,Panel,Form,FormGroup,FormControl,Col,ControlLabel,Table,Thumbnail,Tabs,Tab,Grid,Row,Pagination } from 'react-bootstrap';
 
 import { FileProperties } from "../Components/Files/FileProperties"
-import { PagedMediaTable2 } from "../Components/PagedMediaTable2"
+import { PagedMediaTable } from "../Components/PagedMediaTable"
 
 import sprintf from 'sprintf'
 import vsprintf from 'sprintf'
@@ -140,10 +140,11 @@ export default class EditFile extends React.Component {
           </Tab>
           <Tab eventKey={2} title="Links">
             <br/>
-            <PagedMediaTable2
+            <PagedMediaTable
               object_type='file_links'
               uid_object = {this.props.params.uid.toString()}
-              row_type = "URLLink"
+              table= "K"
+              row_type = "ContextLink"
               view_name = "KLinksOfObject"
               tagged_component = "TaggedLink"
               object_filter= "0002"

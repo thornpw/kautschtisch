@@ -58,11 +58,11 @@
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
-	var _Data = __webpack_require__(551);
+	var _Data = __webpack_require__(575);
 
 	var _Data2 = _interopRequireDefault(_Data);
 
-	var _AddEngine = __webpack_require__(552);
+	var _AddEngine = __webpack_require__(576);
 
 	var _AddEngine2 = _interopRequireDefault(_AddEngine);
 
@@ -74,63 +74,63 @@
 
 	var _ListEngines2 = _interopRequireDefault(_ListEngines);
 
-	var _AddSystem = __webpack_require__(553);
+	var _AddSystem = __webpack_require__(577);
 
 	var _AddSystem2 = _interopRequireDefault(_AddSystem);
 
-	var _EditSystem = __webpack_require__(554);
+	var _EditSystem = __webpack_require__(578);
 
 	var _EditSystem2 = _interopRequireDefault(_EditSystem);
 
-	var _ListSystems = __webpack_require__(542);
+	var _ListSystems = __webpack_require__(566);
 
 	var _ListSystems2 = _interopRequireDefault(_ListSystems);
 
-	var _AddEngine_configuration = __webpack_require__(560);
+	var _AddEngine_configuration = __webpack_require__(584);
 
 	var _AddEngine_configuration2 = _interopRequireDefault(_AddEngine_configuration);
 
-	var _EditEngine_configuration = __webpack_require__(561);
+	var _EditEngine_configuration = __webpack_require__(585);
 
 	var _EditEngine_configuration2 = _interopRequireDefault(_EditEngine_configuration);
 
-	var _ListEngine_configurations = __webpack_require__(543);
+	var _ListEngine_configurations = __webpack_require__(567);
 
 	var _ListEngine_configurations2 = _interopRequireDefault(_ListEngine_configurations);
 
-	var _AddOrganisation = __webpack_require__(562);
+	var _AddOrganisation = __webpack_require__(586);
 
 	var _AddOrganisation2 = _interopRequireDefault(_AddOrganisation);
 
-	var _EditOrganisation = __webpack_require__(564);
+	var _EditOrganisation = __webpack_require__(588);
 
 	var _EditOrganisation2 = _interopRequireDefault(_EditOrganisation);
 
-	var _ListOrganisations = __webpack_require__(590);
+	var _ListOrganisations = __webpack_require__(589);
 
 	var _ListOrganisations2 = _interopRequireDefault(_ListOrganisations);
 
-	var _AddPicture = __webpack_require__(592);
+	var _AddPicture = __webpack_require__(591);
 
 	var _AddPicture2 = _interopRequireDefault(_AddPicture);
 
-	var _EditPicture = __webpack_require__(593);
+	var _EditPicture = __webpack_require__(592);
 
 	var _EditPicture2 = _interopRequireDefault(_EditPicture);
 
-	var _ListPictures = __webpack_require__(594);
+	var _ListPictures = __webpack_require__(593);
 
 	var _ListPictures2 = _interopRequireDefault(_ListPictures);
 
-	var _AddLink = __webpack_require__(596);
+	var _AddLink = __webpack_require__(595);
 
 	var _AddLink2 = _interopRequireDefault(_AddLink);
 
-	var _EditLink = __webpack_require__(597);
+	var _EditLink = __webpack_require__(596);
 
 	var _EditLink2 = _interopRequireDefault(_EditLink);
 
-	var _ListLinks = __webpack_require__(599);
+	var _ListLinks = __webpack_require__(598);
 
 	var _ListLinks2 = _interopRequireDefault(_ListLinks);
 
@@ -154,7 +154,7 @@
 
 	var _EditTag2 = _interopRequireDefault(_EditTag);
 
-	var _ListTags = __webpack_require__(544);
+	var _ListTags = __webpack_require__(568);
 
 	var _ListTags2 = _interopRequireDefault(_ListTags);
 
@@ -166,7 +166,7 @@
 
 	var _EditTag_category2 = _interopRequireDefault(_EditTag_category);
 
-	var _ListTag_categorys = __webpack_require__(545);
+	var _ListTag_categorys = __webpack_require__(569);
 
 	var _ListTag_categorys2 = _interopRequireDefault(_ListTag_categorys);
 
@@ -178,7 +178,7 @@
 
 	var _EditGame_file2 = _interopRequireDefault(_EditGame_file);
 
-	var _ListGame_files = __webpack_require__(549);
+	var _ListGame_files = __webpack_require__(573);
 
 	var _ListGame_files2 = _interopRequireDefault(_ListGame_files);
 
@@ -190,7 +190,7 @@
 
 	var _EditEngine_file2 = _interopRequireDefault(_EditEngine_file);
 
-	var _ListEngine_files = __webpack_require__(548);
+	var _ListEngine_files = __webpack_require__(572);
 
 	var _ListEngine_files2 = _interopRequireDefault(_ListEngine_files);
 
@@ -202,7 +202,7 @@
 
 	var _EditGame2 = _interopRequireDefault(_EditGame);
 
-	var _ListGames = __webpack_require__(550);
+	var _ListGames = __webpack_require__(574);
 
 	var _ListGames2 = _interopRequireDefault(_ListGames);
 
@@ -223,16 +223,16 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: '/ListEngine_configurations/:offset', component: _ListEngine_configurations2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/AddEngine_configuration', component: _AddEngine_configuration2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/EditEngine_configuration/:id', component: _EditEngine_configuration2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/ListOrganisations/:redraw', component: _ListOrganisations2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/ListOrganisations/:reload', component: _ListOrganisations2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/AddOrganisation', component: _AddOrganisation2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/EditOrganisation/:uid', component: _EditOrganisation2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/ListPictures/:redraw', component: _ListPictures2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/ListPictures/:reload', component: _ListPictures2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/AddPicture', component: _AddPicture2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/EditPicture/:uid', component: _EditPicture2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/ListLinks/:redraw', component: _ListLinks2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/ListLinks/:reload', component: _ListLinks2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/AddLink', component: _AddLink2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/EditLink/:uid', component: _EditLink2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/ListFiles/:redraw', component: _ListFiles2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/ListFiles/:reload', component: _ListFiles2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/AddFile', component: _AddFile2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/EditFile/:uid', component: _EditFile2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/ListTags/:offset', component: _ListTags2.default }),
@@ -46172,19 +46172,19 @@
 
 	var _EditEngine = __webpack_require__(492);
 
-	var _ListSystems = __webpack_require__(542);
+	var _ListSystems = __webpack_require__(566);
 
-	var _ListEngine_configurations = __webpack_require__(543);
+	var _ListEngine_configurations = __webpack_require__(567);
 
-	var _ListTags = __webpack_require__(544);
+	var _ListTags = __webpack_require__(568);
 
-	var _ListTag_categorys = __webpack_require__(545);
+	var _ListTag_categorys = __webpack_require__(569);
 
-	var _ListEngine_files = __webpack_require__(548);
+	var _ListEngine_files = __webpack_require__(572);
 
-	var _ListGame_files = __webpack_require__(549);
+	var _ListGame_files = __webpack_require__(573);
 
-	var _ListGames = __webpack_require__(550);
+	var _ListGames = __webpack_require__(574);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48078,6 +48078,13 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.PagedMediaTable = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -48092,15 +48099,39 @@
 
 	var _TaggedLink = __webpack_require__(538);
 
-	var _ContextPicture = __webpack_require__(540);
+	var _TaggedFile = __webpack_require__(540);
 
-	var _URLLink = __webpack_require__(541);
+	var _ContextPicture = __webpack_require__(542);
+
+	var _ContextFile = __webpack_require__(543);
+
+	var _ContextLink = __webpack_require__(544);
 
 	var _sprintf = __webpack_require__(490);
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
+	var _ObjectList = __webpack_require__(545);
+
+	var _ListColumn = __webpack_require__(564);
+
+	var _filter_utils = __webpack_require__(565);
+
+	var _redux = __webpack_require__(546);
+
+	var _pagination_actions = __webpack_require__(561);
+
+	var _pagination_reducers = __webpack_require__(562);
+
+	var _pagination_store = __webpack_require__(563);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	// Paged media table
 	// =============================================================================
@@ -48124,7 +48155,7 @@
 	//
 	// Model (state)
 	// *****************************************************************************
-	// row_datas
+	// data
 	// max_page
 	// actual_page
 	// total_rows
@@ -48142,210 +48173,143 @@
 	// 1.1 Only a class is used as input in the props
 	// =============================================================================
 
-	// PagedMediaTable component
-	// =============================================================================
-	var PagedMediaTable = _react2.default.createClass({
-	  displayName: 'PagedMediaTable',
+	// array for dynamic row data components
+	// the calling component give in the string and the array return the component
+	// *****************************************************************************
+	var MediaComponents = {
+	  "ContextPicture": _ContextPicture.ContextPicture,
+	  "ContextLink": _ContextLink.ContextLink,
+	  "ContextFile": _ContextFile.ContextFile
+	};
 
-	  // array for dynamic row data components
-	  // the calling component give in the string and the array return the component
-	  // *****************************************************************************
-	  MediaComponents: {
-	    "ContextPicture": _ContextPicture.ContextPicture,
-	    "URLLink": _URLLink.URLLink
-	  },
-	  TaggedComponents: {
-	    "TaggedPicture": _TaggedPicture.TaggedPicture,
-	    "TaggedLink": _TaggedLink.TaggedLink
-	  },
-	  getInitialState: function getInitialState() {
-	    return {
-	      row_datas: [],
+	var TaggedComponents = {
+	  "TaggedPicture": _TaggedPicture.TaggedPicture,
+	  "TaggedLink": _TaggedLink.TaggedLink,
+	  "TaggedFile": _TaggedFile.TaggedFile
+	};
+
+	var PagedMediaTable = exports.PagedMediaTable = function (_React$Component) {
+	  _inherits(PagedMediaTable, _React$Component);
+
+	  function PagedMediaTable(props) {
+	    _classCallCheck(this, PagedMediaTable);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PagedMediaTable).call(this, props));
+
+	    _this.state = {
+	      data: [],
 	      max_page: 0,
 	      actual_page: 0,
 	      total_rows: 0,
 	      new_filter: '',
 	      offset: 0
 	    };
-	  },
-	  onFilterChange: function onFilterChange(e) {
-	    this.setState({ offset: 0 });
-	    this.props.object_pagignation.set_offset(0);
-	    this.props.object_pagignation.set_filter(this.state.new_filter);
-	    this.doRedraw();
-	  },
-	  onFilterClear: function onFilterClear(e) {
-	    this.setState({ offset: 0, new_filter: '' });
-	    this.props.object_pagignation.set_offset(0);
-	    this.props.object_pagignation.set_filter('');
-	    this.doRedraw();
-	  },
-	  onNewFilterChange: function onNewFilterChange(e) {
-	    this.setState({ new_filter: e.target.value });
-	  },
-	  // called in the load functions
-	  get_load_filter: function get_load_filter() {
-	    var _filter = this.props.object_pagignation.get_filter();
 
-	    if (_filter == '') {
-	      return "'°'";
-	    } else {
-	      return "'°" + _filter + "°'";
-	    }
-	  },
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    if (!(this.props.object_pagignation.get_filter() == this.state.new_filter)) {
-	      this.setState({ new_filter: this.props.object_pagignation.get_filter() });
-	      this.doRedraw(this);
-	    }
-	    if (!(nextProps.object_pagignation.get_offset() == this.props.object_pagignation.get_offset())) {
-	      this.props.object_pagignation.set_offset(nextProps.get_offset());
-	      this.doRedraw(this);
-	    }
-	  },
-	  componentDidMount: function componentDidMount() {
-	    this.doRedraw();
-	  },
-	  createRows: function createRows(items) {
-	    var output = [];
-	    var DynamicComponent = this.MediaComponents[this.props.row_type];
-	    for (var i = 0; i < items.length; i++) {
-	      output.push(_react2.default.createElement(DynamicComponent, { key: i, data: items[i], table: 'KObject2MediaTag', update_parent_data: this.doRedraw }));
-	    }
-	    return output;
-	  },
-	  createTaggedComponent: function createTaggedComponent() {
-	    var output = [];
-	    var DynamicComponent = this.TaggedComponents[this.props.tagged_component];
-	    output.push(_react2.default.createElement(DynamicComponent, { key: 0, doParentRedraw: this.doRedraw, uid_object: this.props.uid_object, object_filter: this.props.object_filter, media_type: this.props.media_type }));
-	    return output;
-	  },
-	  handleSelect: function handleSelect(eventKey) {
-	    this.props.object_pagignation.set_active_page(eventKey);
-	    this.props.object_pagignation.set_offset((parseInt(eventKey) - 1) * this.props.object_pagignation.get_limit());
-	    this.doRedraw(this);
-	  },
-	  doRedraw: function doRedraw() {
-	    var _uid_object = "'" + this.props.uid_object + "'";
-	    $.ajax({
-	      url: encodeURI((0, _sprintf2.default)("http://localhost:3300/api/db/search/%s?offset=%s&limit=%s&filter=where|Name|like|%s;and|ObjectUID|eq|%s", this.props.view_name, this.props.object_pagignation.get_offset(), this.props.object_pagignation.get_limit(), this.get_load_filter(), _uid_object)),
-	      dataType: 'json',
-	      cache: false,
-	      success: function (data) {
-	        this.setState({ total_rows: parseInt(data.amount), max_page: Math.floor(parseInt(data.amount) / this.props.object_pagignation.get_limit()) });
-	        this.setState({ row_datas: data.data, actual_page: Math.floor(this.props.object_pagignation.get_offset() / this.props.object_pagignation.get_limit()) });
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error("PagedMediaTable", status, err.toString());
-	      }.bind(this)
-	    });
-	  },
+	    _this.redux_state = _pagination_store.pagination_store.getState().paginations[_this.props.object_type];
+	    return _this;
+	  }
 
-	  render: function render() {
-	    _react2.default.createElement('div', null);
-	  },
-	  render2: function render2() {
-	    var imagePreviewUrl = this.state.imagePreviewUrl;
-
-	    var $imagePreview = null;
-	    if (imagePreviewUrl) {
-	      $imagePreview = _react2.default.createElement(_reactBootstrap.Thumbnail, { src: imagePreviewUrl });
+	  _createClass(PagedMediaTable, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      _pagination_store.pagination_store.dispatch((0, _pagination_actions.resetContextPagination)());
+	      this.load_data();
 	    }
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Table,
-	        { striped: true, bordered: true, hover: true },
-	        _react2.default.createElement(
-	          'thead',
-	          null,
-	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement('th', null),
+	  }, {
+	    key: 'createRows',
+	    value: function createRows() {
+	      var output = [];
+	      var items = this.state.data;
+	      var DynamicComponent = MediaComponents[this.props.row_type];
+
+	      for (var i = 0; i < items.length; i++) {
+	        output.push(_react2.default.createElement(DynamicComponent, { key: i, data: items[i], doParentReload: this.load_data }));
+	      }
+	      return output;
+	    }
+	  }, {
+	    key: 'createHeader',
+	    value: function createHeader() {
+	      var output = [];
+	      for (var column = 0; column < this.redux_state.column_has_filter.length; column++) {
+	        if (!this.redux_state.column_has_filter[column]) {
+	          output.push(_react2.default.createElement(
+	            'th',
+	            { key: column },
 	            _react2.default.createElement(
-	              'th',
+	              'table',
 	              null,
 	              _react2.default.createElement(
-	                'table',
+	                'tbody',
 	                null,
 	                _react2.default.createElement(
-	                  'tbody',
+	                  'tr',
 	                  null,
 	                  _react2.default.createElement(
-	                    'tr',
+	                    'td',
 	                    null,
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'Name'
-	                    ),
-	                    _react2.default.createElement('td', { width: '4px' }),
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Search for', onChange: this.onNewFilterChange, value: this.state.new_filter })
-	                    ),
-	                    _react2.default.createElement('td', { width: '4px' }),
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      _react2.default.createElement(
-	                        _reactBootstrap.Button,
-	                        { onClick: this.onFilterChange },
-	                        _react2.default.createElement('img', { src: 'media/gfx/search.png' })
-	                      )
-	                    ),
-	                    _react2.default.createElement('td', { width: '4px' }),
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      _react2.default.createElement(
-	                        _reactBootstrap.Button,
-	                        { onClick: this.onFilterClear },
-	                        _react2.default.createElement('img', { src: 'media/gfx/clear_filter.png' })
-	                      )
-	                    )
+	                    this.redux_state.filter_columns_displaynames[column]
 	                  )
 	                )
 	              )
 	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'tbody',
-	          null,
-	          this.createRows(this.state.row_datas)
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'ul',
-	        { className: 'pagination' },
-	        _react2.default.createElement(_reactBootstrap.Pagination, {
-	          prev: true,
-	          next: true,
-	          first: true,
-	          last: true,
-	          ellipsis: true,
-	          boundaryLinks: true,
-	          items: Math.ceil(this.state.total_rows / this.props.object_pagignation.get_limit()),
-	          maxButtons: this.props.max_buttons,
-	          activePage: this.props.object_pagignation.get_active_page(),
-	          onSelect: this.handleSelect
-	        })
-	      ),
-	      _react2.default.createElement(
+	          ));
+	        } else {
+	          output.push(_react2.default.createElement(_ListColumn.ListColumn, { key: column, object_type: this.props.object_type, column_number: column, display_name: this.redux_state.filter_columns_displaynames[column], update_data: this.load_data.bind(this) }));
+	        }
+	      }
+	      return output;
+	    }
+	  }, {
+	    key: 'createTaggedComponent',
+	    value: function createTaggedComponent() {
+	      var output = [];
+	      var DynamicComponent = TaggedComponents[this.props.tagged_component];
+	      output.push(_react2.default.createElement(DynamicComponent, { key: 0, doParentReload: this.load_data.bind(this), uid_object: this.props.uid_object, object_filter: this.props.object_filter, media_type: this.props.media_type }));
+	      return output;
+	    }
+	  }, {
+	    key: 'load_data',
+	    value: function load_data() {
+	      var _uid_object = "'" + this.props.uid_object + "'";
+	      console.log(this.redux_state.filters);
+	      $.ajax({
+	        url: encodeURI((0, _sprintf2.default)("http://localhost:3300/api/db/search/%s?offset=%s&limit=%s%s;and|ObjectUID|eq|%s", this.props.view_name, this.redux_state.offset, this.redux_state.limit, (0, _filter_utils.buildConditionFromFilters)(this.redux_state.filters, this.redux_state.filter_columns), _uid_object)),
+	        dataType: 'json',
+	        cache: false,
+	        success: function (data) {
+	          console.log(data.amount);
+	          _pagination_store.pagination_store.dispatch((0, _pagination_actions.setAmountOfRows)(this.props.object_type, data.amount));
+	          this.setState({ data: data.data });
+	        }.bind(this),
+	        error: function (xhr, status, err) {
+	          console.error("PagedMediaTable", status, err.toString());
+	        }.bind(this)
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
 	        'div',
-	        { className: 'form-group' },
-	        ' '
-	      ),
-	      this.createTaggedComponent()
-	    );
-	  }
-	});
+	        null,
+	        _react2.default.createElement(
+	          _ObjectList.ObjectList,
+	          {
+	            add_link: '',
+	            createObject: this.createRows.bind(this),
+	            object_type: this.props.object_type,
+	            update_data: this.load_data.bind(this)
+	          },
+	          this.createHeader()
+	        ),
+	        this.createTaggedComponent()
+	      );
+	    }
+	  }]);
 
-	module.exports = PagedMediaTable;
+	  return PagedMediaTable;
+	}(_react2.default.Component);
 
 /***/ },
 /* 496 */
@@ -48401,7 +48365,7 @@
 	//                      syntax:     ({column name}|{filter value}[|])*
 	//                      no filter:  '-'
 	//                      example:    id_tag_category|8
-	// doParentReadraw:     function to redraw parent
+	// doParentReload:      function to reload parent
 	//
 	// Model (state)
 	// *****************************************************************************
@@ -48515,7 +48479,7 @@
 	                      this.setState({
 	                        File: undefined
 	                      });
-	                      this.props.doParentRedraw();
+	                      this.props.doParentReload();
 	                    }.bind(this),
 	                    error: function (xhr, status, err) {
 	                      console.error('http://localhost:3300/api/picture 1', status, err.toString());
@@ -48576,11 +48540,11 @@
 	              null,
 	              this.state.uid_tag != '' && this.state.Name != '' && this.state.File != undefined && this.state.File.size > 0 ? _react2.default.createElement(
 	                _reactBootstrap.Button,
-	                { bsStyle: 'success', onClick: this.handleAdd },
+	                { bsStyle: 'success', onClick: this.handleAdd.bind(this) },
 	                _react2.default.createElement('img', { src: 'media/gfx/add.png' })
 	              ) : _react2.default.createElement(
 	                _reactBootstrap.Button,
-	                { bsStyle: 'success', onClick: this.handleAdd, disabled: true },
+	                { bsStyle: 'success', onClick: this.handleAdd.bind(this), disabled: true },
 	                _react2.default.createElement('img', { src: 'media/gfx/add.png' })
 	              )
 	            ),
@@ -48619,7 +48583,7 @@
 	                          media_type: this.props.media_type,
 	                          display_column: 'Name',
 	                          value: 'a',
-	                          change_function: this.onTagChange })
+	                          change_function: this.onTagChange.bind(this) })
 	                      )
 	                    )
 	                  ),
@@ -48640,7 +48604,7 @@
 	                        _react2.default.createElement(
 	                          _reactBootstrap.Form,
 	                          { horizontal: true },
-	                          _react2.default.createElement(_PictureProperties.PictureProperties, { update_parent: this.update_parent, data: this.state })
+	                          _react2.default.createElement(_PictureProperties.PictureProperties, { update_parent: this.update_parent.bind(this), data: this.state })
 	                        )
 	                      )
 	                    )
@@ -56397,7 +56361,7 @@
 	//                      syntax:     ({column name}|{filter value}[|])*
 	//                      no filter:  '-'
 	//                      example:    id_tag_category|8
-	// doParentReadraw:     function to redraw parent
+	// doParentReload       reload the parent data
 	//
 	// Model (state)
 	// *****************************************************************************
@@ -56495,7 +56459,7 @@
 	                IsPicture: false,
 	                IsVideo: false
 	              });
-	              this.props.doParentRedraw();
+	              this.props.doParentReload();
 	            }.bind(this),
 	            error: function (xhr, status, err) {
 	              console.error('http://localhost:3300/api/link 1', status, err.toString());
@@ -56874,6 +56838,508 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	var _reactBootstrap = __webpack_require__(237);
+
+	var _Select = __webpack_require__(494);
+
+	var _Select2 = _interopRequireDefault(_Select);
+
+	var _FileProperties = __webpack_require__(541);
+
+	var _FileProperties2 = _interopRequireDefault(_FileProperties);
+
+	var _sprintf = __webpack_require__(490);
+
+	var _sprintf2 = _interopRequireDefault(_sprintf);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var http = __webpack_require__(498);
+
+	// Tagged file
+	// =============================================================================
+	// React component to select a tag and a file
+	// *****************************************************************************
+	// Author: thorsten.butschke@googlemail.com
+	// *****************************************************************************
+	// Interface
+	// *****************************************************************************
+	// input (props)
+	// -----
+	// uid_object:          {this.props.uid_object}
+	// filters:             string to filter the selectable tags
+	//                      syntax:     ({column name}|{filter value}[|])*
+	//                      no filter:  '-'
+	//                      example:    id_tag_category|8
+	// doParentReload       reload the parent data
+	//
+	// Model (state)
+	// *****************************************************************************
+	// name_tag:            name of selected tag
+	// uid_tag:             id of selected tag
+	// Name                 the name of the file
+	// Info                 the description of the file
+	// FileUUID             the uuid of the file
+	// File:                the selected file
+	//
+	// Functions
+	// *****************************************************************************
+	// Add object2mediatag and a file
+	//
+	// Versions
+	// *****************************************************************************
+	// 1.0 Initial redesign
+	// =============================================================================
+	exports.default = _react2.default.createClass({
+	  displayName: 'TaggedFile',
+
+	  // Model
+	  // ===========================================================================
+	  getInitialState: function getInitialState() {
+	    return {
+	      'name_tag': '',
+	      'uid_tag': -1,
+	      'Name': '',
+	      'Info': '',
+	      'FileUUID': '',
+	      'File': undefined
+	    };
+	  },
+	  update_parent: function update_parent(_Name, _Info, _File) {
+	    this.setState({
+	      'Name': _Name,
+	      'Info': _Info,
+	      'File': _File
+	    });
+	  },
+	  // Functions
+	  // ===========================================================================
+	  handleAdd: function handleAdd() {
+	    // create new tagged file
+	    // *************************************************************************
+	    // store the file as formdata
+	    // -------------------------------------------------------------------------
+	    var file2upload = new FormData();
+	    file2upload.append('file', this.state.File);
+
+	    // get uuid via rest call
+	    // -------------------------------------------------------------------------
+	    $.ajax({
+	      url: encodeURI((0, _sprintf2.default)('http://localhost:3300/api/uuid')),
+	      dataType: 'json',
+	      type: 'GET',
+	      cache: false,
+	      success: function (data) {
+	        var _uuid = data.uuid;
+
+	        // create data for file post
+	        // ---------------------------------------------------------------------
+	        var _edit = {
+	          "Name": this.state.Name,
+	          "Info": this.state.Info,
+	          'FileUUID': _uuid
+	        };
+
+	        // post file data
+	        // ---------------------------------------------------------------------
+	        $.ajax({
+	          url: 'http://localhost:3300/api/file/',
+	          data: _edit,
+	          dataType: 'json',
+	          type: 'POST',
+	          success: function (data) {
+	            var _edit_object2mediatag = {
+	              'TagUID': this.state.uid_tag,
+	              'ObjectUID': this.props.uid_object,
+	              'MediaUID': data.uid
+	            };
+	            // post object to media tag
+	            // -----------------------------------------------------------------
+	            $.ajax({
+	              url: 'http://localhost:3300/api/object2mediatag/',
+	              data: _edit_object2mediatag,
+	              dataType: 'json',
+	              type: 'POST',
+	              success: function (data) {
+	                // post file file
+	                // -------------------------------------------------------------
+	                $.ajax({
+	                  url: 'http://localhost:3300/api/file/upload/' + _uuid,
+	                  data: file2upload,
+	                  cache: false,
+	                  contentType: false,
+	                  processData: false,
+	                  type: 'POST',
+	                  success: function (data) {
+	                    this.setState({
+	                      File: undefined
+	                    });
+	                    this.props.doParentReload();
+	                  }.bind(this),
+	                  error: function (xhr, status, err) {
+	                    console.error('http://localhost:3300/api/file 1', status, err.toString());
+	                  }.bind(this)
+	                });
+	              }.bind(this),
+	              error: function (xhr, status, err) {
+	                console.error('http://localhost:3300/api/file 2', status, err.toString());
+	              }.bind(this)
+	            });
+	          }.bind(this),
+	          error: function (xhr, status, err) {
+	            console.error('http://localhost:3300/api/file 3', status, err.toString());
+	            // window.location.replace(sprintf("/#/ListEngines/0")); // %s ,getOffet()
+	          }.bind(this)
+	        });
+	      }.bind(this),
+	      error: function (xhr, status, err) {
+	        console.error('http://localhost:3300/api/file 4', status, err.toString());
+	      }.bind(this)
+	    });
+	  },
+	  onTagChange: function onTagChange(e) {
+	    // set uid_tag and name_tag when tag was selectedIndex
+	    // *************************************************************************
+	    this.setState({ uid_tag: e.target.value, name_tag: e.target.childNodes[e.target.selectedIndex].label });
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      _reactBootstrap.Table,
+	      { striped: true, bordered: true },
+	      _react2.default.createElement(
+	        'thead',
+	        null,
+	        _react2.default.createElement(
+	          'tr',
+	          null,
+	          _react2.default.createElement('td', null),
+	          _react2.default.createElement(
+	            'td',
+	            { width: '100%' },
+	            'Add tagged file'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'tbody',
+	        null,
+	        _react2.default.createElement(
+	          'tr',
+	          null,
+	          _react2.default.createElement(
+	            'td',
+	            null,
+	            this.state.uid_tag != '' && this.state.Name != '' && this.state.File != undefined && this.state.File.size > 0 ? _react2.default.createElement(
+	              _reactBootstrap.Button,
+	              { bsStyle: 'success', onClick: this.handleAdd },
+	              _react2.default.createElement('img', { src: 'media/gfx/add.png' })
+	            ) : _react2.default.createElement(
+	              _reactBootstrap.Button,
+	              { bsStyle: 'success', onClick: this.handleAdd, disabled: true },
+	              _react2.default.createElement('img', { src: 'media/gfx/add.png' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'td',
+	            null,
+	            _react2.default.createElement(
+	              _reactBootstrap.Table,
+	              { bordered: true },
+	              _react2.default.createElement(
+	                'tbody',
+	                null,
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Tag'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement(
+	                      _reactBootstrap.Col,
+	                      { sm: 3 },
+	                      _react2.default.createElement(_reactBootstrap.FormControl, { disabled: true, value: this.state.name_tag })
+	                    ),
+	                    _react2.default.createElement(
+	                      _reactBootstrap.Col,
+	                      { sm: 7 },
+	                      _react2.default.createElement(_Select2.default, {
+	                        target: 'KAvailableSupportedObjectMediaTag',
+	                        uid_object: this.props.uid_object,
+	                        object_filter: this.props.object_filter,
+	                        media_type: this.props.media_type,
+	                        display_column: 'Name',
+	                        value: 'a',
+	                        change_function: this.onTagChange })
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'File'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement(
+	                      _reactBootstrap.Col,
+	                      { sm: 10 },
+	                      _react2.default.createElement(
+	                        _reactBootstrap.Form,
+	                        { horizontal: true },
+	                        _react2.default.createElement(_FileProperties2.default, { update_parent: this.update_parent, data: this.state })
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 541 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.FileProperties = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	var _reactBootstrap = __webpack_require__(237);
+
+	var _sprintf = __webpack_require__(490);
+
+	var _sprintf2 = _interopRequireDefault(_sprintf);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// FileProperties
+	// =============================================================================
+	// React component to display the class File. It is used to add and edit objects
+	// *****************************************************************************
+	// Author: thorsten.butschke@googlemail.com
+	// *****************************************************************************
+	// Interface
+	// *****************************************************************************
+	// input (props)
+	// -----
+	// update_parent        write the state attributes back to the parent
+	// data                 the attributes from the parent
+	// -Name                name of the link
+	// -Info                description of the URL
+	// -File                the file file
+	//
+	//
+	// Model (state)
+	// *****************************************************************************
+	// Name                 name of the link
+	// Info                 description of the URL
+	// File                 the file file
+	// imagePreviewUrl      the URL of the preview thumbnail
+	//
+	// Functions
+	// *****************************************************************************
+	// onNameChange               callback for typing the name and put it into the state
+	// onInfoChange               callback for typing the description and put it into the state
+	// onImageChange              callback for selcting a file and put it into the state
+	// componentWillReceiveProps  get data from the parent
+	//
+	// Versions
+	// *****************************************************************************
+	// 1.0 Initial redesign
+	// =============================================================================
+
+	var FileProperties = exports.FileProperties = function (_React$Component) {
+	  _inherits(FileProperties, _React$Component);
+
+	  function FileProperties(props) {
+	    _classCallCheck(this, FileProperties);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(FileProperties).call(this, props));
+
+	    _this.state = {
+	      Name: '',
+	      Info: '',
+	      File: '',
+	      Path: '',
+	      imagePreviewUrl: ''
+	    };
+	    return _this;
+	  }
+
+	  _createClass(FileProperties, [{
+	    key: 'onNameChange',
+	    value: function onNameChange(e) {
+	      this.setState({ Name: e.target.value });
+	      if (this.props.update_parent) {
+	        this.props.update_parent(e.target.value, this.state.Info, this.state.File);
+	      }
+	    }
+	  }, {
+	    key: 'onInfoChange',
+	    value: function onInfoChange(e) {
+	      this.setState({ Info: e.target.value });
+	      if (this.props.update_parent) {
+	        this.props.update_parent(this.state.Name, e.target.value, this.state.File);
+	      }
+	    }
+	  }, {
+	    key: 'onImageChange',
+	    value: function onImageChange(e) {
+	      var _this2 = this;
+
+	      // read in the file while when a file was selected
+	      // *************************************************************************
+	      e.preventDefault();
+
+	      var reader = new FileReader();
+	      var selected_file = e.target.files[0];
+
+	      reader.onloadend = function () {
+	        _this2.setState({
+	          File: selected_file,
+	          imagePreviewUrl: reader.result
+	        });
+	      };
+	      if (e.target.files.length > 0) {
+	        reader.readAsDataURL(selected_file);
+	      } else {
+	        this.setState({ File: undefined, imagePreviewUrl: '' });
+	      }
+	      if (this.props.update_parent) {
+	        if (e.target.files.length > 0) {
+	          this.props.update_parent(this.state.Name, this.state.Info, e.target.files[0]);
+	        } else {
+	          this.props.update_parent(this.state.Name, this.state.Info, undefined);
+	        }
+	      }
+	    }
+	  }, {
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(nextProps) {
+	      if (nextProps.data != null) {
+	        this.setState({
+	          'Name': nextProps.data.Name,
+	          'Info': nextProps.data.Info,
+	          'File': nextProps.data.File
+	        });
+	      }
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var imagePreviewUrl = this.state.imagePreviewUrl;
+
+	      var $imagePreview = undefined;
+	      if (imagePreviewUrl) {
+	        $imagePreview = _react2.default.createElement('img', { src: 'media/gfx/ok.png' });
+	      }
+
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          _reactBootstrap.FormGroup,
+	          { controlId: 'Name' },
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { componentClass: _reactBootstrap.ControlLabel, sm: 2 },
+	            'Name'
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { sm: 10 },
+	            _react2.default.createElement(_reactBootstrap.FormControl, { onChange: this.onNameChange.bind(this), value: this.state.Name })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.FormGroup,
+	          { controlId: 'Info' },
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { componentClass: _reactBootstrap.ControlLabel, sm: 2 },
+	            'Info'
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { sm: 10 },
+	            _react2.default.createElement(_reactBootstrap.FormControl, { onChange: this.onInfoChange.bind(this), value: this.state.Info })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.FormGroup,
+	          { controlId: 'File' },
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { componentClass: _reactBootstrap.ControlLabel, sm: 2 },
+	            'File'
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { sm: 10 },
+	            this.props.data != null && this.props.data.Path != null && this.props.data.Path != '' ? _react2.default.createElement('img', { src: 'media/gfx/ok.png' }) : null,
+	            _react2.default.createElement('input', { type: 'file', onChange: this.onImageChange.bind(this) }),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'imgPreview' },
+	              $imagePreview
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return FileProperties;
+	}(_react2.default.Component);
+
+	;
+
+/***/ },
+/* 542 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 	exports.ContextPicture = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -56908,7 +57374,7 @@
 	// *****************************************************************************
 	// input (props)
 	// -----
-	// doParentReadraw      redraw the parent
+	// doParentReload       reload the parent
 	// data                 the attributes from the parent
 	// -FileUUID            the UUID of the picture
 	// -MediaUID            the uid of the picture. Used to link to the edit page
@@ -56944,7 +57410,7 @@
 	        type: 'DELETE',
 	        cache: false,
 	        success: function (data) {
-	          this.props.doParentRedraw();
+	          this.props.doParentReload();
 	        }.bind(this),
 	        error: function (xhr, status, err) {
 	          console.error("ContextPicture 1", status, err.toString());
@@ -56968,6 +57434,21 @@
 	        ),
 	        _react2.default.createElement(
 	          'td',
+	          { className: 'border' },
+	          this.props.data.TagName
+	        ),
+	        _react2.default.createElement(
+	          'td',
+	          { className: 'border' },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "/EditPicture/" + this.props.data.MediaUID },
+	            ' ',
+	            this.props.data.Name
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'td',
 	          { width: '100%', className: 'border' },
 	          this.props.data.FileUUID != null && this.props.data.FileUUID != '' ? _react2.default.createElement(_reactBootstrap.Thumbnail, { key: 'b', src: this.props.data.FileUUID != '' ? "http://localhost:3300/uploads/" + this.props.data.FileUUID : null }) : null
 	        )
@@ -56979,7 +57460,7 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 541 */
+/* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56987,7 +57468,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.URLLink = undefined;
+	exports.ContextFile = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -57011,9 +57492,9 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	// URLLink
+	// ContextPile
 	// =============================================================================
-	// React component to display a link in a object list
+	// React component to display a file context in a context list
 	// *****************************************************************************
 	// Author: thorsten.butschke@googlemail.com
 	// *****************************************************************************
@@ -57021,47 +57502,170 @@
 	// *****************************************************************************
 	// input (props)
 	// -----
-	// table                table to sarch the link in
+	// doParentReload       reload the parent data
 	// data                 the attributes from the parent
-	// -Name                the name of the link
-	// -URL                 the link URL
-	// -uid                 the UID of the link. Used to delete it
-	// update_parent_data   call function to load links in the parent component
+	// -FileUUID            the UUID of the file
+	// -MediaUID            the uid of the file. Used to link to the edit page
+	// -ContextUID          the uid of the context. Used to delete the context
 	//
 	// Model (state)
 	// *****************************************************************************
 	//
 	// Functions
 	// *****************************************************************************
-	// handleDelete         deletes a link
+	// handleDelete         deletes the context
 	//
 	// Versions
 	// *****************************************************************************
 	// 1.0 Initial redesign
 	// =============================================================================
 
-	var URLLink = exports.URLLink = function (_React$Component) {
-	  _inherits(URLLink, _React$Component);
+	var ContextFile = exports.ContextFile = function (_React$Component) {
+	  _inherits(ContextFile, _React$Component);
 
-	  function URLLink(props) {
-	    _classCallCheck(this, URLLink);
+	  function ContextFile(props) {
+	    _classCallCheck(this, ContextFile);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(URLLink).call(this, props));
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ContextFile).call(this, props));
 	  }
 
-	  _createClass(URLLink, [{
+	  _createClass(ContextFile, [{
 	    key: 'handleDelete',
-	    value: function handleDelete() {
+	    value: function handleDelete(id_to_delete) {
 	      $.ajax({
-	        url: (0, _sprintf2.default)("http://localhost:3300/api/db/%s/%s", this.props.table, this.props.data.UID),
+	        url: "http://localhost:3300/api/db/KObject2MediaTag/" + this.props.data.ContextUID,
 	        dataType: 'json',
 	        type: 'DELETE',
 	        cache: false,
 	        success: function (data) {
-	          this.props.update_parent_data();
+	          this.props.doParentReload();
 	        }.bind(this),
 	        error: function (xhr, status, err) {
-	          console.error("URLLink 1", status, err.toString());
+	          console.error("ContextPile 1", status, err.toString());
+	        }.bind(this)
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'tr',
+	        { className: 'file' },
+	        _react2.default.createElement(
+	          'td',
+	          { className: 'border' },
+	          _react2.default.createElement(
+	            _reactBootstrap.Button,
+	            { bsStyle: 'danger', onClick: this.handleDelete.bind(this) },
+	            _react2.default.createElement('img', { src: 'media/gfx/delete.png' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'td',
+	          { className: 'border' },
+	          this.props.data.TagName
+	        ),
+	        _react2.default.createElement(
+	          'td',
+	          { className: 'border' },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "/EditFile/" + this.props.data.MediaUID },
+	            ' ',
+	            this.props.data.Name
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ContextFile;
+	}(_react2.default.Component);
+
+/***/ },
+/* 544 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.ContextLink = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	var _reactBootstrap = __webpack_require__(237);
+
+	var _sprintf = __webpack_require__(490);
+
+	var _sprintf2 = _interopRequireDefault(_sprintf);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// ContextLink
+	// =============================================================================
+	// React component to display a context link in a object list
+	// *****************************************************************************
+	// Author: thorsten.butschke@googlemail.com
+	// *****************************************************************************
+	// Interface
+	// *****************************************************************************
+	// input (props)
+	// -----
+	// table                table to sarch the context in
+	// data                 the attributes from the parent
+	// -Name                the name of the link
+	// -URL                 the link URL
+	// -UID                 the UID of the link. Used to delete it
+	// doParentReload       call function to load links in the parent component
+	//
+	// Model (state)
+	// *****************************************************************************
+	//
+	// Functions
+	// *****************************************************************************
+	// handleDelete         deletes a context
+	//
+	// Versions
+	// *****************************************************************************
+	// 1.0 Initial redesign
+	// =============================================================================
+
+	var ContextLink = exports.ContextLink = function (_React$Component) {
+	  _inherits(ContextLink, _React$Component);
+
+	  function ContextLink(props) {
+	    _classCallCheck(this, ContextLink);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ContextLink).call(this, props));
+	  }
+
+	  _createClass(ContextLink, [{
+	    key: 'handleDelete',
+	    value: function handleDelete() {
+	      $.ajax({
+	        url: "http://localhost:3300/api/db/KObject2MediaTag/" + this.props.data.ContextUID,
+	        dataType: 'json',
+	        type: 'DELETE',
+	        cache: false,
+	        success: function (data) {
+	          this.props.doParentReload();
+	        }.bind(this),
+	        error: function (xhr, status, err) {
+	          console.error("ContextLink 1", status, err.toString());
 	        }.bind(this)
 	      });
 	    }
@@ -57083,9 +57687,14 @@
 	        _react2.default.createElement(
 	          'td',
 	          { className: 'border' },
+	          this.props.data.TagName
+	        ),
+	        _react2.default.createElement(
+	          'td',
+	          { className: 'border' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: "/EditLink/" + this.props.data.UID },
+	            { to: "/EditLink/" + this.props.data.MediaUID },
 	            ' ',
 	            this.props.data.Name
 	          )
@@ -57104,11 +57713,1548 @@
 	    }
 	  }]);
 
-	  return URLLink;
+	  return ContextLink;
 	}(_react2.default.Component);
 
 /***/ },
-/* 542 */
+/* 545 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.ObjectList = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	var _reactBootstrap = __webpack_require__(237);
+
+	var _sprintf = __webpack_require__(490);
+
+	var _sprintf2 = _interopRequireDefault(_sprintf);
+
+	var _redux = __webpack_require__(546);
+
+	var _pagination_actions = __webpack_require__(561);
+
+	var _pagination_reducers = __webpack_require__(562);
+
+	var _pagination_store = __webpack_require__(563);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// Link List
+	// -----------------------------------------------------------------------------
+	var ObjectList = exports.ObjectList = function (_React$Component) {
+	  _inherits(ObjectList, _React$Component);
+
+	  function ObjectList(props) {
+	    _classCallCheck(this, ObjectList);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ObjectList).call(this, props));
+
+	    _this.redux_state = _pagination_store.pagination_store.getState().paginations[_this.props.object_type];
+	    return _this;
+	  }
+
+	  _createClass(ObjectList, [{
+	    key: 'handleSelect',
+	    value: function handleSelect(eventKey) {
+	      _pagination_store.pagination_store.dispatch((0, _pagination_actions.changeOffset)(this.props.object_type, eventKey));
+	      this.props.update_data();
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          _reactBootstrap.Table,
+	          { striped: true, bordered: true, hover: true },
+	          _react2.default.createElement(
+	            'thead',
+	            null,
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'th',
+	                null,
+	                this.props.add_link != '' ? _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: this.props.add_link },
+	                  _react2.default.createElement(
+	                    _reactBootstrap.Button,
+	                    { bsStyle: 'success', type: 'submit' },
+	                    _react2.default.createElement('img', { src: 'media/gfx/add.png' })
+	                  )
+	                ) : _react2.default.createElement('div', null)
+	              ),
+	              this.props.children
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tbody',
+	            null,
+	            this.props.createObject()
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'pagination' },
+	          _react2.default.createElement(_reactBootstrap.Pagination, {
+	            prev: true,
+	            next: true,
+	            first: true,
+	            last: true,
+	            ellipsis: true,
+	            boundaryLinks: true,
+	            items: Math.ceil(this.redux_state.total_rows / this.redux_state.limit),
+	            maxButtons: 5,
+	            activePage: this.redux_state.active_page,
+	            onSelect: this.handleSelect.bind(this)
+	          })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'form-group' },
+	          ' '
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ObjectList;
+	}(_react2.default.Component);
+
+/***/ },
+/* 546 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	exports.__esModule = true;
+	exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
+
+	var _createStore = __webpack_require__(547);
+
+	var _createStore2 = _interopRequireDefault(_createStore);
+
+	var _combineReducers = __webpack_require__(556);
+
+	var _combineReducers2 = _interopRequireDefault(_combineReducers);
+
+	var _bindActionCreators = __webpack_require__(558);
+
+	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
+
+	var _applyMiddleware = __webpack_require__(559);
+
+	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
+
+	var _compose = __webpack_require__(560);
+
+	var _compose2 = _interopRequireDefault(_compose);
+
+	var _warning = __webpack_require__(557);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	/*
+	* This is a dummy function to check if the function name has been altered by minification.
+	* If the function has been minified and NODE_ENV !== 'production', warn the user.
+	*/
+	function isCrushed() {}
+
+	if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
+	  (0, _warning2['default'])('You are currently using minified code outside of NODE_ENV === \'production\'. ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or DefinePlugin for webpack (http://stackoverflow.com/questions/30030031) ' + 'to ensure you have the correct code for your production build.');
+	}
+
+	exports.createStore = _createStore2['default'];
+	exports.combineReducers = _combineReducers2['default'];
+	exports.bindActionCreators = _bindActionCreators2['default'];
+	exports.applyMiddleware = _applyMiddleware2['default'];
+	exports.compose = _compose2['default'];
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 547 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+	exports.ActionTypes = undefined;
+	exports['default'] = createStore;
+
+	var _isPlainObject = __webpack_require__(548);
+
+	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
+
+	var _symbolObservable = __webpack_require__(553);
+
+	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	/**
+	 * These are private action types reserved by Redux.
+	 * For any unknown actions, you must return the current state.
+	 * If the current state is undefined, you must return the initial state.
+	 * Do not reference these action types directly in your code.
+	 */
+	var ActionTypes = exports.ActionTypes = {
+	  INIT: '@@redux/INIT'
+	};
+
+	/**
+	 * Creates a Redux store that holds the state tree.
+	 * The only way to change the data in the store is to call `dispatch()` on it.
+	 *
+	 * There should only be a single store in your app. To specify how different
+	 * parts of the state tree respond to actions, you may combine several reducers
+	 * into a single reducer function by using `combineReducers`.
+	 *
+	 * @param {Function} reducer A function that returns the next state tree, given
+	 * the current state tree and the action to handle.
+	 *
+	 * @param {any} [preloadedState] The initial state. You may optionally specify it
+	 * to hydrate the state from the server in universal apps, or to restore a
+	 * previously serialized user session.
+	 * If you use `combineReducers` to produce the root reducer function, this must be
+	 * an object with the same shape as `combineReducers` keys.
+	 *
+	 * @param {Function} enhancer The store enhancer. You may optionally specify it
+	 * to enhance the store with third-party capabilities such as middleware,
+	 * time travel, persistence, etc. The only store enhancer that ships with Redux
+	 * is `applyMiddleware()`.
+	 *
+	 * @returns {Store} A Redux store that lets you read the state, dispatch actions
+	 * and subscribe to changes.
+	 */
+	function createStore(reducer, preloadedState, enhancer) {
+	  var _ref2;
+
+	  if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
+	    enhancer = preloadedState;
+	    preloadedState = undefined;
+	  }
+
+	  if (typeof enhancer !== 'undefined') {
+	    if (typeof enhancer !== 'function') {
+	      throw new Error('Expected the enhancer to be a function.');
+	    }
+
+	    return enhancer(createStore)(reducer, preloadedState);
+	  }
+
+	  if (typeof reducer !== 'function') {
+	    throw new Error('Expected the reducer to be a function.');
+	  }
+
+	  var currentReducer = reducer;
+	  var currentState = preloadedState;
+	  var currentListeners = [];
+	  var nextListeners = currentListeners;
+	  var isDispatching = false;
+
+	  function ensureCanMutateNextListeners() {
+	    if (nextListeners === currentListeners) {
+	      nextListeners = currentListeners.slice();
+	    }
+	  }
+
+	  /**
+	   * Reads the state tree managed by the store.
+	   *
+	   * @returns {any} The current state tree of your application.
+	   */
+	  function getState() {
+	    return currentState;
+	  }
+
+	  /**
+	   * Adds a change listener. It will be called any time an action is dispatched,
+	   * and some part of the state tree may potentially have changed. You may then
+	   * call `getState()` to read the current state tree inside the callback.
+	   *
+	   * You may call `dispatch()` from a change listener, with the following
+	   * caveats:
+	   *
+	   * 1. The subscriptions are snapshotted just before every `dispatch()` call.
+	   * If you subscribe or unsubscribe while the listeners are being invoked, this
+	   * will not have any effect on the `dispatch()` that is currently in progress.
+	   * However, the next `dispatch()` call, whether nested or not, will use a more
+	   * recent snapshot of the subscription list.
+	   *
+	   * 2. The listener should not expect to see all state changes, as the state
+	   * might have been updated multiple times during a nested `dispatch()` before
+	   * the listener is called. It is, however, guaranteed that all subscribers
+	   * registered before the `dispatch()` started will be called with the latest
+	   * state by the time it exits.
+	   *
+	   * @param {Function} listener A callback to be invoked on every dispatch.
+	   * @returns {Function} A function to remove this change listener.
+	   */
+	  function subscribe(listener) {
+	    if (typeof listener !== 'function') {
+	      throw new Error('Expected listener to be a function.');
+	    }
+
+	    var isSubscribed = true;
+
+	    ensureCanMutateNextListeners();
+	    nextListeners.push(listener);
+
+	    return function unsubscribe() {
+	      if (!isSubscribed) {
+	        return;
+	      }
+
+	      isSubscribed = false;
+
+	      ensureCanMutateNextListeners();
+	      var index = nextListeners.indexOf(listener);
+	      nextListeners.splice(index, 1);
+	    };
+	  }
+
+	  /**
+	   * Dispatches an action. It is the only way to trigger a state change.
+	   *
+	   * The `reducer` function, used to create the store, will be called with the
+	   * current state tree and the given `action`. Its return value will
+	   * be considered the **next** state of the tree, and the change listeners
+	   * will be notified.
+	   *
+	   * The base implementation only supports plain object actions. If you want to
+	   * dispatch a Promise, an Observable, a thunk, or something else, you need to
+	   * wrap your store creating function into the corresponding middleware. For
+	   * example, see the documentation for the `redux-thunk` package. Even the
+	   * middleware will eventually dispatch plain object actions using this method.
+	   *
+	   * @param {Object} action A plain object representing “what changed”. It is
+	   * a good idea to keep actions serializable so you can record and replay user
+	   * sessions, or use the time travelling `redux-devtools`. An action must have
+	   * a `type` property which may not be `undefined`. It is a good idea to use
+	   * string constants for action types.
+	   *
+	   * @returns {Object} For convenience, the same action object you dispatched.
+	   *
+	   * Note that, if you use a custom middleware, it may wrap `dispatch()` to
+	   * return something else (for example, a Promise you can await).
+	   */
+	  function dispatch(action) {
+	    if (!(0, _isPlainObject2['default'])(action)) {
+	      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
+	    }
+
+	    if (typeof action.type === 'undefined') {
+	      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
+	    }
+
+	    if (isDispatching) {
+	      throw new Error('Reducers may not dispatch actions.');
+	    }
+
+	    try {
+	      isDispatching = true;
+	      currentState = currentReducer(currentState, action);
+	    } finally {
+	      isDispatching = false;
+	    }
+
+	    var listeners = currentListeners = nextListeners;
+	    for (var i = 0; i < listeners.length; i++) {
+	      listeners[i]();
+	    }
+
+	    return action;
+	  }
+
+	  /**
+	   * Replaces the reducer currently used by the store to calculate the state.
+	   *
+	   * You might need this if your app implements code splitting and you want to
+	   * load some of the reducers dynamically. You might also need this if you
+	   * implement a hot reloading mechanism for Redux.
+	   *
+	   * @param {Function} nextReducer The reducer for the store to use instead.
+	   * @returns {void}
+	   */
+	  function replaceReducer(nextReducer) {
+	    if (typeof nextReducer !== 'function') {
+	      throw new Error('Expected the nextReducer to be a function.');
+	    }
+
+	    currentReducer = nextReducer;
+	    dispatch({ type: ActionTypes.INIT });
+	  }
+
+	  /**
+	   * Interoperability point for observable/reactive libraries.
+	   * @returns {observable} A minimal observable of state changes.
+	   * For more information, see the observable proposal:
+	   * https://github.com/zenparsing/es-observable
+	   */
+	  function observable() {
+	    var _ref;
+
+	    var outerSubscribe = subscribe;
+	    return _ref = {
+	      /**
+	       * The minimal observable subscription method.
+	       * @param {Object} observer Any object that can be used as an observer.
+	       * The observer object should have a `next` method.
+	       * @returns {subscription} An object with an `unsubscribe` method that can
+	       * be used to unsubscribe the observable from the store, and prevent further
+	       * emission of values from the observable.
+	       */
+	      subscribe: function subscribe(observer) {
+	        if (typeof observer !== 'object') {
+	          throw new TypeError('Expected the observer to be an object.');
+	        }
+
+	        function observeState() {
+	          if (observer.next) {
+	            observer.next(getState());
+	          }
+	        }
+
+	        observeState();
+	        var unsubscribe = outerSubscribe(observeState);
+	        return { unsubscribe: unsubscribe };
+	      }
+	    }, _ref[_symbolObservable2['default']] = function () {
+	      return this;
+	    }, _ref;
+	  }
+
+	  // When a store is created, an "INIT" action is dispatched so that every
+	  // reducer returns their initial state. This effectively populates
+	  // the initial state tree.
+	  dispatch({ type: ActionTypes.INIT });
+
+	  return _ref2 = {
+	    dispatch: dispatch,
+	    subscribe: subscribe,
+	    getState: getState,
+	    replaceReducer: replaceReducer
+	  }, _ref2[_symbolObservable2['default']] = observable, _ref2;
+	}
+
+/***/ },
+/* 548 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var getPrototype = __webpack_require__(549),
+	    isHostObject = __webpack_require__(551),
+	    isObjectLike = __webpack_require__(552);
+
+	/** `Object#toString` result references. */
+	var objectTag = '[object Object]';
+
+	/** Used for built-in method references. */
+	var funcProto = Function.prototype,
+	    objectProto = Object.prototype;
+
+	/** Used to resolve the decompiled source of functions. */
+	var funcToString = funcProto.toString;
+
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+
+	/** Used to infer the `Object` constructor. */
+	var objectCtorString = funcToString.call(Object);
+
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+
+	/**
+	 * Checks if `value` is a plain object, that is, an object created by the
+	 * `Object` constructor or one with a `[[Prototype]]` of `null`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.8.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
+	 * @example
+	 *
+	 * function Foo() {
+	 *   this.a = 1;
+	 * }
+	 *
+	 * _.isPlainObject(new Foo);
+	 * // => false
+	 *
+	 * _.isPlainObject([1, 2, 3]);
+	 * // => false
+	 *
+	 * _.isPlainObject({ 'x': 0, 'y': 0 });
+	 * // => true
+	 *
+	 * _.isPlainObject(Object.create(null));
+	 * // => true
+	 */
+	function isPlainObject(value) {
+	  if (!isObjectLike(value) ||
+	      objectToString.call(value) != objectTag || isHostObject(value)) {
+	    return false;
+	  }
+	  var proto = getPrototype(value);
+	  if (proto === null) {
+	    return true;
+	  }
+	  var Ctor = hasOwnProperty.call(proto, 'constructor') && proto.constructor;
+	  return (typeof Ctor == 'function' &&
+	    Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString);
+	}
+
+	module.exports = isPlainObject;
+
+
+/***/ },
+/* 549 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var overArg = __webpack_require__(550);
+
+	/** Built-in value references. */
+	var getPrototype = overArg(Object.getPrototypeOf, Object);
+
+	module.exports = getPrototype;
+
+
+/***/ },
+/* 550 */
+/***/ function(module, exports) {
+
+	/**
+	 * Creates a unary function that invokes `func` with its argument transformed.
+	 *
+	 * @private
+	 * @param {Function} func The function to wrap.
+	 * @param {Function} transform The argument transform.
+	 * @returns {Function} Returns the new function.
+	 */
+	function overArg(func, transform) {
+	  return function(arg) {
+	    return func(transform(arg));
+	  };
+	}
+
+	module.exports = overArg;
+
+
+/***/ },
+/* 551 */
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is a host object in IE < 9.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a host object, else `false`.
+	 */
+	function isHostObject(value) {
+	  // Many host objects are `Object` objects that can coerce to strings
+	  // despite having improperly defined `toString` methods.
+	  var result = false;
+	  if (value != null && typeof value.toString != 'function') {
+	    try {
+	      result = !!(value + '');
+	    } catch (e) {}
+	  }
+	  return result;
+	}
+
+	module.exports = isHostObject;
+
+
+/***/ },
+/* 552 */
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is object-like. A value is object-like if it's not `null`
+	 * and has a `typeof` result of "object".
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+	 * @example
+	 *
+	 * _.isObjectLike({});
+	 * // => true
+	 *
+	 * _.isObjectLike([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObjectLike(_.noop);
+	 * // => false
+	 *
+	 * _.isObjectLike(null);
+	 * // => false
+	 */
+	function isObjectLike(value) {
+	  return !!value && typeof value == 'object';
+	}
+
+	module.exports = isObjectLike;
+
+
+/***/ },
+/* 553 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(554);
+
+
+/***/ },
+/* 554 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global, module) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _ponyfill = __webpack_require__(555);
+
+	var _ponyfill2 = _interopRequireDefault(_ponyfill);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var root; /* global window */
+
+
+	if (typeof self !== 'undefined') {
+	  root = self;
+	} else if (typeof window !== 'undefined') {
+	  root = window;
+	} else if (typeof global !== 'undefined') {
+	  root = global;
+	} else if (true) {
+	  root = module;
+	} else {
+	  root = Function('return this')();
+	}
+
+	var result = (0, _ponyfill2['default'])(root);
+	exports['default'] = result;
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(533)(module)))
+
+/***/ },
+/* 555 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports['default'] = symbolObservablePonyfill;
+	function symbolObservablePonyfill(root) {
+		var result;
+		var _Symbol = root.Symbol;
+
+		if (typeof _Symbol === 'function') {
+			if (_Symbol.observable) {
+				result = _Symbol.observable;
+			} else {
+				result = _Symbol('observable');
+				_Symbol.observable = result;
+			}
+		} else {
+			result = '@@observable';
+		}
+
+		return result;
+	};
+
+/***/ },
+/* 556 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	exports.__esModule = true;
+	exports['default'] = combineReducers;
+
+	var _createStore = __webpack_require__(547);
+
+	var _isPlainObject = __webpack_require__(548);
+
+	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
+
+	var _warning = __webpack_require__(557);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function getUndefinedStateErrorMessage(key, action) {
+	  var actionType = action && action.type;
+	  var actionName = actionType && '"' + actionType.toString() + '"' || 'an action';
+
+	  return 'Given action ' + actionName + ', reducer "' + key + '" returned undefined. ' + 'To ignore an action, you must explicitly return the previous state.';
+	}
+
+	function getUnexpectedStateShapeWarningMessage(inputState, reducers, action, unexpectedKeyCache) {
+	  var reducerKeys = Object.keys(reducers);
+	  var argumentName = action && action.type === _createStore.ActionTypes.INIT ? 'preloadedState argument passed to createStore' : 'previous state received by the reducer';
+
+	  if (reducerKeys.length === 0) {
+	    return 'Store does not have a valid reducer. Make sure the argument passed ' + 'to combineReducers is an object whose values are reducers.';
+	  }
+
+	  if (!(0, _isPlainObject2['default'])(inputState)) {
+	    return 'The ' + argumentName + ' has unexpected type of "' + {}.toString.call(inputState).match(/\s([a-z|A-Z]+)/)[1] + '". Expected argument to be an object with the following ' + ('keys: "' + reducerKeys.join('", "') + '"');
+	  }
+
+	  var unexpectedKeys = Object.keys(inputState).filter(function (key) {
+	    return !reducers.hasOwnProperty(key) && !unexpectedKeyCache[key];
+	  });
+
+	  unexpectedKeys.forEach(function (key) {
+	    unexpectedKeyCache[key] = true;
+	  });
+
+	  if (unexpectedKeys.length > 0) {
+	    return 'Unexpected ' + (unexpectedKeys.length > 1 ? 'keys' : 'key') + ' ' + ('"' + unexpectedKeys.join('", "') + '" found in ' + argumentName + '. ') + 'Expected to find one of the known reducer keys instead: ' + ('"' + reducerKeys.join('", "') + '". Unexpected keys will be ignored.');
+	  }
+	}
+
+	function assertReducerSanity(reducers) {
+	  Object.keys(reducers).forEach(function (key) {
+	    var reducer = reducers[key];
+	    var initialState = reducer(undefined, { type: _createStore.ActionTypes.INIT });
+
+	    if (typeof initialState === 'undefined') {
+	      throw new Error('Reducer "' + key + '" returned undefined during initialization. ' + 'If the state passed to the reducer is undefined, you must ' + 'explicitly return the initial state. The initial state may ' + 'not be undefined.');
+	    }
+
+	    var type = '@@redux/PROBE_UNKNOWN_ACTION_' + Math.random().toString(36).substring(7).split('').join('.');
+	    if (typeof reducer(undefined, { type: type }) === 'undefined') {
+	      throw new Error('Reducer "' + key + '" returned undefined when probed with a random type. ' + ('Don\'t try to handle ' + _createStore.ActionTypes.INIT + ' or other actions in "redux/*" ') + 'namespace. They are considered private. Instead, you must return the ' + 'current state for any unknown actions, unless it is undefined, ' + 'in which case you must return the initial state, regardless of the ' + 'action type. The initial state may not be undefined.');
+	    }
+	  });
+	}
+
+	/**
+	 * Turns an object whose values are different reducer functions, into a single
+	 * reducer function. It will call every child reducer, and gather their results
+	 * into a single state object, whose keys correspond to the keys of the passed
+	 * reducer functions.
+	 *
+	 * @param {Object} reducers An object whose values correspond to different
+	 * reducer functions that need to be combined into one. One handy way to obtain
+	 * it is to use ES6 `import * as reducers` syntax. The reducers may never return
+	 * undefined for any action. Instead, they should return their initial state
+	 * if the state passed to them was undefined, and the current state for any
+	 * unrecognized action.
+	 *
+	 * @returns {Function} A reducer function that invokes every reducer inside the
+	 * passed object, and builds a state object with the same shape.
+	 */
+	function combineReducers(reducers) {
+	  var reducerKeys = Object.keys(reducers);
+	  var finalReducers = {};
+	  for (var i = 0; i < reducerKeys.length; i++) {
+	    var key = reducerKeys[i];
+
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (typeof reducers[key] === 'undefined') {
+	        (0, _warning2['default'])('No reducer provided for key "' + key + '"');
+	      }
+	    }
+
+	    if (typeof reducers[key] === 'function') {
+	      finalReducers[key] = reducers[key];
+	    }
+	  }
+	  var finalReducerKeys = Object.keys(finalReducers);
+
+	  if (process.env.NODE_ENV !== 'production') {
+	    var unexpectedKeyCache = {};
+	  }
+
+	  var sanityError;
+	  try {
+	    assertReducerSanity(finalReducers);
+	  } catch (e) {
+	    sanityError = e;
+	  }
+
+	  return function combination() {
+	    var state = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+	    var action = arguments[1];
+
+	    if (sanityError) {
+	      throw sanityError;
+	    }
+
+	    if (process.env.NODE_ENV !== 'production') {
+	      var warningMessage = getUnexpectedStateShapeWarningMessage(state, finalReducers, action, unexpectedKeyCache);
+	      if (warningMessage) {
+	        (0, _warning2['default'])(warningMessage);
+	      }
+	    }
+
+	    var hasChanged = false;
+	    var nextState = {};
+	    for (var i = 0; i < finalReducerKeys.length; i++) {
+	      var key = finalReducerKeys[i];
+	      var reducer = finalReducers[key];
+	      var previousStateForKey = state[key];
+	      var nextStateForKey = reducer(previousStateForKey, action);
+	      if (typeof nextStateForKey === 'undefined') {
+	        var errorMessage = getUndefinedStateErrorMessage(key, action);
+	        throw new Error(errorMessage);
+	      }
+	      nextState[key] = nextStateForKey;
+	      hasChanged = hasChanged || nextStateForKey !== previousStateForKey;
+	    }
+	    return hasChanged ? nextState : state;
+	  };
+	}
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 557 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	exports.__esModule = true;
+	exports['default'] = warning;
+	/**
+	 * Prints a warning in the console if it exists.
+	 *
+	 * @param {String} message The warning message.
+	 * @returns {void}
+	 */
+	function warning(message) {
+	  /* eslint-disable no-console */
+	  if (typeof console !== 'undefined' && typeof console.error === 'function') {
+	    console.error(message);
+	  }
+	  /* eslint-enable no-console */
+	  try {
+	    // This error was thrown as a convenience so that if you enable
+	    // "break on all exceptions" in your console,
+	    // it would pause the execution at this line.
+	    throw new Error(message);
+	    /* eslint-disable no-empty */
+	  } catch (e) {}
+	  /* eslint-enable no-empty */
+	}
+
+/***/ },
+/* 558 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	exports.__esModule = true;
+	exports['default'] = bindActionCreators;
+	function bindActionCreator(actionCreator, dispatch) {
+	  return function () {
+	    return dispatch(actionCreator.apply(undefined, arguments));
+	  };
+	}
+
+	/**
+	 * Turns an object whose values are action creators, into an object with the
+	 * same keys, but with every function wrapped into a `dispatch` call so they
+	 * may be invoked directly. This is just a convenience method, as you can call
+	 * `store.dispatch(MyActionCreators.doSomething())` yourself just fine.
+	 *
+	 * For convenience, you can also pass a single function as the first argument,
+	 * and get a function in return.
+	 *
+	 * @param {Function|Object} actionCreators An object whose values are action
+	 * creator functions. One handy way to obtain it is to use ES6 `import * as`
+	 * syntax. You may also pass a single function.
+	 *
+	 * @param {Function} dispatch The `dispatch` function available on your Redux
+	 * store.
+	 *
+	 * @returns {Function|Object} The object mimicking the original object, but with
+	 * every action creator wrapped into the `dispatch` call. If you passed a
+	 * function as `actionCreators`, the return value will also be a single
+	 * function.
+	 */
+	function bindActionCreators(actionCreators, dispatch) {
+	  if (typeof actionCreators === 'function') {
+	    return bindActionCreator(actionCreators, dispatch);
+	  }
+
+	  if (typeof actionCreators !== 'object' || actionCreators === null) {
+	    throw new Error('bindActionCreators expected an object or a function, instead received ' + (actionCreators === null ? 'null' : typeof actionCreators) + '. ' + 'Did you write "import ActionCreators from" instead of "import * as ActionCreators from"?');
+	  }
+
+	  var keys = Object.keys(actionCreators);
+	  var boundActionCreators = {};
+	  for (var i = 0; i < keys.length; i++) {
+	    var key = keys[i];
+	    var actionCreator = actionCreators[key];
+	    if (typeof actionCreator === 'function') {
+	      boundActionCreators[key] = bindActionCreator(actionCreator, dispatch);
+	    }
+	  }
+	  return boundActionCreators;
+	}
+
+/***/ },
+/* 559 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	exports['default'] = applyMiddleware;
+
+	var _compose = __webpack_require__(560);
+
+	var _compose2 = _interopRequireDefault(_compose);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	/**
+	 * Creates a store enhancer that applies middleware to the dispatch method
+	 * of the Redux store. This is handy for a variety of tasks, such as expressing
+	 * asynchronous actions in a concise manner, or logging every action payload.
+	 *
+	 * See `redux-thunk` package as an example of the Redux middleware.
+	 *
+	 * Because middleware is potentially asynchronous, this should be the first
+	 * store enhancer in the composition chain.
+	 *
+	 * Note that each middleware will be given the `dispatch` and `getState` functions
+	 * as named arguments.
+	 *
+	 * @param {...Function} middlewares The middleware chain to be applied.
+	 * @returns {Function} A store enhancer applying the middleware.
+	 */
+	function applyMiddleware() {
+	  for (var _len = arguments.length, middlewares = Array(_len), _key = 0; _key < _len; _key++) {
+	    middlewares[_key] = arguments[_key];
+	  }
+
+	  return function (createStore) {
+	    return function (reducer, preloadedState, enhancer) {
+	      var store = createStore(reducer, preloadedState, enhancer);
+	      var _dispatch = store.dispatch;
+	      var chain = [];
+
+	      var middlewareAPI = {
+	        getState: store.getState,
+	        dispatch: function dispatch(action) {
+	          return _dispatch(action);
+	        }
+	      };
+	      chain = middlewares.map(function (middleware) {
+	        return middleware(middlewareAPI);
+	      });
+	      _dispatch = _compose2['default'].apply(undefined, chain)(store.dispatch);
+
+	      return _extends({}, store, {
+	        dispatch: _dispatch
+	      });
+	    };
+	  };
+	}
+
+/***/ },
+/* 560 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	exports.__esModule = true;
+	exports["default"] = compose;
+	/**
+	 * Composes single-argument functions from right to left. The rightmost
+	 * function can take multiple arguments as it provides the signature for
+	 * the resulting composite function.
+	 *
+	 * @param {...Function} funcs The functions to compose.
+	 * @returns {Function} A function obtained by composing the argument functions
+	 * from right to left. For example, compose(f, g, h) is identical to doing
+	 * (...args) => f(g(h(...args))).
+	 */
+
+	function compose() {
+	  for (var _len = arguments.length, funcs = Array(_len), _key = 0; _key < _len; _key++) {
+	    funcs[_key] = arguments[_key];
+	  }
+
+	  if (funcs.length === 0) {
+	    return function (arg) {
+	      return arg;
+	    };
+	  }
+
+	  if (funcs.length === 1) {
+	    return funcs[0];
+	  }
+
+	  var last = funcs[funcs.length - 1];
+	  var rest = funcs.slice(0, -1);
+	  return function () {
+	    return rest.reduceRight(function (composed, f) {
+	      return f(composed);
+	    }, last.apply(undefined, arguments));
+	  };
+	}
+
+/***/ },
+/* 561 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.addPagination = addPagination;
+	exports.setNewFilter = setNewFilter;
+	exports.setFilter = setFilter;
+	exports.clearFilter = clearFilter;
+	exports.changeOffset = changeOffset;
+	exports.setAmountOfRows = setAmountOfRows;
+	exports.resetPagination = resetPagination;
+	exports.resetContextPagination = resetContextPagination;
+	function addPagination(paginations) {
+	  return {
+	    type: 'ADD_PAGINATION',
+	    paginations: paginations
+	  };
+	}
+
+	function setNewFilter(pagination, number, new_filter) {
+	  return {
+	    type: 'SET_NEWFILTER',
+	    pagination: pagination,
+	    number: number,
+	    new_filter: new_filter
+	  };
+	}
+
+	function setFilter(pagination, number) {
+	  return {
+	    type: 'SET_FILTER',
+	    pagination: pagination,
+	    number: number
+	  };
+	}
+
+	function clearFilter(pagination, number) {
+	  return {
+	    type: 'CLEAR_FILTER',
+	    pagination: pagination,
+	    number: number
+	  };
+	}
+
+	function changeOffset(pagination, page) {
+	  return {
+	    type: 'CHANGE_OFFSET',
+	    pagination: pagination,
+	    page: page
+	  };
+	}
+
+	function setAmountOfRows(pagination, amount) {
+	  return {
+	    type: 'SET_AMOUNT_OF_ROWS',
+	    pagination: pagination,
+	    amount: amount
+	  };
+	}
+
+	function resetPagination() {
+	  return {
+	    type: 'RESET_PAGINATION'
+	  };
+	}
+
+	function resetContextPagination() {
+	  return {
+	    type: 'RESET_CONTEXT_PAGINATION'
+	  };
+	}
+
+/***/ },
+/* 562 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var paginations = ['links', 'pictures', 'files', 'organisations', 'picture_links', 'file_links', 'organisation_pictures', 'organisation_links'];
+
+	var context_paginations = ['picture_links', 'file_links', 'organisation_pictures', 'organisation_links'];
+
+	function r_pagination() {
+	  var state = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+	  var action = arguments[1];
+
+	  switch (action.type) {
+	    // Check if action dispatched is
+	    // CREATE_BOOK and act on that
+	    case 'ADD_PAGINATION':
+	      return Object.assign({}, state, {
+	        paginations: action.paginations
+	      });
+	    case 'SET_NEWFILTER':
+	      var _state = state;
+	      console.log(action.new_filter);
+	      _state.paginations[action.pagination].new_filters[action.number] = action.new_filter;
+	      return Object.assign({}, state, {
+	        paginations: _state.paginations
+	      });
+	    case 'SET_FILTER':
+	      var _state = state;
+	      _state.paginations[action.pagination].offset = 0;
+	      _state.paginations[action.pagination].active_page = 1;
+	      _state.paginations[action.pagination].filters[action.number] = _state.paginations[action.pagination].new_filters[action.number];
+	      return Object.assign({}, state, {
+	        paginations: _state.paginations
+	      });
+	    case 'CLEAR_FILTER':
+	      var _state = state;
+
+	      _state.paginations[action.pagination].offset = 0;
+	      _state.paginations[action.pagination].active_page = 1;
+	      _state.paginations[action.pagination].new_filters[action.number] = '';
+	      _state.paginations[action.pagination].filters[action.number] = '';
+
+	      return Object.assign({}, state, {
+	        paginations: _state.paginations
+	      });
+	    case 'CHANGE_OFFSET':
+	      var _state = state;
+	      _state.paginations[action.pagination].active_page = action.page;
+	      _state.paginations[action.pagination].offset = (action.page - 1) * _state.paginations[action.pagination].limit;
+	      return Object.assign({}, state, {
+	        paginations: _state.paginations
+	      });
+	    case 'SET_AMOUNT_OF_ROWS':
+	      var _state = state;
+	      _state.paginations[action.pagination].total_rows = parseInt(action.amount);
+	      _state.paginations[action.pagination].max_page = Math.floor(parseInt(action.amount) / _state.paginations[action.pagination].limit);
+	      return Object.assign({}, state, {
+	        paginations: _state.paginations
+	      });
+	    case 'RESET_PAGINATION':
+	      console.log("test");
+	      var _state = state;
+
+	      for (var elem in paginations) {
+	        _state.paginations[paginations[elem]].offset = _state.paginations[paginations[elem]].initial_offset;
+	        _state.paginations[paginations[elem]].active_page = 1;
+	        _state.paginations[paginations[elem]].filters = _state.paginations[paginations[elem]].initial_filters;
+	      }
+	    case 'RESET_CONTEXT_PAGINATION':
+	      var _state = state;
+
+	      for (var elem in context_paginations) {
+	        console.log("clear:" + elem);
+	        _state.paginations[context_paginations[elem]].offset = _state.paginations[context_paginations[elem]].initial_offset;
+	        _state.paginations[context_paginations[elem]].active_page = 1;
+	        _state.paginations[context_paginations[elem]].filters = _state.paginations[context_paginations[elem]].initial_filters;
+	      }
+
+	      return Object.assign({}, state, {
+	        paginations: _state.paginations
+	      });
+	    default:
+	      return state;
+	  }
+	};
+
+	exports.r_pagination = r_pagination;
+
+/***/ },
+/* 563 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.pagination_store = undefined;
+
+	var _redux = __webpack_require__(546);
+
+	var _pagination_actions = __webpack_require__(561);
+
+	var _pagination_reducers = __webpack_require__(562);
+
+	var pagination_store = (0, _redux.createStore)(_pagination_reducers.r_pagination);
+
+	pagination_store.dispatch((0, _pagination_actions.addPagination)({
+	  'links': {
+	    initial_offset: 0,
+	    initial_limit: 2,
+	    initial_filters: ['', ''],
+	    column_has_filter: [true, true],
+	    filter_columns_displaynames: ["Name", "URL"],
+	    filter_columns: ["Name", "URL"],
+	    offset: 0,
+	    limit: 2,
+	    new_filters: ['', ''],
+	    filters: ['', ''],
+	    active_page: 1,
+	    max_page: 1,
+	    total_rows: 0
+	  },
+	  'pictures': {
+	    initial_offset: 0,
+	    initial_limit: 2,
+	    initial_filters: [''],
+	    column_has_filter: [true, false],
+	    filter_columns_displaynames: ["Name", ''],
+	    filter_columns: ["Name"],
+	    offset: 0,
+	    limit: 2,
+	    new_filters: [''],
+	    filters: [''],
+	    active_page: 1,
+	    max_page: 1,
+	    total_rows: 0
+	  },
+	  'files': {
+	    initial_offset: 0,
+	    initial_limit: 2,
+	    initial_filters: [''],
+	    column_has_filter: [true],
+	    filter_columns_displaynames: ["Name"],
+	    filter_columns: ["Name"],
+	    offset: 0,
+	    limit: 2,
+	    new_filters: [''],
+	    filters: [''],
+	    active_page: 1,
+	    max_page: 1,
+	    total_rows: 0
+	  },
+	  'organisations': {
+	    initial_offset: 0,
+	    initial_limit: 2,
+	    initial_filters: [''],
+	    column_has_filter: [true],
+	    filter_columns_displaynames: ["Name"],
+	    filter_columns: ["Name"],
+	    offset: 0,
+	    limit: 2,
+	    new_filters: [''],
+	    filters: [''],
+	    active_page: 1,
+	    max_page: 1,
+	    total_rows: 0
+	  },
+	  'picture_links': {
+	    initial_offset: 0,
+	    initial_limit: 2,
+	    initial_filters: [''],
+	    column_has_filter: [false, true, true],
+	    filter_columns_displaynames: ["Conext", "Name", "URL"],
+	    filter_columns: ["Name", "URL"],
+	    offset: 0,
+	    limit: 2,
+	    new_filters: ['', ''],
+	    filters: ['', ''],
+	    active_page: 1,
+	    max_page: 1,
+	    total_rows: 0
+	  },
+	  'file_links': {
+	    initial_offset: 0,
+	    initial_limit: 2,
+	    initial_filters: [''],
+	    column_has_filter: [false, true, true],
+	    filter_columns_displaynames: ["Conext", "Name", "URL"],
+	    filter_columns: ["Name", "URL"],
+	    offset: 0,
+	    limit: 2,
+	    new_filters: ['', ''],
+	    filters: ['', ''],
+	    active_page: 1,
+	    max_page: 1,
+	    total_rows: 0
+	  },
+	  'organisation_links': {
+	    initial_offset: 0,
+	    initial_limit: 2,
+	    initial_filters: [''],
+	    column_has_filter: [false, true, true],
+	    filter_columns_displaynames: ["Conext", "Name", "URL"],
+	    filter_columns: ["Name", "URL"],
+	    offset: 0,
+	    limit: 2,
+	    new_filters: ['', ''],
+	    filters: ['', ''],
+	    active_page: 1,
+	    max_page: 1,
+	    total_rows: 0
+	  },
+	  'organisation_pictures': {
+	    initial_offset: 0,
+	    initial_limit: 2,
+	    initial_filters: [''],
+	    column_has_filter: [false, true, false],
+	    filter_columns_displaynames: ["Conext", "Name", ''],
+	    filter_columns: ["Name"],
+	    offset: 0,
+	    limit: 2,
+	    new_filters: [''],
+	    filters: [''],
+	    active_page: 1,
+	    max_page: 1,
+	    total_rows: 0
+	  }
+	}));
+
+	exports.pagination_store = pagination_store;
+
+/***/ },
+/* 564 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.ListColumn = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	var _reactBootstrap = __webpack_require__(237);
+
+	var _sprintf = __webpack_require__(490);
+
+	var _sprintf2 = _interopRequireDefault(_sprintf);
+
+	var _redux = __webpack_require__(546);
+
+	var _pagination_actions = __webpack_require__(561);
+
+	var _pagination_reducers = __webpack_require__(562);
+
+	var _pagination_store = __webpack_require__(563);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// ListColumn
+	// =============================================================================
+	// React component to display a link a object list
+	// *****************************************************************************
+	// Author: thorsten.butschke@googlemail.com
+	// *****************************************************************************
+	// Interface
+	// *****************************************************************************
+	// input (props)
+	// -----
+	// display_name         the name of the column
+	// column_number        the number of the column in the list
+	// update_data          call function to reload parent data
+	//
+	// Model (state)
+	// *****************************************************************************
+	// new_filter           the text that is entered in the search field. This text
+	//                      becomes the real filter after pressing the search button
+	//
+	// Functions
+	// *****************************************************************************
+	// onNewFilterChange    callback when a character is typed
+	// onFilterChange       the filter becomes the text in the search field
+	// onFilterClear        clear the filter as well as the search field
+	//
+	// Versions
+	// *****************************************************************************
+	// 1.0 Initial redesign
+	// =============================================================================
+
+	var ListColumn = function (_React$Component) {
+	  _inherits(ListColumn, _React$Component);
+
+	  function ListColumn(props) {
+	    _classCallCheck(this, ListColumn);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ListColumn).call(this, props));
+
+	    _this.state = {
+	      new_filter: ''
+	    };
+	    return _this;
+	  }
+
+	  _createClass(ListColumn, [{
+	    key: 'onNewFilterChange',
+	    value: function onNewFilterChange(e) {
+	      this.setState({ new_filter: e.target.value });
+	      _pagination_store.pagination_store.dispatch((0, _pagination_actions.setNewFilter)(this.props.object_type, this.props.column_number, e.target.value));
+	    }
+	  }, {
+	    key: 'onFilterChange',
+	    value: function onFilterChange(e) {
+	      _pagination_store.pagination_store.dispatch((0, _pagination_actions.setFilter)(this.props.object_type, this.props.column_number));
+	      this.props.update_data();
+	    }
+	  }, {
+	    key: 'onFilterClear',
+	    value: function onFilterClear(e) {
+	      this.setState({ new_filter: '' });
+	      _pagination_store.pagination_store.dispatch((0, _pagination_actions.clearFilter)(this.props.object_type, this.props.column_number));
+	      this.props.update_data();
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'th',
+	        null,
+	        _react2.default.createElement(
+	          'table',
+	          { width: '300px' },
+	          _react2.default.createElement(
+	            'tbody',
+	            null,
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                this.props.display_name
+	              ),
+	              _react2.default.createElement('td', { width: '4px' }),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Search for', onChange: this.onNewFilterChange.bind(this), value: this.state.new_filter })
+	              ),
+	              _react2.default.createElement('td', { width: '4px' }),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  _reactBootstrap.Button,
+	                  { onClick: this.onFilterChange.bind(this) },
+	                  _react2.default.createElement('img', { src: 'media/gfx/search.png' })
+	                )
+	              ),
+	              _react2.default.createElement('td', { width: '4px' }),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  _reactBootstrap.Button,
+	                  { onClick: this.onFilterClear.bind(this) },
+	                  _react2.default.createElement('img', { src: 'media/gfx/clear_filter.png' })
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ListColumn;
+	}(_react2.default.Component);
+
+	exports.ListColumn = ListColumn;
+
+/***/ },
+/* 565 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.buildConditionFromFilters = buildConditionFromFilters;
+	function buildConditionFromFilters(_filters, _filter_columns) {
+	  var _condition = '';
+	  var _counter = 0;
+
+	  for (var _filter in _filters) {
+	    var _operator = 'where';
+	    if (_counter > 0) {
+	      _operator = 'and';
+	    }
+	    var _column = _filter_columns[_counter];
+	    var _value = "'°" + _filters[_filter] + "°'";
+
+	    _condition += _operator + "|" + _column + "|like|" + _value;
+
+	    if (_counter < _filters.length - 1) {
+	      _condition += ";";
+	    }
+
+	    _counter += 1;
+	  }
+
+	  if (_counter != 0) {
+	    _condition = "&filter=" + _condition;
+	  }
+	  return _condition;
+	}
+
+/***/ },
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57445,7 +59591,7 @@
 	});
 
 /***/ },
-/* 543 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57782,7 +59928,7 @@
 	});
 
 /***/ },
-/* 544 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58119,7 +60265,7 @@
 	});
 
 /***/ },
-/* 545 */
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58141,11 +60287,11 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _Search = __webpack_require__(546);
+	var _Search = __webpack_require__(570);
 
 	var _Search2 = _interopRequireDefault(_Search);
 
-	var _TwoButtonDialog = __webpack_require__(547);
+	var _TwoButtonDialog = __webpack_require__(571);
 
 	var _TwoButtonDialog2 = _interopRequireDefault(_TwoButtonDialog);
 
@@ -58514,7 +60660,7 @@
 	});
 
 /***/ },
-/* 546 */
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58586,7 +60732,7 @@
 	module.exports = Search;
 
 /***/ },
-/* 547 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58711,7 +60857,7 @@
 	module.exports = TwoButtonDialog;
 
 /***/ },
-/* 548 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -59048,7 +61194,7 @@
 	});
 
 /***/ },
-/* 549 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -59385,7 +61531,7 @@
 	});
 
 /***/ },
-/* 550 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -59722,7 +61868,7 @@
 	});
 
 /***/ },
-/* 551 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -59750,7 +61896,7 @@
 	});
 
 /***/ },
-/* 552 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -59918,7 +62064,7 @@
 	});
 
 /***/ },
-/* 553 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -59943,7 +62089,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListSystems = __webpack_require__(542);
+	var _ListSystems = __webpack_require__(566);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -60043,7 +62189,7 @@
 	});
 
 /***/ },
-/* 554 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -60060,7 +62206,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(555);
+	var _superagent = __webpack_require__(579);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -60072,7 +62218,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListSystems = __webpack_require__(542);
+	var _ListSystems = __webpack_require__(566);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -60193,7 +62339,7 @@
 	});
 
 /***/ },
-/* 555 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -60210,9 +62356,9 @@
 	  root = this;
 	}
 
-	var Emitter = __webpack_require__(556);
-	var requestBase = __webpack_require__(557);
-	var isObject = __webpack_require__(558);
+	var Emitter = __webpack_require__(580);
+	var requestBase = __webpack_require__(581);
+	var isObject = __webpack_require__(582);
 
 	/**
 	 * Noop.
@@ -60224,7 +62370,7 @@
 	 * Expose `request`.
 	 */
 
-	var request = module.exports = __webpack_require__(559).bind(null, Request);
+	var request = module.exports = __webpack_require__(583).bind(null, Request);
 
 	/**
 	 * Determine XHR.
@@ -61175,7 +63321,7 @@
 
 
 /***/ },
-/* 556 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -61344,13 +63490,13 @@
 
 
 /***/ },
-/* 557 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Module of mixed-in functions shared between node and client code
 	 */
-	var isObject = __webpack_require__(558);
+	var isObject = __webpack_require__(582);
 
 	/**
 	 * Clear previous timeout.
@@ -61722,7 +63868,7 @@
 
 
 /***/ },
-/* 558 */
+/* 582 */
 /***/ function(module, exports) {
 
 	/**
@@ -61741,7 +63887,7 @@
 
 
 /***/ },
-/* 559 */
+/* 583 */
 /***/ function(module, exports) {
 
 	// The node and browser modules expose versions of this with the
@@ -61779,7 +63925,7 @@
 
 
 /***/ },
-/* 560 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -61804,7 +63950,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListEngine_configurations = __webpack_require__(543);
+	var _ListEngine_configurations = __webpack_require__(567);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -61904,7 +64050,7 @@
 	});
 
 /***/ },
-/* 561 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -61921,7 +64067,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(555);
+	var _superagent = __webpack_require__(579);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -61933,7 +64079,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListEngine_configurations = __webpack_require__(543);
+	var _ListEngine_configurations = __webpack_require__(567);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -62049,7 +64195,7 @@
 	});
 
 /***/ },
-/* 562 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62068,7 +64214,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _OrganisationProperties = __webpack_require__(563);
+	var _OrganisationProperties = __webpack_require__(587);
 
 	var _sprintf = __webpack_require__(490);
 
@@ -62191,7 +64337,7 @@
 	exports.default = AddOrganisation;
 
 /***/ },
-/* 563 */
+/* 587 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62310,7 +64456,7 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 564 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62329,9 +64475,9 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _OrganisationProperties = __webpack_require__(563);
+	var _OrganisationProperties = __webpack_require__(587);
 
-	var _PagedMediaTable = __webpack_require__(565);
+	var _PagedMediaTable = __webpack_require__(495);
 
 	var _sprintf = __webpack_require__(490);
 
@@ -62478,12 +64624,27 @@
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.Tab,
+	              { eventKey: 2, title: 'Pictures' },
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(_PagedMediaTable.PagedMediaTable, {
+	                object_type: 'organisation_pictures',
+	                uid_object: this.props.params.uid.toString(),
+	                row_type: 'ContextPicture',
+	                view_name: 'KPicturesOfObject',
+	                tagged_component: 'TaggedPicture',
+	                object_filter: '0010',
+	                media_type: '0009',
+	                max_buttons: 5
+	              })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Tab,
 	              { eventKey: 3, title: 'Links' },
 	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(_PagedMediaTable.PagedMediaTable2, {
+	              _react2.default.createElement(_PagedMediaTable.PagedMediaTable, {
 	                object_type: 'organisation_links',
 	                uid_object: this.props.params.uid.toString(),
-	                row_type: 'URLLink',
+	                row_type: 'ContextLink',
 	                view_name: 'KLinksOfObject',
 	                tagged_component: 'TaggedLink',
 	                object_filter: '0010',
@@ -62503,2360 +64664,7 @@
 	exports.default = EditOrganisation;
 
 /***/ },
-/* 565 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.PagedMediaTable2 = undefined;
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _Select = __webpack_require__(494);
-
-	var _TaggedPicture = __webpack_require__(496);
-
-	var _TaggedLink = __webpack_require__(538);
-
-	var _TaggedFile = __webpack_require__(566);
-
-	var _ContextPicture = __webpack_require__(540);
-
-	var _ContextFile = __webpack_require__(568);
-
-	var _URLLink = __webpack_require__(541);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	var _ObjectList = __webpack_require__(569);
-
-	var _ListColumn = __webpack_require__(588);
-
-	var _filter_utils = __webpack_require__(589);
-
-	var _redux = __webpack_require__(570);
-
-	var _pagination_actions = __webpack_require__(585);
-
-	var _pagination_reducers = __webpack_require__(586);
-
-	var _pagination_store = __webpack_require__(587);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	// Paged media table
-	// =============================================================================
-	// React component to display media content in a paged table
-	// *****************************************************************************
-	// Author: thorsten.butschke@googlemail.com
-	// *****************************************************************************
-	// Interface
-	// *****************************************************************************
-	// input (props)
-	// -----
-	// object_pagignation:
-	//    set_offset:      function to set the offset of row_datas
-	//    get_offset       function to get the offset
-	//    set_filter       function to set the filter of the row_datas
-	//    get_filter       function to get the filter
-	//    get_limit        function to get the number of media content objects to show
-	// max_buttons      number of max elements in the pagination band
-	// row_type         media type
-	// uid_object       uid of the main objects the media objects belongs to
-	//
-	// Model (state)
-	// *****************************************************************************
-	// data
-	// max_page
-	// actual_page
-	// total_rows
-	// new_filter
-	// offset
-	// activePage
-	//
-	// Functions
-	// *****************************************************************************
-	// handleSelect: select pagination option
-	//
-	// Versions
-	// *****************************************************************************
-	// 1.0 Initial redesign
-	// 1.1 Only a class is used as input in the props
-	// =============================================================================
-
-	// array for dynamic row data components
-	// the calling component give in the string and the array return the component
-	// *****************************************************************************
-	var MediaComponents = {
-	  "ContextPicture": _ContextPicture.ContextPicture,
-	  "URLLink": _URLLink.URLLink,
-	  "ContextFile": _ContextFile.ContextFile
-	};
-
-	var TaggedComponents = {
-	  "TaggedPicture": _TaggedPicture.TaggedPicture,
-	  "TaggedLink": _TaggedLink.TaggedLink,
-	  "TaggedFile": _TaggedFile.TaggedFile
-	};
-
-	var PagedMediaTable2 = exports.PagedMediaTable2 = function (_React$Component) {
-	  _inherits(PagedMediaTable2, _React$Component);
-
-	  function PagedMediaTable2(props) {
-	    _classCallCheck(this, PagedMediaTable2);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PagedMediaTable2).call(this, props));
-
-	    _this.state = {
-	      data: [],
-	      max_page: 0,
-	      actual_page: 0,
-	      total_rows: 0,
-	      new_filter: '',
-	      offset: 0
-	    };
-
-	    _this.redux_state = _pagination_store.pagination_store.getState().paginations[_this.props.object_type];
-	    return _this;
-	  }
-
-	  _createClass(PagedMediaTable2, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      _pagination_store.pagination_store.dispatch((0, _pagination_actions.resetContextPagination)());
-	      this.load_data();
-	    }
-	  }, {
-	    key: 'createRows',
-	    value: function createRows() {
-	      var output = [];
-	      var items = this.state.data;
-	      var DynamicComponent = MediaComponents[this.props.row_type];
-
-	      for (var i = 0; i < items.length; i++) {
-	        output.push(_react2.default.createElement(DynamicComponent, { key: i, data: items[i], doParentRedraw: this.load_data }));
-	      }
-	      return output;
-	    }
-	  }, {
-	    key: 'createTaggedComponent',
-	    value: function createTaggedComponent() {
-	      var output = [];
-	      var DynamicComponent = TaggedComponents[this.props.tagged_component];
-	      output.push(_react2.default.createElement(DynamicComponent, { key: 0, doParentRedraw: this.load_data.bind(this), uid_object: this.props.uid_object, object_filter: this.props.object_filter, media_type: this.props.media_type }));
-	      return output;
-	    }
-	  }, {
-	    key: 'load_data',
-	    value: function load_data() {
-	      var _uid_object = "'" + this.props.uid_object + "'";
-	      console.log(this.redux_state.filters);
-	      $.ajax({
-	        url: encodeURI((0, _sprintf2.default)("http://localhost:3300/api/db/search/%s?offset=%s&limit=%s%s;and|ObjectUID|eq|%s", this.props.view_name, this.redux_state.offset, this.redux_state.limit, (0, _filter_utils.buildConditionFromFilters)(this.redux_state.filters, this.redux_state.filter_columns), _uid_object)),
-	        dataType: 'json',
-	        cache: false,
-	        success: function (data) {
-	          console.log(data.amount);
-	          _pagination_store.pagination_store.dispatch((0, _pagination_actions.setAmountOfRows)(this.props.object_type, data.amount));
-	          this.setState({ data: data.data });
-	        }.bind(this),
-	        error: function (xhr, status, err) {
-	          console.error("PagedMediaTable", status, err.toString());
-	        }.bind(this)
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var imagePreviewUrl = this.state.imagePreviewUrl;
-
-	      var $imagePreview = null;
-	      if (imagePreviewUrl) {
-	        $imagePreview = _react2.default.createElement(_reactBootstrap.Thumbnail, { src: imagePreviewUrl });
-	      }
-
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          _ObjectList.ObjectList,
-	          {
-	            add_link: '',
-	            createObject: this.createRows.bind(this),
-	            object_type: this.props.object_type,
-	            update_data: this.load_data.bind(this)
-	          },
-	          _react2.default.createElement(_ListColumn.ListColumn, { object_type: this.props.object_type, column_number: 0, display_name: 'Name', update_data: this.load_data.bind(this) }),
-	          _react2.default.createElement(_ListColumn.ListColumn, { object_type: this.props.object_type, column_number: 1, display_name: 'URL', update_data: this.load_data.bind(this) })
-	        ),
-	        this.createTaggedComponent()
-	      );
-	    }
-	  }]);
-
-	  return PagedMediaTable2;
-	}(_react2.default.Component);
-
-/***/ },
-/* 566 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _Select = __webpack_require__(494);
-
-	var _Select2 = _interopRequireDefault(_Select);
-
-	var _FileProperties = __webpack_require__(567);
-
-	var _FileProperties2 = _interopRequireDefault(_FileProperties);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var http = __webpack_require__(498);
-
-	// Tagged file
-	// =============================================================================
-	// React component to select a tag and a file
-	// *****************************************************************************
-	// Author: thorsten.butschke@googlemail.com
-	// *****************************************************************************
-	// Interface
-	// *****************************************************************************
-	// input (props)
-	// -----
-	// uid_object:          {this.props.uid_object}
-	// filters:             string to filter the selectable tags
-	//                      syntax:     ({column name}|{filter value}[|])*
-	//                      no filter:  '-'
-	//                      example:    id_tag_category|8
-	// doParentReadraw:     function to redraw parent
-	//
-	// Model (state)
-	// *****************************************************************************
-	// name_tag:            name of selected tag
-	// uid_tag:             id of selected tag
-	// Name                 the name of the file
-	// Info                 the description of the file
-	// FileUUID             the uuid of the file
-	// File:                the selected file
-	//
-	// Functions
-	// *****************************************************************************
-	// Add object2mediatag and a file
-	//
-	// Versions
-	// *****************************************************************************
-	// 1.0 Initial redesign
-	// =============================================================================
-	exports.default = _react2.default.createClass({
-	  displayName: 'TaggedFile',
-
-	  // Model
-	  // ===========================================================================
-	  getInitialState: function getInitialState() {
-	    return {
-	      'name_tag': '',
-	      'uid_tag': -1,
-	      'Name': '',
-	      'Info': '',
-	      'FileUUID': '',
-	      'File': undefined
-	    };
-	  },
-	  update_parent: function update_parent(_Name, _Info, _File) {
-	    this.setState({
-	      'Name': _Name,
-	      'Info': _Info,
-	      'File': _File
-	    });
-	  },
-	  // Functions
-	  // ===========================================================================
-	  handleAdd: function handleAdd() {
-	    // create new tagged file
-	    // *************************************************************************
-	    // store the file as formdata
-	    // -------------------------------------------------------------------------
-	    var file2upload = new FormData();
-	    file2upload.append('file', this.state.File);
-
-	    // get uuid via rest call
-	    // -------------------------------------------------------------------------
-	    $.ajax({
-	      url: encodeURI((0, _sprintf2.default)('http://localhost:3300/api/uuid')),
-	      dataType: 'json',
-	      type: 'GET',
-	      cache: false,
-	      success: function (data) {
-	        var _uuid = data.uuid;
-
-	        // create data for file post
-	        // ---------------------------------------------------------------------
-	        var _edit = {
-	          "Name": this.state.Name,
-	          "Info": this.state.Info,
-	          'FileUUID': _uuid
-	        };
-
-	        // post file data
-	        // ---------------------------------------------------------------------
-	        $.ajax({
-	          url: 'http://localhost:3300/api/file/',
-	          data: _edit,
-	          dataType: 'json',
-	          type: 'POST',
-	          success: function (data) {
-	            var _edit_object2mediatag = {
-	              'TagUID': this.state.uid_tag,
-	              'ObjectUID': this.props.uid_object,
-	              'MediaUID': data.uid
-	            };
-	            // post object to media tag
-	            // -----------------------------------------------------------------
-	            $.ajax({
-	              url: 'http://localhost:3300/api/object2mediatag/',
-	              data: _edit_object2mediatag,
-	              dataType: 'json',
-	              type: 'POST',
-	              success: function (data) {
-	                // post file file
-	                // -------------------------------------------------------------
-	                $.ajax({
-	                  url: 'http://localhost:3300/api/file/upload/' + _uuid,
-	                  data: file2upload,
-	                  cache: false,
-	                  contentType: false,
-	                  processData: false,
-	                  type: 'POST',
-	                  success: function (data) {
-	                    this.setState({
-	                      File: undefined
-	                    });
-	                    this.props.doParentRedraw();
-	                  }.bind(this),
-	                  error: function (xhr, status, err) {
-	                    console.error('http://localhost:3300/api/file 1', status, err.toString());
-	                  }.bind(this)
-	                });
-	              }.bind(this),
-	              error: function (xhr, status, err) {
-	                console.error('http://localhost:3300/api/file 2', status, err.toString());
-	              }.bind(this)
-	            });
-	          }.bind(this),
-	          error: function (xhr, status, err) {
-	            console.error('http://localhost:3300/api/file 3', status, err.toString());
-	            // window.location.replace(sprintf("/#/ListEngines/0")); // %s ,getOffet()
-	          }.bind(this)
-	        });
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error('http://localhost:3300/api/file 4', status, err.toString());
-	      }.bind(this)
-	    });
-	  },
-	  onTagChange: function onTagChange(e) {
-	    // set uid_tag and name_tag when tag was selectedIndex
-	    // *************************************************************************
-	    this.setState({ uid_tag: e.target.value, name_tag: e.target.childNodes[e.target.selectedIndex].label });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      _reactBootstrap.Table,
-	      { striped: true, bordered: true },
-	      _react2.default.createElement(
-	        'thead',
-	        null,
-	        _react2.default.createElement(
-	          'tr',
-	          null,
-	          _react2.default.createElement('td', null),
-	          _react2.default.createElement(
-	            'td',
-	            { width: '100%' },
-	            'Add tagged file'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'tbody',
-	        null,
-	        _react2.default.createElement(
-	          'tr',
-	          null,
-	          _react2.default.createElement(
-	            'td',
-	            null,
-	            this.state.uid_tag != '' && this.state.Name != '' && this.state.File != undefined && this.state.File.size > 0 ? _react2.default.createElement(
-	              _reactBootstrap.Button,
-	              { bsStyle: 'success', onClick: this.handleAdd },
-	              _react2.default.createElement('img', { src: 'media/gfx/add.png' })
-	            ) : _react2.default.createElement(
-	              _reactBootstrap.Button,
-	              { bsStyle: 'success', onClick: this.handleAdd, disabled: true },
-	              _react2.default.createElement('img', { src: 'media/gfx/add.png' })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'td',
-	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.Table,
-	              { bordered: true },
-	              _react2.default.createElement(
-	                'tbody',
-	                null,
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    'Tag'
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement(
-	                      _reactBootstrap.Col,
-	                      { sm: 3 },
-	                      _react2.default.createElement(_reactBootstrap.FormControl, { disabled: true, value: this.state.name_tag })
-	                    ),
-	                    _react2.default.createElement(
-	                      _reactBootstrap.Col,
-	                      { sm: 7 },
-	                      _react2.default.createElement(_Select2.default, {
-	                        target: 'KAvailableSupportedObjectMediaTag',
-	                        uid_object: this.props.uid_object,
-	                        object_filter: this.props.object_filter,
-	                        media_type: this.props.media_type,
-	                        display_column: 'Name',
-	                        value: 'a',
-	                        change_function: this.onTagChange })
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    'File'
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement(
-	                      _reactBootstrap.Col,
-	                      { sm: 10 },
-	                      _react2.default.createElement(
-	                        _reactBootstrap.Form,
-	                        { horizontal: true },
-	                        _react2.default.createElement(_FileProperties2.default, { update_parent: this.update_parent, data: this.state })
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 567 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.FileProperties = undefined;
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	// FileProperties
-	// =============================================================================
-	// React component to display the class File. It is used to add and edit objects
-	// *****************************************************************************
-	// Author: thorsten.butschke@googlemail.com
-	// *****************************************************************************
-	// Interface
-	// *****************************************************************************
-	// input (props)
-	// -----
-	// update_parent        write the state attributes back to the parent
-	// data                 the attributes from the parent
-	// -Name                name of the link
-	// -Info                description of the URL
-	// -File                the file file
-	//
-	//
-	// Model (state)
-	// *****************************************************************************
-	// Name                 name of the link
-	// Info                 description of the URL
-	// File                 the file file
-	// imagePreviewUrl      the URL of the preview thumbnail
-	//
-	// Functions
-	// *****************************************************************************
-	// onNameChange               callback for typing the name and put it into the state
-	// onInfoChange               callback for typing the description and put it into the state
-	// onImageChange              callback for selcting a file and put it into the state
-	// componentWillReceiveProps  get data from the parent
-	//
-	// Versions
-	// *****************************************************************************
-	// 1.0 Initial redesign
-	// =============================================================================
-
-	var FileProperties = exports.FileProperties = function (_React$Component) {
-	  _inherits(FileProperties, _React$Component);
-
-	  function FileProperties(props) {
-	    _classCallCheck(this, FileProperties);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(FileProperties).call(this, props));
-
-	    _this.state = {
-	      Name: '',
-	      Info: '',
-	      File: '',
-	      Path: '',
-	      imagePreviewUrl: ''
-	    };
-	    return _this;
-	  }
-
-	  _createClass(FileProperties, [{
-	    key: 'onNameChange',
-	    value: function onNameChange(e) {
-	      this.setState({ Name: e.target.value });
-	      if (this.props.update_parent) {
-	        this.props.update_parent(e.target.value, this.state.Info, this.state.File);
-	      }
-	    }
-	  }, {
-	    key: 'onInfoChange',
-	    value: function onInfoChange(e) {
-	      this.setState({ Info: e.target.value });
-	      if (this.props.update_parent) {
-	        this.props.update_parent(this.state.Name, e.target.value, this.state.File);
-	      }
-	    }
-	  }, {
-	    key: 'onImageChange',
-	    value: function onImageChange(e) {
-	      var _this2 = this;
-
-	      // read in the file while when a file was selected
-	      // *************************************************************************
-	      e.preventDefault();
-
-	      var reader = new FileReader();
-	      var selected_file = e.target.files[0];
-
-	      reader.onloadend = function () {
-	        _this2.setState({
-	          File: selected_file,
-	          imagePreviewUrl: reader.result
-	        });
-	      };
-	      if (e.target.files.length > 0) {
-	        reader.readAsDataURL(selected_file);
-	      } else {
-	        this.setState({ File: undefined, imagePreviewUrl: '' });
-	      }
-	      if (this.props.update_parent) {
-	        if (e.target.files.length > 0) {
-	          this.props.update_parent(this.state.Name, this.state.Info, e.target.files[0]);
-	        } else {
-	          this.props.update_parent(this.state.Name, this.state.Info, undefined);
-	        }
-	      }
-	    }
-	  }, {
-	    key: 'componentWillReceiveProps',
-	    value: function componentWillReceiveProps(nextProps) {
-	      if (nextProps.data != null) {
-	        this.setState({
-	          'Name': nextProps.data.Name,
-	          'Info': nextProps.data.Info,
-	          'File': nextProps.data.File
-	        });
-	      }
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var imagePreviewUrl = this.state.imagePreviewUrl;
-
-	      var $imagePreview = undefined;
-	      if (imagePreviewUrl) {
-	        $imagePreview = _react2.default.createElement('img', { src: 'media/gfx/ok.png' });
-	      }
-
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.FormGroup,
-	          { controlId: 'Name' },
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { componentClass: _reactBootstrap.ControlLabel, sm: 2 },
-	            'Name'
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { sm: 10 },
-	            _react2.default.createElement(_reactBootstrap.FormControl, { onChange: this.onNameChange.bind(this), value: this.state.Name })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.FormGroup,
-	          { controlId: 'Info' },
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { componentClass: _reactBootstrap.ControlLabel, sm: 2 },
-	            'Info'
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { sm: 10 },
-	            _react2.default.createElement(_reactBootstrap.FormControl, { onChange: this.onInfoChange.bind(this), value: this.state.Info })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.FormGroup,
-	          { controlId: 'File' },
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { componentClass: _reactBootstrap.ControlLabel, sm: 2 },
-	            'File'
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { sm: 10 },
-	            this.props.data != null && this.props.data.Path != null && this.props.data.Path != '' ? _react2.default.createElement('img', { src: 'media/gfx/ok.png' }) : null,
-	            _react2.default.createElement('input', { type: 'file', onChange: this.onImageChange.bind(this) }),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'imgPreview' },
-	              $imagePreview
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return FileProperties;
-	}(_react2.default.Component);
-
-	;
-
-/***/ },
-/* 568 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.ContextFile = undefined;
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	// ContextPile
-	// =============================================================================
-	// React component to display a file context in a context list
-	// *****************************************************************************
-	// Author: thorsten.butschke@googlemail.com
-	// *****************************************************************************
-	// Interface
-	// *****************************************************************************
-	// input (props)
-	// -----
-	// doParentReadraw      redraw the parent
-	// data                 the attributes from the parent
-	// -FileUUID            the UUID of the file
-	// -MediaUID            the uid of the file. Used to link to the edit page
-	// -ContextUID          the uid of the context. Used to delete the context
-	//
-	// Model (state)
-	// *****************************************************************************
-	//
-	// Functions
-	// *****************************************************************************
-	// handleDelete         deletes the context
-	//
-	// Versions
-	// *****************************************************************************
-	// 1.0 Initial redesign
-	// =============================================================================
-
-	var ContextFile = exports.ContextFile = function (_React$Component) {
-	  _inherits(ContextFile, _React$Component);
-
-	  function ContextFile(props) {
-	    _classCallCheck(this, ContextFile);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ContextFile).call(this, props));
-	  }
-
-	  _createClass(ContextFile, [{
-	    key: 'handleDelete',
-	    value: function handleDelete(id_to_delete) {
-	      $.ajax({
-	        url: "http://localhost:3300/api/db/KObject2MediaTag/" + this.props.data.ContextUID,
-	        dataType: 'json',
-	        type: 'DELETE',
-	        cache: false,
-	        success: function (data) {
-	          this.props.doParentRedraw();
-	        }.bind(this),
-	        error: function (xhr, status, err) {
-	          console.error("ContextPile 1", status, err.toString());
-	        }.bind(this)
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'tr',
-	        { className: 'file' },
-	        _react2.default.createElement(
-	          'td',
-	          { className: 'border' },
-	          _react2.default.createElement(
-	            _reactBootstrap.Button,
-	            { bsStyle: 'danger', onClick: this.handleDelete.bind(this) },
-	            _react2.default.createElement('img', { src: 'media/gfx/delete.png' })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'td',
-	          { width: '100%', className: 'border' },
-	          this.props.data.FileUUID != null && this.props.data.FileUUID != '' ? _react2.default.createElement(_reactBootstrap.Thumbnail, { key: 'b', src: this.props.data.FileUUID != '' ? "http://localhost:3300/uploads/" + this.props.data.FileUUID : null }) : null
-	        )
-	      );
-	    }
-	  }]);
-
-	  return ContextFile;
-	}(_react2.default.Component);
-
-/***/ },
-/* 569 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.ObjectList = undefined;
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	var _redux = __webpack_require__(570);
-
-	var _pagination_actions = __webpack_require__(585);
-
-	var _pagination_reducers = __webpack_require__(586);
-
-	var _pagination_store = __webpack_require__(587);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	// Link List
-	// -----------------------------------------------------------------------------
-	var ObjectList = exports.ObjectList = function (_React$Component) {
-	  _inherits(ObjectList, _React$Component);
-
-	  function ObjectList(props) {
-	    _classCallCheck(this, ObjectList);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ObjectList).call(this, props));
-
-	    _this.redux_state = _pagination_store.pagination_store.getState().paginations[_this.props.object_type];
-	    return _this;
-	  }
-
-	  _createClass(ObjectList, [{
-	    key: 'handleSelect',
-	    value: function handleSelect(eventKey) {
-	      _pagination_store.pagination_store.dispatch((0, _pagination_actions.changeOffset)(this.props.object_type, eventKey));
-	      this.props.update_data();
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Table,
-	          { striped: true, bordered: true, hover: true },
-	          _react2.default.createElement(
-	            'thead',
-	            null,
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'th',
-	                null,
-	                this.props.add_link != '' ? _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: this.props.add_link },
-	                  _react2.default.createElement(
-	                    _reactBootstrap.Button,
-	                    { bsStyle: 'success', type: 'submit' },
-	                    _react2.default.createElement('img', { src: 'media/gfx/add.png' })
-	                  )
-	                ) : _react2.default.createElement('div', null)
-	              ),
-	              this.props.children
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'tbody',
-	            null,
-	            this.props.createObject()
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'pagination' },
-	          _react2.default.createElement(_reactBootstrap.Pagination, {
-	            prev: true,
-	            next: true,
-	            first: true,
-	            last: true,
-	            ellipsis: true,
-	            boundaryLinks: true,
-	            items: Math.ceil(this.redux_state.total_rows / this.redux_state.limit),
-	            maxButtons: 5,
-	            activePage: this.redux_state.active_page,
-	            onSelect: this.handleSelect.bind(this)
-	          })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'form-group' },
-	          ' '
-	        )
-	      );
-	    }
-	  }]);
-
-	  return ObjectList;
-	}(_react2.default.Component);
-
-/***/ },
-/* 570 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-
-	exports.__esModule = true;
-	exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
-
-	var _createStore = __webpack_require__(571);
-
-	var _createStore2 = _interopRequireDefault(_createStore);
-
-	var _combineReducers = __webpack_require__(580);
-
-	var _combineReducers2 = _interopRequireDefault(_combineReducers);
-
-	var _bindActionCreators = __webpack_require__(582);
-
-	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
-
-	var _applyMiddleware = __webpack_require__(583);
-
-	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
-
-	var _compose = __webpack_require__(584);
-
-	var _compose2 = _interopRequireDefault(_compose);
-
-	var _warning = __webpack_require__(581);
-
-	var _warning2 = _interopRequireDefault(_warning);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	/*
-	* This is a dummy function to check if the function name has been altered by minification.
-	* If the function has been minified and NODE_ENV !== 'production', warn the user.
-	*/
-	function isCrushed() {}
-
-	if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
-	  (0, _warning2['default'])('You are currently using minified code outside of NODE_ENV === \'production\'. ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or DefinePlugin for webpack (http://stackoverflow.com/questions/30030031) ' + 'to ensure you have the correct code for your production build.');
-	}
-
-	exports.createStore = _createStore2['default'];
-	exports.combineReducers = _combineReducers2['default'];
-	exports.bindActionCreators = _bindActionCreators2['default'];
-	exports.applyMiddleware = _applyMiddleware2['default'];
-	exports.compose = _compose2['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ },
-/* 571 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-	exports.ActionTypes = undefined;
-	exports['default'] = createStore;
-
-	var _isPlainObject = __webpack_require__(572);
-
-	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
-
-	var _symbolObservable = __webpack_require__(577);
-
-	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	/**
-	 * These are private action types reserved by Redux.
-	 * For any unknown actions, you must return the current state.
-	 * If the current state is undefined, you must return the initial state.
-	 * Do not reference these action types directly in your code.
-	 */
-	var ActionTypes = exports.ActionTypes = {
-	  INIT: '@@redux/INIT'
-	};
-
-	/**
-	 * Creates a Redux store that holds the state tree.
-	 * The only way to change the data in the store is to call `dispatch()` on it.
-	 *
-	 * There should only be a single store in your app. To specify how different
-	 * parts of the state tree respond to actions, you may combine several reducers
-	 * into a single reducer function by using `combineReducers`.
-	 *
-	 * @param {Function} reducer A function that returns the next state tree, given
-	 * the current state tree and the action to handle.
-	 *
-	 * @param {any} [preloadedState] The initial state. You may optionally specify it
-	 * to hydrate the state from the server in universal apps, or to restore a
-	 * previously serialized user session.
-	 * If you use `combineReducers` to produce the root reducer function, this must be
-	 * an object with the same shape as `combineReducers` keys.
-	 *
-	 * @param {Function} enhancer The store enhancer. You may optionally specify it
-	 * to enhance the store with third-party capabilities such as middleware,
-	 * time travel, persistence, etc. The only store enhancer that ships with Redux
-	 * is `applyMiddleware()`.
-	 *
-	 * @returns {Store} A Redux store that lets you read the state, dispatch actions
-	 * and subscribe to changes.
-	 */
-	function createStore(reducer, preloadedState, enhancer) {
-	  var _ref2;
-
-	  if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
-	    enhancer = preloadedState;
-	    preloadedState = undefined;
-	  }
-
-	  if (typeof enhancer !== 'undefined') {
-	    if (typeof enhancer !== 'function') {
-	      throw new Error('Expected the enhancer to be a function.');
-	    }
-
-	    return enhancer(createStore)(reducer, preloadedState);
-	  }
-
-	  if (typeof reducer !== 'function') {
-	    throw new Error('Expected the reducer to be a function.');
-	  }
-
-	  var currentReducer = reducer;
-	  var currentState = preloadedState;
-	  var currentListeners = [];
-	  var nextListeners = currentListeners;
-	  var isDispatching = false;
-
-	  function ensureCanMutateNextListeners() {
-	    if (nextListeners === currentListeners) {
-	      nextListeners = currentListeners.slice();
-	    }
-	  }
-
-	  /**
-	   * Reads the state tree managed by the store.
-	   *
-	   * @returns {any} The current state tree of your application.
-	   */
-	  function getState() {
-	    return currentState;
-	  }
-
-	  /**
-	   * Adds a change listener. It will be called any time an action is dispatched,
-	   * and some part of the state tree may potentially have changed. You may then
-	   * call `getState()` to read the current state tree inside the callback.
-	   *
-	   * You may call `dispatch()` from a change listener, with the following
-	   * caveats:
-	   *
-	   * 1. The subscriptions are snapshotted just before every `dispatch()` call.
-	   * If you subscribe or unsubscribe while the listeners are being invoked, this
-	   * will not have any effect on the `dispatch()` that is currently in progress.
-	   * However, the next `dispatch()` call, whether nested or not, will use a more
-	   * recent snapshot of the subscription list.
-	   *
-	   * 2. The listener should not expect to see all state changes, as the state
-	   * might have been updated multiple times during a nested `dispatch()` before
-	   * the listener is called. It is, however, guaranteed that all subscribers
-	   * registered before the `dispatch()` started will be called with the latest
-	   * state by the time it exits.
-	   *
-	   * @param {Function} listener A callback to be invoked on every dispatch.
-	   * @returns {Function} A function to remove this change listener.
-	   */
-	  function subscribe(listener) {
-	    if (typeof listener !== 'function') {
-	      throw new Error('Expected listener to be a function.');
-	    }
-
-	    var isSubscribed = true;
-
-	    ensureCanMutateNextListeners();
-	    nextListeners.push(listener);
-
-	    return function unsubscribe() {
-	      if (!isSubscribed) {
-	        return;
-	      }
-
-	      isSubscribed = false;
-
-	      ensureCanMutateNextListeners();
-	      var index = nextListeners.indexOf(listener);
-	      nextListeners.splice(index, 1);
-	    };
-	  }
-
-	  /**
-	   * Dispatches an action. It is the only way to trigger a state change.
-	   *
-	   * The `reducer` function, used to create the store, will be called with the
-	   * current state tree and the given `action`. Its return value will
-	   * be considered the **next** state of the tree, and the change listeners
-	   * will be notified.
-	   *
-	   * The base implementation only supports plain object actions. If you want to
-	   * dispatch a Promise, an Observable, a thunk, or something else, you need to
-	   * wrap your store creating function into the corresponding middleware. For
-	   * example, see the documentation for the `redux-thunk` package. Even the
-	   * middleware will eventually dispatch plain object actions using this method.
-	   *
-	   * @param {Object} action A plain object representing “what changed”. It is
-	   * a good idea to keep actions serializable so you can record and replay user
-	   * sessions, or use the time travelling `redux-devtools`. An action must have
-	   * a `type` property which may not be `undefined`. It is a good idea to use
-	   * string constants for action types.
-	   *
-	   * @returns {Object} For convenience, the same action object you dispatched.
-	   *
-	   * Note that, if you use a custom middleware, it may wrap `dispatch()` to
-	   * return something else (for example, a Promise you can await).
-	   */
-	  function dispatch(action) {
-	    if (!(0, _isPlainObject2['default'])(action)) {
-	      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
-	    }
-
-	    if (typeof action.type === 'undefined') {
-	      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
-	    }
-
-	    if (isDispatching) {
-	      throw new Error('Reducers may not dispatch actions.');
-	    }
-
-	    try {
-	      isDispatching = true;
-	      currentState = currentReducer(currentState, action);
-	    } finally {
-	      isDispatching = false;
-	    }
-
-	    var listeners = currentListeners = nextListeners;
-	    for (var i = 0; i < listeners.length; i++) {
-	      listeners[i]();
-	    }
-
-	    return action;
-	  }
-
-	  /**
-	   * Replaces the reducer currently used by the store to calculate the state.
-	   *
-	   * You might need this if your app implements code splitting and you want to
-	   * load some of the reducers dynamically. You might also need this if you
-	   * implement a hot reloading mechanism for Redux.
-	   *
-	   * @param {Function} nextReducer The reducer for the store to use instead.
-	   * @returns {void}
-	   */
-	  function replaceReducer(nextReducer) {
-	    if (typeof nextReducer !== 'function') {
-	      throw new Error('Expected the nextReducer to be a function.');
-	    }
-
-	    currentReducer = nextReducer;
-	    dispatch({ type: ActionTypes.INIT });
-	  }
-
-	  /**
-	   * Interoperability point for observable/reactive libraries.
-	   * @returns {observable} A minimal observable of state changes.
-	   * For more information, see the observable proposal:
-	   * https://github.com/zenparsing/es-observable
-	   */
-	  function observable() {
-	    var _ref;
-
-	    var outerSubscribe = subscribe;
-	    return _ref = {
-	      /**
-	       * The minimal observable subscription method.
-	       * @param {Object} observer Any object that can be used as an observer.
-	       * The observer object should have a `next` method.
-	       * @returns {subscription} An object with an `unsubscribe` method that can
-	       * be used to unsubscribe the observable from the store, and prevent further
-	       * emission of values from the observable.
-	       */
-	      subscribe: function subscribe(observer) {
-	        if (typeof observer !== 'object') {
-	          throw new TypeError('Expected the observer to be an object.');
-	        }
-
-	        function observeState() {
-	          if (observer.next) {
-	            observer.next(getState());
-	          }
-	        }
-
-	        observeState();
-	        var unsubscribe = outerSubscribe(observeState);
-	        return { unsubscribe: unsubscribe };
-	      }
-	    }, _ref[_symbolObservable2['default']] = function () {
-	      return this;
-	    }, _ref;
-	  }
-
-	  // When a store is created, an "INIT" action is dispatched so that every
-	  // reducer returns their initial state. This effectively populates
-	  // the initial state tree.
-	  dispatch({ type: ActionTypes.INIT });
-
-	  return _ref2 = {
-	    dispatch: dispatch,
-	    subscribe: subscribe,
-	    getState: getState,
-	    replaceReducer: replaceReducer
-	  }, _ref2[_symbolObservable2['default']] = observable, _ref2;
-	}
-
-/***/ },
-/* 572 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var getPrototype = __webpack_require__(573),
-	    isHostObject = __webpack_require__(575),
-	    isObjectLike = __webpack_require__(576);
-
-	/** `Object#toString` result references. */
-	var objectTag = '[object Object]';
-
-	/** Used for built-in method references. */
-	var funcProto = Function.prototype,
-	    objectProto = Object.prototype;
-
-	/** Used to resolve the decompiled source of functions. */
-	var funcToString = funcProto.toString;
-
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-
-	/** Used to infer the `Object` constructor. */
-	var objectCtorString = funcToString.call(Object);
-
-	/**
-	 * Used to resolve the
-	 * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-	var objectToString = objectProto.toString;
-
-	/**
-	 * Checks if `value` is a plain object, that is, an object created by the
-	 * `Object` constructor or one with a `[[Prototype]]` of `null`.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 0.8.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
-	 * @example
-	 *
-	 * function Foo() {
-	 *   this.a = 1;
-	 * }
-	 *
-	 * _.isPlainObject(new Foo);
-	 * // => false
-	 *
-	 * _.isPlainObject([1, 2, 3]);
-	 * // => false
-	 *
-	 * _.isPlainObject({ 'x': 0, 'y': 0 });
-	 * // => true
-	 *
-	 * _.isPlainObject(Object.create(null));
-	 * // => true
-	 */
-	function isPlainObject(value) {
-	  if (!isObjectLike(value) ||
-	      objectToString.call(value) != objectTag || isHostObject(value)) {
-	    return false;
-	  }
-	  var proto = getPrototype(value);
-	  if (proto === null) {
-	    return true;
-	  }
-	  var Ctor = hasOwnProperty.call(proto, 'constructor') && proto.constructor;
-	  return (typeof Ctor == 'function' &&
-	    Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString);
-	}
-
-	module.exports = isPlainObject;
-
-
-/***/ },
-/* 573 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var overArg = __webpack_require__(574);
-
-	/** Built-in value references. */
-	var getPrototype = overArg(Object.getPrototypeOf, Object);
-
-	module.exports = getPrototype;
-
-
-/***/ },
-/* 574 */
-/***/ function(module, exports) {
-
-	/**
-	 * Creates a unary function that invokes `func` with its argument transformed.
-	 *
-	 * @private
-	 * @param {Function} func The function to wrap.
-	 * @param {Function} transform The argument transform.
-	 * @returns {Function} Returns the new function.
-	 */
-	function overArg(func, transform) {
-	  return function(arg) {
-	    return func(transform(arg));
-	  };
-	}
-
-	module.exports = overArg;
-
-
-/***/ },
-/* 575 */
-/***/ function(module, exports) {
-
-	/**
-	 * Checks if `value` is a host object in IE < 9.
-	 *
-	 * @private
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is a host object, else `false`.
-	 */
-	function isHostObject(value) {
-	  // Many host objects are `Object` objects that can coerce to strings
-	  // despite having improperly defined `toString` methods.
-	  var result = false;
-	  if (value != null && typeof value.toString != 'function') {
-	    try {
-	      result = !!(value + '');
-	    } catch (e) {}
-	  }
-	  return result;
-	}
-
-	module.exports = isHostObject;
-
-
-/***/ },
-/* 576 */
-/***/ function(module, exports) {
-
-	/**
-	 * Checks if `value` is object-like. A value is object-like if it's not `null`
-	 * and has a `typeof` result of "object".
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 4.0.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
-	 * @example
-	 *
-	 * _.isObjectLike({});
-	 * // => true
-	 *
-	 * _.isObjectLike([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isObjectLike(_.noop);
-	 * // => false
-	 *
-	 * _.isObjectLike(null);
-	 * // => false
-	 */
-	function isObjectLike(value) {
-	  return !!value && typeof value == 'object';
-	}
-
-	module.exports = isObjectLike;
-
-
-/***/ },
-/* 577 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(578);
-
-
-/***/ },
-/* 578 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global, module) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _ponyfill = __webpack_require__(579);
-
-	var _ponyfill2 = _interopRequireDefault(_ponyfill);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var root; /* global window */
-
-
-	if (typeof self !== 'undefined') {
-	  root = self;
-	} else if (typeof window !== 'undefined') {
-	  root = window;
-	} else if (typeof global !== 'undefined') {
-	  root = global;
-	} else if (true) {
-	  root = module;
-	} else {
-	  root = Function('return this')();
-	}
-
-	var result = (0, _ponyfill2['default'])(root);
-	exports['default'] = result;
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(533)(module)))
-
-/***/ },
-/* 579 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	exports['default'] = symbolObservablePonyfill;
-	function symbolObservablePonyfill(root) {
-		var result;
-		var _Symbol = root.Symbol;
-
-		if (typeof _Symbol === 'function') {
-			if (_Symbol.observable) {
-				result = _Symbol.observable;
-			} else {
-				result = _Symbol('observable');
-				_Symbol.observable = result;
-			}
-		} else {
-			result = '@@observable';
-		}
-
-		return result;
-	};
-
-/***/ },
-/* 580 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-
-	exports.__esModule = true;
-	exports['default'] = combineReducers;
-
-	var _createStore = __webpack_require__(571);
-
-	var _isPlainObject = __webpack_require__(572);
-
-	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
-
-	var _warning = __webpack_require__(581);
-
-	var _warning2 = _interopRequireDefault(_warning);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function getUndefinedStateErrorMessage(key, action) {
-	  var actionType = action && action.type;
-	  var actionName = actionType && '"' + actionType.toString() + '"' || 'an action';
-
-	  return 'Given action ' + actionName + ', reducer "' + key + '" returned undefined. ' + 'To ignore an action, you must explicitly return the previous state.';
-	}
-
-	function getUnexpectedStateShapeWarningMessage(inputState, reducers, action, unexpectedKeyCache) {
-	  var reducerKeys = Object.keys(reducers);
-	  var argumentName = action && action.type === _createStore.ActionTypes.INIT ? 'preloadedState argument passed to createStore' : 'previous state received by the reducer';
-
-	  if (reducerKeys.length === 0) {
-	    return 'Store does not have a valid reducer. Make sure the argument passed ' + 'to combineReducers is an object whose values are reducers.';
-	  }
-
-	  if (!(0, _isPlainObject2['default'])(inputState)) {
-	    return 'The ' + argumentName + ' has unexpected type of "' + {}.toString.call(inputState).match(/\s([a-z|A-Z]+)/)[1] + '". Expected argument to be an object with the following ' + ('keys: "' + reducerKeys.join('", "') + '"');
-	  }
-
-	  var unexpectedKeys = Object.keys(inputState).filter(function (key) {
-	    return !reducers.hasOwnProperty(key) && !unexpectedKeyCache[key];
-	  });
-
-	  unexpectedKeys.forEach(function (key) {
-	    unexpectedKeyCache[key] = true;
-	  });
-
-	  if (unexpectedKeys.length > 0) {
-	    return 'Unexpected ' + (unexpectedKeys.length > 1 ? 'keys' : 'key') + ' ' + ('"' + unexpectedKeys.join('", "') + '" found in ' + argumentName + '. ') + 'Expected to find one of the known reducer keys instead: ' + ('"' + reducerKeys.join('", "') + '". Unexpected keys will be ignored.');
-	  }
-	}
-
-	function assertReducerSanity(reducers) {
-	  Object.keys(reducers).forEach(function (key) {
-	    var reducer = reducers[key];
-	    var initialState = reducer(undefined, { type: _createStore.ActionTypes.INIT });
-
-	    if (typeof initialState === 'undefined') {
-	      throw new Error('Reducer "' + key + '" returned undefined during initialization. ' + 'If the state passed to the reducer is undefined, you must ' + 'explicitly return the initial state. The initial state may ' + 'not be undefined.');
-	    }
-
-	    var type = '@@redux/PROBE_UNKNOWN_ACTION_' + Math.random().toString(36).substring(7).split('').join('.');
-	    if (typeof reducer(undefined, { type: type }) === 'undefined') {
-	      throw new Error('Reducer "' + key + '" returned undefined when probed with a random type. ' + ('Don\'t try to handle ' + _createStore.ActionTypes.INIT + ' or other actions in "redux/*" ') + 'namespace. They are considered private. Instead, you must return the ' + 'current state for any unknown actions, unless it is undefined, ' + 'in which case you must return the initial state, regardless of the ' + 'action type. The initial state may not be undefined.');
-	    }
-	  });
-	}
-
-	/**
-	 * Turns an object whose values are different reducer functions, into a single
-	 * reducer function. It will call every child reducer, and gather their results
-	 * into a single state object, whose keys correspond to the keys of the passed
-	 * reducer functions.
-	 *
-	 * @param {Object} reducers An object whose values correspond to different
-	 * reducer functions that need to be combined into one. One handy way to obtain
-	 * it is to use ES6 `import * as reducers` syntax. The reducers may never return
-	 * undefined for any action. Instead, they should return their initial state
-	 * if the state passed to them was undefined, and the current state for any
-	 * unrecognized action.
-	 *
-	 * @returns {Function} A reducer function that invokes every reducer inside the
-	 * passed object, and builds a state object with the same shape.
-	 */
-	function combineReducers(reducers) {
-	  var reducerKeys = Object.keys(reducers);
-	  var finalReducers = {};
-	  for (var i = 0; i < reducerKeys.length; i++) {
-	    var key = reducerKeys[i];
-
-	    if (process.env.NODE_ENV !== 'production') {
-	      if (typeof reducers[key] === 'undefined') {
-	        (0, _warning2['default'])('No reducer provided for key "' + key + '"');
-	      }
-	    }
-
-	    if (typeof reducers[key] === 'function') {
-	      finalReducers[key] = reducers[key];
-	    }
-	  }
-	  var finalReducerKeys = Object.keys(finalReducers);
-
-	  if (process.env.NODE_ENV !== 'production') {
-	    var unexpectedKeyCache = {};
-	  }
-
-	  var sanityError;
-	  try {
-	    assertReducerSanity(finalReducers);
-	  } catch (e) {
-	    sanityError = e;
-	  }
-
-	  return function combination() {
-	    var state = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-	    var action = arguments[1];
-
-	    if (sanityError) {
-	      throw sanityError;
-	    }
-
-	    if (process.env.NODE_ENV !== 'production') {
-	      var warningMessage = getUnexpectedStateShapeWarningMessage(state, finalReducers, action, unexpectedKeyCache);
-	      if (warningMessage) {
-	        (0, _warning2['default'])(warningMessage);
-	      }
-	    }
-
-	    var hasChanged = false;
-	    var nextState = {};
-	    for (var i = 0; i < finalReducerKeys.length; i++) {
-	      var key = finalReducerKeys[i];
-	      var reducer = finalReducers[key];
-	      var previousStateForKey = state[key];
-	      var nextStateForKey = reducer(previousStateForKey, action);
-	      if (typeof nextStateForKey === 'undefined') {
-	        var errorMessage = getUndefinedStateErrorMessage(key, action);
-	        throw new Error(errorMessage);
-	      }
-	      nextState[key] = nextStateForKey;
-	      hasChanged = hasChanged || nextStateForKey !== previousStateForKey;
-	    }
-	    return hasChanged ? nextState : state;
-	  };
-	}
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ },
-/* 581 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	exports.__esModule = true;
-	exports['default'] = warning;
-	/**
-	 * Prints a warning in the console if it exists.
-	 *
-	 * @param {String} message The warning message.
-	 * @returns {void}
-	 */
-	function warning(message) {
-	  /* eslint-disable no-console */
-	  if (typeof console !== 'undefined' && typeof console.error === 'function') {
-	    console.error(message);
-	  }
-	  /* eslint-enable no-console */
-	  try {
-	    // This error was thrown as a convenience so that if you enable
-	    // "break on all exceptions" in your console,
-	    // it would pause the execution at this line.
-	    throw new Error(message);
-	    /* eslint-disable no-empty */
-	  } catch (e) {}
-	  /* eslint-enable no-empty */
-	}
-
-/***/ },
-/* 582 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	exports.__esModule = true;
-	exports['default'] = bindActionCreators;
-	function bindActionCreator(actionCreator, dispatch) {
-	  return function () {
-	    return dispatch(actionCreator.apply(undefined, arguments));
-	  };
-	}
-
-	/**
-	 * Turns an object whose values are action creators, into an object with the
-	 * same keys, but with every function wrapped into a `dispatch` call so they
-	 * may be invoked directly. This is just a convenience method, as you can call
-	 * `store.dispatch(MyActionCreators.doSomething())` yourself just fine.
-	 *
-	 * For convenience, you can also pass a single function as the first argument,
-	 * and get a function in return.
-	 *
-	 * @param {Function|Object} actionCreators An object whose values are action
-	 * creator functions. One handy way to obtain it is to use ES6 `import * as`
-	 * syntax. You may also pass a single function.
-	 *
-	 * @param {Function} dispatch The `dispatch` function available on your Redux
-	 * store.
-	 *
-	 * @returns {Function|Object} The object mimicking the original object, but with
-	 * every action creator wrapped into the `dispatch` call. If you passed a
-	 * function as `actionCreators`, the return value will also be a single
-	 * function.
-	 */
-	function bindActionCreators(actionCreators, dispatch) {
-	  if (typeof actionCreators === 'function') {
-	    return bindActionCreator(actionCreators, dispatch);
-	  }
-
-	  if (typeof actionCreators !== 'object' || actionCreators === null) {
-	    throw new Error('bindActionCreators expected an object or a function, instead received ' + (actionCreators === null ? 'null' : typeof actionCreators) + '. ' + 'Did you write "import ActionCreators from" instead of "import * as ActionCreators from"?');
-	  }
-
-	  var keys = Object.keys(actionCreators);
-	  var boundActionCreators = {};
-	  for (var i = 0; i < keys.length; i++) {
-	    var key = keys[i];
-	    var actionCreator = actionCreators[key];
-	    if (typeof actionCreator === 'function') {
-	      boundActionCreators[key] = bindActionCreator(actionCreator, dispatch);
-	    }
-	  }
-	  return boundActionCreators;
-	}
-
-/***/ },
-/* 583 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	exports['default'] = applyMiddleware;
-
-	var _compose = __webpack_require__(584);
-
-	var _compose2 = _interopRequireDefault(_compose);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	/**
-	 * Creates a store enhancer that applies middleware to the dispatch method
-	 * of the Redux store. This is handy for a variety of tasks, such as expressing
-	 * asynchronous actions in a concise manner, or logging every action payload.
-	 *
-	 * See `redux-thunk` package as an example of the Redux middleware.
-	 *
-	 * Because middleware is potentially asynchronous, this should be the first
-	 * store enhancer in the composition chain.
-	 *
-	 * Note that each middleware will be given the `dispatch` and `getState` functions
-	 * as named arguments.
-	 *
-	 * @param {...Function} middlewares The middleware chain to be applied.
-	 * @returns {Function} A store enhancer applying the middleware.
-	 */
-	function applyMiddleware() {
-	  for (var _len = arguments.length, middlewares = Array(_len), _key = 0; _key < _len; _key++) {
-	    middlewares[_key] = arguments[_key];
-	  }
-
-	  return function (createStore) {
-	    return function (reducer, preloadedState, enhancer) {
-	      var store = createStore(reducer, preloadedState, enhancer);
-	      var _dispatch = store.dispatch;
-	      var chain = [];
-
-	      var middlewareAPI = {
-	        getState: store.getState,
-	        dispatch: function dispatch(action) {
-	          return _dispatch(action);
-	        }
-	      };
-	      chain = middlewares.map(function (middleware) {
-	        return middleware(middlewareAPI);
-	      });
-	      _dispatch = _compose2['default'].apply(undefined, chain)(store.dispatch);
-
-	      return _extends({}, store, {
-	        dispatch: _dispatch
-	      });
-	    };
-	  };
-	}
-
-/***/ },
-/* 584 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	exports.__esModule = true;
-	exports["default"] = compose;
-	/**
-	 * Composes single-argument functions from right to left. The rightmost
-	 * function can take multiple arguments as it provides the signature for
-	 * the resulting composite function.
-	 *
-	 * @param {...Function} funcs The functions to compose.
-	 * @returns {Function} A function obtained by composing the argument functions
-	 * from right to left. For example, compose(f, g, h) is identical to doing
-	 * (...args) => f(g(h(...args))).
-	 */
-
-	function compose() {
-	  for (var _len = arguments.length, funcs = Array(_len), _key = 0; _key < _len; _key++) {
-	    funcs[_key] = arguments[_key];
-	  }
-
-	  if (funcs.length === 0) {
-	    return function (arg) {
-	      return arg;
-	    };
-	  }
-
-	  if (funcs.length === 1) {
-	    return funcs[0];
-	  }
-
-	  var last = funcs[funcs.length - 1];
-	  var rest = funcs.slice(0, -1);
-	  return function () {
-	    return rest.reduceRight(function (composed, f) {
-	      return f(composed);
-	    }, last.apply(undefined, arguments));
-	  };
-	}
-
-/***/ },
-/* 585 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.addPagination = addPagination;
-	exports.setNewFilter = setNewFilter;
-	exports.setFilter = setFilter;
-	exports.clearFilter = clearFilter;
-	exports.changeOffset = changeOffset;
-	exports.setAmountOfRows = setAmountOfRows;
-	exports.resetPagination = resetPagination;
-	exports.resetContextPagination = resetContextPagination;
-	function addPagination(paginations) {
-	  return {
-	    type: 'ADD_PAGINATION',
-	    paginations: paginations
-	  };
-	}
-
-	function setNewFilter(pagination, number, new_filter) {
-	  return {
-	    type: 'SET_NEWFILTER',
-	    pagination: pagination,
-	    number: number,
-	    new_filter: new_filter
-	  };
-	}
-
-	function setFilter(pagination, number) {
-	  return {
-	    type: 'SET_FILTER',
-	    pagination: pagination,
-	    number: number
-	  };
-	}
-
-	function clearFilter(pagination, number) {
-	  return {
-	    type: 'CLEAR_FILTER',
-	    pagination: pagination,
-	    number: number
-	  };
-	}
-
-	function changeOffset(pagination, page) {
-	  return {
-	    type: 'CHANGE_OFFSET',
-	    pagination: pagination,
-	    page: page
-	  };
-	}
-
-	function setAmountOfRows(pagination, amount) {
-	  return {
-	    type: 'SET_AMOUNT_OF_ROWS',
-	    pagination: pagination,
-	    amount: amount
-	  };
-	}
-
-	function resetPagination() {
-	  return {
-	    type: 'RESET_PAGINATION'
-	  };
-	}
-
-	function resetContextPagination() {
-	  return {
-	    type: 'RESET_CONTEXT_PAGINATION'
-	  };
-	}
-
-/***/ },
-/* 586 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	var paginations = ['links', 'pictures', 'files', 'organisations', 'picture_links', 'file_links', 'organisation_pictures', 'organisation_links'];
-
-	var context_paginations = ['picture_links', 'file_links', 'organisation_pictures', 'organisation_links'];
-
-	function r_pagination() {
-	  var state = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-	  var action = arguments[1];
-
-	  switch (action.type) {
-	    // Check if action dispatched is
-	    // CREATE_BOOK and act on that
-	    case 'ADD_PAGINATION':
-	      return Object.assign({}, state, {
-	        paginations: action.paginations
-	      });
-	    case 'SET_NEWFILTER':
-	      var _state = state;
-	      console.log(action.new_filter);
-	      _state.paginations[action.pagination].new_filters[action.number] = action.new_filter;
-	      return Object.assign({}, state, {
-	        paginations: _state.paginations
-	      });
-	    case 'SET_FILTER':
-	      var _state = state;
-	      _state.paginations[action.pagination].offset = 0;
-	      _state.paginations[action.pagination].active_page = 1;
-	      _state.paginations[action.pagination].filters[action.number] = _state.paginations[action.pagination].new_filters[action.number];
-	      return Object.assign({}, state, {
-	        paginations: _state.paginations
-	      });
-	    case 'CLEAR_FILTER':
-	      var _state = state;
-
-	      _state.paginations[action.pagination].offset = 0;
-	      _state.paginations[action.pagination].active_page = 1;
-	      _state.paginations[action.pagination].new_filters[action.number] = '';
-	      _state.paginations[action.pagination].filters[action.number] = '';
-
-	      return Object.assign({}, state, {
-	        paginations: _state.paginations
-	      });
-	    case 'CHANGE_OFFSET':
-	      var _state = state;
-	      _state.paginations[action.pagination].active_page = action.page;
-	      _state.paginations[action.pagination].offset = (action.page - 1) * _state.paginations[action.pagination].limit;
-	      return Object.assign({}, state, {
-	        paginations: _state.paginations
-	      });
-	    case 'SET_AMOUNT_OF_ROWS':
-	      var _state = state;
-	      _state.paginations[action.pagination].total_rows = parseInt(action.amount);
-	      _state.paginations[action.pagination].max_page = Math.floor(parseInt(action.amount) / _state.paginations[action.pagination].limit);
-	      return Object.assign({}, state, {
-	        paginations: _state.paginations
-	      });
-	    case 'RESET_PAGINATION':
-	      console.log("test");
-	      var _state = state;
-
-	      for (var elem in paginations) {
-	        _state.paginations[paginations[elem]].offset = _state.paginations[paginations[elem]].initial_offset;
-	        _state.paginations[paginations[elem]].active_page = 1;
-	        _state.paginations[paginations[elem]].filters = _state.paginations[paginations[elem]].initial_filters;
-	      }
-	    case 'RESET_CONTEXT_PAGINATION':
-	      var _state = state;
-
-	      for (var elem in context_paginations) {
-	        console.log("clear:" + elem);
-	        _state.paginations[paginations[elem]].offset = _state.paginations[paginations[elem]].initial_offset;
-	        _state.paginations[paginations[elem]].active_page = 1;
-	        _state.paginations[paginations[elem]].filters = _state.paginations[paginations[elem]].initial_filters;
-	      }
-
-	      return Object.assign({}, state, {
-	        paginations: _state.paginations
-	      });
-	    default:
-	      return state;
-	  }
-	};
-
-	exports.r_pagination = r_pagination;
-
-/***/ },
-/* 587 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.pagination_store = undefined;
-
-	var _redux = __webpack_require__(570);
-
-	var _pagination_actions = __webpack_require__(585);
-
-	var _pagination_reducers = __webpack_require__(586);
-
-	var pagination_store = (0, _redux.createStore)(_pagination_reducers.r_pagination);
-
-	pagination_store.dispatch((0, _pagination_actions.addPagination)({
-	  'links': {
-	    initial_offset: 0,
-	    initial_limit: 2,
-	    initial_filters: ['', ''],
-	    filter_columns: ["Name", "URL"],
-	    offset: 0,
-	    limit: 2,
-	    new_filters: ['', ''],
-	    filters: ['', ''],
-	    active_page: 1,
-	    max_page: 1,
-	    total_rows: 0
-	  },
-	  'pictures': {
-	    initial_offset: 0,
-	    initial_limit: 2,
-	    initial_filters: [''],
-	    filter_columns: ["Name"],
-	    offset: 0,
-	    limit: 2,
-	    new_filters: [''],
-	    filters: [''],
-	    active_page: 1,
-	    max_page: 1,
-	    total_rows: 0
-	  },
-	  'files': {
-	    initial_offset: 0,
-	    initial_limit: 2,
-	    initial_filters: [''],
-	    filter_columns: ["Name"],
-	    offset: 0,
-	    limit: 2,
-	    new_filters: [''],
-	    filters: [''],
-	    active_page: 1,
-	    max_page: 1,
-	    total_rows: 0
-	  },
-	  'organisations': {
-	    initial_offset: 0,
-	    initial_limit: 2,
-	    initial_filters: [''],
-	    filter_columns: ["Name"],
-	    offset: 0,
-	    limit: 2,
-	    new_filters: [''],
-	    filters: [''],
-	    active_page: 1,
-	    max_page: 1,
-	    total_rows: 0
-	  },
-	  'picture_links': {
-	    initial_offset: 0,
-	    initial_limit: 2,
-	    initial_filters: [''],
-	    filter_columns: ["Name", "URL"],
-	    offset: 0,
-	    limit: 2,
-	    new_filters: ['', ''],
-	    filters: ['', ''],
-	    active_page: 1,
-	    max_page: 1,
-	    total_rows: 0
-	  },
-	  'file_links': {
-	    initial_offset: 0,
-	    initial_limit: 2,
-	    initial_filters: [''],
-	    filter_columns: ["Name", "URL"],
-	    offset: 0,
-	    limit: 2,
-	    new_filters: ['', ''],
-	    filters: ['', ''],
-	    active_page: 1,
-	    max_page: 1,
-	    total_rows: 0
-	  },
-	  'organisation_links': {
-	    initial_offset: 0,
-	    initial_limit: 2,
-	    initial_filters: [''],
-	    filter_columns: ["Name", "URL"],
-	    offset: 0,
-	    limit: 2,
-	    new_filters: ['', ''],
-	    filters: ['', ''],
-	    active_page: 1,
-	    max_page: 1,
-	    total_rows: 0
-	  },
-	  'organisation_pictures': {
-	    initial_offset: 0,
-	    initial_limit: 2,
-	    initial_filters: [''],
-	    filter_columns: ["Name", ""],
-	    offset: 0,
-	    limit: 2,
-	    new_filters: ['', ''],
-	    filters: ['', ''],
-	    active_page: 1,
-	    max_page: 1,
-	    total_rows: 0
-	  }
-	}));
-
-	exports.pagination_store = pagination_store;
-
-/***/ },
-/* 588 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.ListColumn = undefined;
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	var _redux = __webpack_require__(570);
-
-	var _pagination_actions = __webpack_require__(585);
-
-	var _pagination_reducers = __webpack_require__(586);
-
-	var _pagination_store = __webpack_require__(587);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	// ListColumn
-	// =============================================================================
-	// React component to display a link a object list
-	// *****************************************************************************
-	// Author: thorsten.butschke@googlemail.com
-	// *****************************************************************************
-	// Interface
-	// *****************************************************************************
-	// input (props)
-	// -----
-	// display_name         the name of the column
-	// column_number        the number of the column in the list
-	// update_data          call function to reload parent data
-	//
-	// Model (state)
-	// *****************************************************************************
-	// new_filter           the text that is entered in the search field. This text
-	//                      becomes the real filter after pressing the search button
-	//
-	// Functions
-	// *****************************************************************************
-	// onNewFilterChange    callback when a character is typed
-	// onFilterChange       the filter becomes the text in the search field
-	// onFilterClear        clear the filter as well as the search field
-	//
-	// Versions
-	// *****************************************************************************
-	// 1.0 Initial redesign
-	// =============================================================================
-
-	var ListColumn = function (_React$Component) {
-	  _inherits(ListColumn, _React$Component);
-
-	  function ListColumn(props) {
-	    _classCallCheck(this, ListColumn);
-
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ListColumn).call(this, props));
-
-	    _this.state = {
-	      new_filter: ''
-	    };
-	    return _this;
-	  }
-
-	  _createClass(ListColumn, [{
-	    key: 'onNewFilterChange',
-	    value: function onNewFilterChange(e) {
-	      console.log("1");
-	      this.setState({ new_filter: e.target.value });
-	      _pagination_store.pagination_store.dispatch((0, _pagination_actions.setNewFilter)(this.props.object_type, this.props.column_number, e.target.value));
-	    }
-	  }, {
-	    key: 'onFilterChange',
-	    value: function onFilterChange(e) {
-	      console.log("2:" + this.props.object_type);
-	      _pagination_store.pagination_store.dispatch((0, _pagination_actions.setFilter)(this.props.object_type, this.props.column_number));
-	      this.props.update_data();
-	    }
-	  }, {
-	    key: 'onFilterClear',
-	    value: function onFilterClear(e) {
-	      console.log("3");
-	      this.setState({ new_filter: '' });
-	      _pagination_store.pagination_store.dispatch((0, _pagination_actions.clearFilter)(this.props.object_type, this.props.column_number));
-	      this.props.update_data();
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'th',
-	        null,
-	        _react2.default.createElement(
-	          'table',
-	          { width: '300px' },
-	          _react2.default.createElement(
-	            'tbody',
-	            null,
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                this.props.display_name
-	              ),
-	              _react2.default.createElement('td', { width: '4px' }),
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Search for', onChange: this.onNewFilterChange.bind(this), value: this.state.new_filter })
-	              ),
-	              _react2.default.createElement('td', { width: '4px' }),
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement(
-	                  _reactBootstrap.Button,
-	                  { onClick: this.onFilterChange.bind(this) },
-	                  _react2.default.createElement('img', { src: 'media/gfx/search.png' })
-	                )
-	              ),
-	              _react2.default.createElement('td', { width: '4px' }),
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement(
-	                  _reactBootstrap.Button,
-	                  { onClick: this.onFilterClear.bind(this) },
-	                  _react2.default.createElement('img', { src: 'media/gfx/clear_filter.png' })
-	                )
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return ListColumn;
-	}(_react2.default.Component);
-
-	exports.ListColumn = ListColumn;
-
-/***/ },
 /* 589 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.buildConditionFromFilters = buildConditionFromFilters;
-	function buildConditionFromFilters(_filters, _filter_columns) {
-	  var _condition = '';
-	  var _counter = 0;
-
-	  for (var _filter in _filters) {
-	    var _operator = 'where';
-	    if (_counter > 0) {
-	      _operator = 'and';
-	    }
-	    var _column = _filter_columns[_counter];
-	    var _value = "'°" + _filters[_filter] + "°'";
-
-	    _condition += _operator + "|" + _column + "|like|" + _value;
-
-	    if (_counter < _filters.length - 1) {
-	      _condition += ";";
-	    }
-
-	    _counter += 1;
-	  }
-
-	  if (_counter != 0) {
-	    _condition = "&filter=" + _condition;
-	  }
-	  return _condition;
-	}
-
-/***/ },
-/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64875,25 +64683,25 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _Organisation = __webpack_require__(591);
+	var _Organisation = __webpack_require__(590);
 
-	var _ObjectList = __webpack_require__(569);
+	var _ObjectList = __webpack_require__(545);
 
-	var _ListColumn = __webpack_require__(588);
+	var _ListColumn = __webpack_require__(564);
 
-	var _filter_utils = __webpack_require__(589);
+	var _filter_utils = __webpack_require__(565);
 
 	var _sprintf = __webpack_require__(490);
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _redux = __webpack_require__(570);
+	var _redux = __webpack_require__(546);
 
-	var _pagination_actions = __webpack_require__(585);
+	var _pagination_actions = __webpack_require__(561);
 
-	var _pagination_reducers = __webpack_require__(586);
+	var _pagination_reducers = __webpack_require__(562);
 
-	var _pagination_store = __webpack_require__(587);
+	var _pagination_store = __webpack_require__(563);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -64946,14 +64754,14 @@
 	      var items = this.state.data;
 
 	      for (var i = 0; i < items.length; i++) {
-	        output.push(_react2.default.createElement(_Organisation.Organisation, { key: i, data: items[i], update_parent_data: this.load_data.bind(this) }));
+	        output.push(_react2.default.createElement(_Organisation.Organisation, { key: i, data: items[i], doParentReload: this.load_data.bind(this) }));
 	      }
 	      return output;
 	    }
 	  }, {
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(nextProps) {
-	      if (nextProps.params != undefined && nextProps.params.redraw == 1) {
+	      if (nextProps.params != undefined && nextProps.params.reload == 1) {
 	        _pagination_store.pagination_store.dispatch((0, _pagination_actions.resetPagination)(this.object_type));
 	        this.load_data();
 	      }
@@ -64961,7 +64769,7 @@
 	  }, {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      if (this.props.params != undefined && this.props.params.redraw == 1) {
+	      if (this.props.params != undefined && this.props.params.reload == 1) {
 	        _pagination_store.pagination_store.dispatch((0, _pagination_actions.resetPagination)(this.object_type));
 	      }
 	      this.load_data();
@@ -64996,7 +64804,7 @@
 	exports.default = ListOrganisations;
 
 /***/ },
-/* 591 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65041,7 +64849,7 @@
 	// data                 the attributes from the parent
 	// -Name                the name of the organisation
 	// -uid                 the UID of the organisation. Used to delete it
-	// -update_parent_data  call function to load organisations in the parent component
+	// doParentReload       call function to load organisations in the parent component
 	//
 	// Model (state)
 	// *****************************************************************************
@@ -65067,13 +64875,14 @@
 	  _createClass(Organisation, [{
 	    key: 'handleDelete',
 	    value: function handleDelete() {
+	      console.log("delete");
 	      $.ajax({
 	        url: "http://localhost:3300/api/db/KOrganisation/" + this.props.data.UID,
 	        dataType: 'json',
 	        type: 'DELETE',
 	        cache: false,
 	        success: function (data) {
-	          this.props.update_parent_data();
+	          this.props.doParentReload();
 	        }.bind(this),
 	        error: function (xhr, status, err) {
 	          console.error("Organisation 1", status, err.toString());
@@ -65113,7 +64922,7 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 592 */
+/* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65294,7 +65103,7 @@
 	exports.default = AddPicture;
 
 /***/ },
-/* 593 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65315,7 +65124,7 @@
 
 	var _PictureProperties = __webpack_require__(497);
 
-	var _PagedMediaTable = __webpack_require__(565);
+	var _PagedMediaTable = __webpack_require__(495);
 
 	var _sprintf = __webpack_require__(490);
 
@@ -65522,10 +65331,10 @@
 	              _reactBootstrap.Tab,
 	              { eventKey: 3, title: 'Links' },
 	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(_PagedMediaTable.PagedMediaTable2, {
+	              _react2.default.createElement(_PagedMediaTable.PagedMediaTable, {
 	                object_type: 'picture_links',
 	                uid_object: this.props.params.uid.toString(),
-	                row_type: 'URLLink',
+	                row_type: 'ContextLink',
 	                view_name: 'KLinksOfObject',
 	                tagged_component: 'TaggedLink',
 	                object_filter: '0009',
@@ -65545,7 +65354,7 @@
 	exports.default = EditPicture;
 
 /***/ },
-/* 594 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65564,25 +65373,25 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _Picture = __webpack_require__(595);
+	var _Picture = __webpack_require__(594);
 
-	var _ObjectList = __webpack_require__(569);
+	var _ObjectList = __webpack_require__(545);
 
-	var _ListColumn = __webpack_require__(588);
+	var _ListColumn = __webpack_require__(564);
 
-	var _filter_utils = __webpack_require__(589);
+	var _filter_utils = __webpack_require__(565);
 
 	var _sprintf = __webpack_require__(490);
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _redux = __webpack_require__(570);
+	var _redux = __webpack_require__(546);
 
-	var _pagination_actions = __webpack_require__(585);
+	var _pagination_actions = __webpack_require__(561);
 
-	var _pagination_reducers = __webpack_require__(586);
+	var _pagination_reducers = __webpack_require__(562);
 
-	var _pagination_store = __webpack_require__(587);
+	var _pagination_store = __webpack_require__(563);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -65635,14 +65444,14 @@
 	      var items = this.state.data;
 
 	      for (var i = 0; i < items.length; i++) {
-	        output.push(_react2.default.createElement(_Picture.Picture, { key: i, data: items[i], update_parent_data: this.load_data.bind(this) }));
+	        output.push(_react2.default.createElement(_Picture.Picture, { key: i, data: items[i], doParentReload: this.load_data.bind(this) }));
 	      }
 	      return output;
 	    }
 	  }, {
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(nextProps) {
-	      if (nextProps.params != undefined && nextProps.params.redraw == 1) {
+	      if (nextProps.params != undefined && nextProps.params.reload == 1) {
 	        _pagination_store.pagination_store.dispatch((0, _pagination_actions.resetPagination)(this.object_type));
 	        this.load_data();
 	      }
@@ -65650,7 +65459,7 @@
 	  }, {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      if (this.props.params != undefined && this.props.params.redraw == 1) {
+	      if (this.props.params != undefined && this.props.params.reload == 1) {
 	        _pagination_store.pagination_store.dispatch((0, _pagination_actions.resetPagination)(this.object_type));
 	      }
 	      this.load_data();
@@ -65702,7 +65511,7 @@
 	exports.default = ListPictures;
 
 /***/ },
-/* 595 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65748,7 +65557,7 @@
 	// -Name                the name of the picture
 	// -uid                 the UID of the picture. Used to delete it
 	// -FileUUID            UUID of the picture
-	// -update_parent_data  call function to load pictures in the parent component
+	// doParentReload       call function to load pictures in the parent component
 	//
 	// Model (state)
 	// *****************************************************************************
@@ -65780,7 +65589,7 @@
 	        type: 'DELETE',
 	        cache: false,
 	        success: function (data) {
-	          this.props.update_parent_data();
+	          this.props.doParentReload();
 	        }.bind(this),
 	        error: function (xhr, status, err) {
 	          console.error("Picture 1", status, err.toString());
@@ -65825,7 +65634,7 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 596 */
+/* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65985,7 +65794,7 @@
 	exports.default = AddLink;
 
 /***/ },
-/* 597 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66013,9 +65822,9 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _kpagination = __webpack_require__(598);
+	var _kpagination = __webpack_require__(597);
 
-	var _ListLinks = __webpack_require__(599);
+	var _ListLinks = __webpack_require__(598);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -66201,7 +66010,7 @@
 	exports.default = EditLink;
 
 /***/ },
-/* 598 */
+/* 597 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -66336,7 +66145,7 @@
 	exports.kpagination = kpagination;
 
 /***/ },
-/* 599 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66355,25 +66164,25 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _URLLink = __webpack_require__(541);
+	var _URLLink = __webpack_require__(599);
 
-	var _ObjectList = __webpack_require__(569);
+	var _ObjectList = __webpack_require__(545);
 
-	var _ListColumn = __webpack_require__(588);
+	var _ListColumn = __webpack_require__(564);
 
-	var _filter_utils = __webpack_require__(589);
+	var _filter_utils = __webpack_require__(565);
 
 	var _sprintf = __webpack_require__(490);
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _redux = __webpack_require__(570);
+	var _redux = __webpack_require__(546);
 
-	var _pagination_actions = __webpack_require__(585);
+	var _pagination_actions = __webpack_require__(561);
 
-	var _pagination_reducers = __webpack_require__(586);
+	var _pagination_reducers = __webpack_require__(562);
 
-	var _pagination_store = __webpack_require__(587);
+	var _pagination_store = __webpack_require__(563);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -66426,14 +66235,14 @@
 	      var items = this.state.data;
 
 	      for (var i = 0; i < items.length; i++) {
-	        output.push(_react2.default.createElement(_URLLink.URLLink, { key: i, data: items[i], table: 'KLink', update_parent_data: this.load_data.bind(this) }));
+	        output.push(_react2.default.createElement(_URLLink.URLLink, { key: i, data: items[i], table: 'KLink', doParentReload: this.load_data.bind(this) }));
 	      }
 	      return output;
 	    }
 	  }, {
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(nextProps) {
-	      if (nextProps.params != undefined && nextProps.params.redraw == 1) {
+	      if (nextProps.params != undefined && nextProps.params.reload == 1) {
 	        _pagination_store.pagination_store.dispatch((0, _pagination_actions.resetPagination)(this.object_type));
 	        this.load_data();
 	      }
@@ -66441,7 +66250,7 @@
 	  }, {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      if (this.props.params != undefined && this.props.params.redraw == 1) {
+	      if (this.props.params != undefined && this.props.params.reload == 1) {
 	        _pagination_store.pagination_store.dispatch((0, _pagination_actions.resetPagination)(this.object_type));
 	      }
 	      this.load_data();
@@ -66477,6 +66286,135 @@
 	exports.default = ListLinks;
 
 /***/ },
+/* 599 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.URLLink = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	var _reactBootstrap = __webpack_require__(237);
+
+	var _sprintf = __webpack_require__(490);
+
+	var _sprintf2 = _interopRequireDefault(_sprintf);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// URLLink
+	// =============================================================================
+	// React component to display a link in a object list
+	// *****************************************************************************
+	// Author: thorsten.butschke@googlemail.com
+	// *****************************************************************************
+	// Interface
+	// *****************************************************************************
+	// input (props)
+	// -----
+	// table                table to sarch the link in
+	// data                 the attributes from the parent
+	// -Name                the name of the link
+	// -URL                 the link URL
+	// -UID                 the UID of the link. Used to delete it
+	// doParentReload       call function to load links in the parent component
+	//
+	// Model (state)
+	// *****************************************************************************
+	//
+	// Functions
+	// *****************************************************************************
+	// handleDelete         deletes a link
+	//
+	// Versions
+	// *****************************************************************************
+	// 1.0 Initial redesign
+	// =============================================================================
+
+	var URLLink = exports.URLLink = function (_React$Component) {
+	  _inherits(URLLink, _React$Component);
+
+	  function URLLink(props) {
+	    _classCallCheck(this, URLLink);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(URLLink).call(this, props));
+	  }
+
+	  _createClass(URLLink, [{
+	    key: 'handleDelete',
+	    value: function handleDelete() {
+	      $.ajax({
+	        url: (0, _sprintf2.default)("http://localhost:3300/api/db/KLink/%s", this.props.data.UID),
+	        dataType: 'json',
+	        type: 'DELETE',
+	        cache: false,
+	        success: function (data) {
+	          this.props.doParentReload();
+	        }.bind(this),
+	        error: function (xhr, status, err) {
+	          console.error("URLLink 1", status, err.toString());
+	        }.bind(this)
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'tr',
+	        { className: 'link' },
+	        _react2.default.createElement(
+	          'td',
+	          { className: 'border' },
+	          _react2.default.createElement(
+	            _reactBootstrap.Button,
+	            { bsStyle: 'danger', onClick: this.handleDelete.bind(this) },
+	            _react2.default.createElement('img', { src: 'media/gfx/delete.png' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'td',
+	          { className: 'border' },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "/EditLink/" + this.props.data.UID },
+	            ' ',
+	            this.props.data.Name
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'td',
+	          { className: 'border' },
+	          _react2.default.createElement(
+	            'a',
+	            { target: '_blank', href: this.props.data.URL },
+	            ' ',
+	            this.props.data.URL
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return URLLink;
+	}(_react2.default.Component);
+
+/***/ },
 /* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -66496,7 +66434,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _FileProperties = __webpack_require__(567);
+	var _FileProperties = __webpack_require__(541);
 
 	var _sprintf = __webpack_require__(490);
 
@@ -66661,9 +66599,9 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _FileProperties = __webpack_require__(567);
+	var _FileProperties = __webpack_require__(541);
 
-	var _PagedMediaTable = __webpack_require__(565);
+	var _PagedMediaTable = __webpack_require__(495);
 
 	var _sprintf = __webpack_require__(490);
 
@@ -66853,10 +66791,11 @@
 	              _reactBootstrap.Tab,
 	              { eventKey: 2, title: 'Links' },
 	              _react2.default.createElement('br', null),
-	              _react2.default.createElement(_PagedMediaTable.PagedMediaTable2, {
+	              _react2.default.createElement(_PagedMediaTable.PagedMediaTable, {
 	                object_type: 'file_links',
 	                uid_object: this.props.params.uid.toString(),
-	                row_type: 'URLLink',
+	                table: 'K',
+	                row_type: 'ContextLink',
 	                view_name: 'KLinksOfObject',
 	                tagged_component: 'TaggedLink',
 	                object_filter: '0002',
@@ -66897,23 +66836,23 @@
 
 	var _File = __webpack_require__(603);
 
-	var _ObjectList = __webpack_require__(569);
+	var _ObjectList = __webpack_require__(545);
 
-	var _ListColumn = __webpack_require__(588);
+	var _ListColumn = __webpack_require__(564);
 
-	var _filter_utils = __webpack_require__(589);
+	var _filter_utils = __webpack_require__(565);
 
 	var _sprintf = __webpack_require__(490);
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _redux = __webpack_require__(570);
+	var _redux = __webpack_require__(546);
 
-	var _pagination_actions = __webpack_require__(585);
+	var _pagination_actions = __webpack_require__(561);
 
-	var _pagination_reducers = __webpack_require__(586);
+	var _pagination_reducers = __webpack_require__(562);
 
-	var _pagination_store = __webpack_require__(587);
+	var _pagination_store = __webpack_require__(563);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -66966,14 +66905,14 @@
 	      var items = this.state.data;
 
 	      for (var i = 0; i < items.length; i++) {
-	        output.push(_react2.default.createElement(_File.File, { key: i, data: items[i], update_parent_data: this.load_data.bind(this) }));
+	        output.push(_react2.default.createElement(_File.File, { key: i, data: items[i], doParentReload: this.load_data.bind(this) }));
 	      }
 	      return output;
 	    }
 	  }, {
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(nextProps) {
-	      if (nextProps.params != undefined && nextProps.params.redraw == 1) {
+	      if (nextProps.params != undefined && nextProps.params.reload == 1) {
 	        _pagination_store.pagination_store.dispatch((0, _pagination_actions.resetPagination)(this.object_type));
 	        this.load_data();
 	      }
@@ -66981,7 +66920,7 @@
 	  }, {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      if (this.props.params != undefined && this.props.params.redraw == 1) {
+	      if (this.props.params != undefined && this.props.params.reload == 1) {
 	        _pagination_store.pagination_store.dispatch((0, _pagination_actions.resetPagination)(this.object_type));
 	      }
 	      this.load_data();
@@ -67003,24 +66942,7 @@
 	              object_type: this.object_type,
 	              update_data: this.load_data.bind(this)
 	            },
-	            _react2.default.createElement(_ListColumn.ListColumn, { object_type: 'files', column_number: 0, display_name: 'Name', update_data: this.load_data.bind(this) }),
-	            _react2.default.createElement(
-	              'th',
-	              null,
-	              _react2.default.createElement(
-	                'table',
-	                { width: '500px' },
-	                _react2.default.createElement(
-	                  'tbody',
-	                  null,
-	                  _react2.default.createElement(
-	                    'tr',
-	                    null,
-	                    _react2.default.createElement('td', null)
-	                  )
-	                )
-	              )
-	            )
+	            _react2.default.createElement(_ListColumn.ListColumn, { object_type: 'files', column_number: 0, display_name: 'Name', update_data: this.load_data.bind(this) })
 	          )
 	        )
 	      );
@@ -67079,7 +67001,7 @@
 	// -Name                the name of the file
 	// -uid                 the UID of the file. Used to delete it
 	// -FileUUID            UUID of the file
-	// -update_parent_data  call function to load files in the parent component
+	// -doParentReload  call function to load files in the parent component
 	//
 	// Model (state)
 	// *****************************************************************************
@@ -67111,7 +67033,7 @@
 	        type: 'DELETE',
 	        cache: false,
 	        success: function (data) {
-	          this.props.update_parent_data();
+	          this.props.doParentReload();
 	        }.bind(this),
 	        error: function (xhr, status, err) {
 	          console.error("File 1", status, err.toString());
@@ -67142,11 +67064,6 @@
 	            ' ',
 	            this.props.data.Name
 	          )
-	        ),
-	        _react2.default.createElement(
-	          'td',
-	          { width: '100%', className: 'border' },
-	          this.props.data.FileUUID != null && this.props.data.FileUUID != '' ? _react2.default.createElement(_reactBootstrap.Thumbnail, { key: 'b', src: this.props.data.FileUUID != '' ? "http://localhost:3300/uploads/" + this.props.data.FileUUID : null }) : null
 	        )
 	      );
 	    }
@@ -67181,7 +67098,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListTags = __webpack_require__(544);
+	var _ListTags = __webpack_require__(568);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -67298,7 +67215,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(555);
+	var _superagent = __webpack_require__(579);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -67310,7 +67227,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListTags = __webpack_require__(544);
+	var _ListTags = __webpack_require__(568);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -67451,7 +67368,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListTag_categorys = __webpack_require__(545);
+	var _ListTag_categorys = __webpack_require__(569);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -67585,7 +67502,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(555);
+	var _superagent = __webpack_require__(579);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -67597,7 +67514,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListTag_categorys = __webpack_require__(545);
+	var _ListTag_categorys = __webpack_require__(569);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -67755,7 +67672,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListGame_files = __webpack_require__(549);
+	var _ListGame_files = __webpack_require__(573);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -67872,7 +67789,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(555);
+	var _superagent = __webpack_require__(579);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -67884,7 +67801,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListGame_files = __webpack_require__(549);
+	var _ListGame_files = __webpack_require__(573);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68029,7 +67946,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListEngine_files = __webpack_require__(548);
+	var _ListEngine_files = __webpack_require__(572);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68146,7 +68063,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(555);
+	var _superagent = __webpack_require__(579);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -68158,7 +68075,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListEngine_files = __webpack_require__(548);
+	var _ListEngine_files = __webpack_require__(572);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68299,7 +68216,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListGames = __webpack_require__(550);
+	var _ListGames = __webpack_require__(574);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68416,7 +68333,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(555);
+	var _superagent = __webpack_require__(579);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -68432,7 +68349,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListGames = __webpack_require__(550);
+	var _ListGames = __webpack_require__(574);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

@@ -18,7 +18,7 @@ import vsprintf from 'sprintf'
 // data                 the attributes from the parent
 // -Name                the name of the organisation
 // -uid                 the UID of the organisation. Used to delete it
-// -update_parent_data  call function to load organisations in the parent component
+// doParentReload       call function to load organisations in the parent component
 //
 // Model (state)
 // *****************************************************************************
@@ -38,13 +38,14 @@ export class Organisation extends React.Component {
   }
 
   handleDelete() {
+    console.log("delete")
     $.ajax({
       url: "http://localhost:3300/api/db/KOrganisation/" + this.props.data.UID,
       dataType: 'json',
       type: 'DELETE',
       cache: false,
       success: function(data) {
-        this.props.update_parent_data();
+        this.props.doParentReload();
       }.bind(this),
       error: function(xhr, status, err) {
         console.error("Organisation 1", status, err.toString());

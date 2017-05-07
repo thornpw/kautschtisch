@@ -50,19 +50,16 @@ class ListColumn extends React.Component {
   }
 
   onNewFilterChange(e) {
-    console.log("1")
     this.setState({new_filter: e.target.value})
     pagination_store.dispatch(setNewFilter(this.props.object_type,this.props.column_number,e.target.value))
   }
 
   onFilterChange(e) {
-    console.log("2:"+this.props.object_type)
     pagination_store.dispatch(setFilter(this.props.object_type,this.props.column_number))
     this.props.update_data()
   }
 
   onFilterClear(e) {
-        console.log("3")
     this.setState({new_filter: ''})
     pagination_store.dispatch(clearFilter(this.props.object_type,this.props.column_number))
     this.props.update_data()

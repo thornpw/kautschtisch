@@ -50,20 +50,20 @@ class ListLinks extends React.Component {
     var items = this.state.data
 
     for(var i = 0; i < items.length; i++) {
-      output.push(<URLLink key={i} data={items[i]} table ="KLink" update_parent_data={this.load_data.bind(this)}/>)
+      output.push(<URLLink key={i} data={items[i]} table ="KLink" doParentReload={this.load_data.bind(this)}/>)
     }
     return output
   }
 
   componentWillReceiveProps(nextProps) {
-    if(nextProps.params != undefined && nextProps.params.redraw == 1) {
+    if(nextProps.params != undefined && nextProps.params.reload == 1) {
       pagination_store.dispatch(resetPagination(this.object_type))
       this.load_data()
     }
   }
 
   componentDidMount() {
-    if(this.props.params != undefined && this.props.params.redraw == 1) {
+    if(this.props.params != undefined && this.props.params.reload == 1) {
       pagination_store.dispatch(resetPagination(this.object_type))
     }
     this.load_data()

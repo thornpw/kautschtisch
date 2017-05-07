@@ -16,7 +16,7 @@ import vsprintf from 'sprintf'
 // *****************************************************************************
 // input (props)
 // -----
-// doParentReadraw      redraw the parent
+// doParentReload       reload the parent data
 // data                 the attributes from the parent
 // -FileUUID            the UUID of the file
 // -MediaUID            the uid of the file. Used to link to the edit page
@@ -46,7 +46,7 @@ export class ContextFile extends React.Component {
       type: 'DELETE',
       cache: false,
       success: function(data) {
-        this.props.doParentRedraw()
+        this.props.doParentReload()
       }.bind(this),
       error: function(xhr, status, err) {
         console.error("ContextPile 1", status, err.toString());
@@ -60,12 +60,11 @@ export class ContextFile extends React.Component {
         <td className="border">
           <Button bsStyle="danger" onClick={this.handleDelete.bind(this)}><img src="media/gfx/delete.png"/></Button>
         </td>
-        <td width="100%" className="border">
-          {
-            this.props.data.FileUUID != null && this.props.data.FileUUID != '' ?
-              <Thumbnail key="b" src={this.props.data.FileUUID != '' ? "http://localhost:3300/uploads/"+this.props.data.FileUUID : null}/>
-              : null
-          }
+        <td className="border">
+          {this.props.data.TagName}
+        </td>
+        <td className="border">
+          <Link to={"/EditFile/" + this.props.data.MediaUID}> {this.props.data.Name}</Link>
         </td>
       </tr>
     )

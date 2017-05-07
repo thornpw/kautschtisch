@@ -50,20 +50,20 @@ class ListPictures extends React.Component {
       var items = this.state.data
 
       for(var i = 0; i < items.length; i++) {
-        output.push(<Picture key={i} data={items[i]} update_parent_data={this.load_data.bind(this)}/>);
+        output.push(<Picture key={i} data={items[i]} doParentReload={this.load_data.bind(this)}/>);
       }
       return output;
   }
 
   componentWillReceiveProps(nextProps) {
-    if(nextProps.params != undefined && nextProps.params.redraw == 1) {
+    if(nextProps.params != undefined && nextProps.params.reload == 1) {
       pagination_store.dispatch(resetPagination(this.object_type))
       this.load_data()
     }
   }
 
   componentDidMount() {
-    if(this.props.params != undefined && this.props.params.redraw == 1) {
+    if(this.props.params != undefined && this.props.params.reload == 1) {
       pagination_store.dispatch(resetPagination(this.object_type))
     }
     this.load_data()

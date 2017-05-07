@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import { Button,ButtonGroup,ButtonToolbar,Panel,Form,FormGroup,FormControl,Col,ControlLabel,Table,Thumbnail,Tabs,Tab,Grid,Row,Pagination } from 'react-bootstrap';
 
 import { OrganisationProperties } from "../Components/Organisations/OrganisationProperties"
-import { PagedMediaTable2 } from "../Components/PagedMediaTable2"
+import { PagedMediaTable } from "../Components/PagedMediaTable"
 
 import sprintf from 'sprintf'
 import vsprintf from 'sprintf'
@@ -97,12 +97,25 @@ export default class EditOrganisation extends React.Component {
                 </FormGroup>
               </Form>
           </Tab>
+          <Tab eventKey={2} title="Pictures">
+            <br/>
+            <PagedMediaTable
+              object_type='organisation_pictures'
+              uid_object = {this.props.params.uid.toString()}
+              row_type = "ContextPicture"
+              view_name = "KPicturesOfObject"
+              tagged_component = "TaggedPicture"
+              object_filter= "0010"
+              media_type="0009"
+              max_buttons= {5}
+            />
+          </Tab>
           <Tab eventKey={3} title="Links">
             <br/>
-            <PagedMediaTable2
+            <PagedMediaTable
               object_type='organisation_links'
               uid_object = {this.props.params.uid.toString()}
-              row_type = "URLLink"
+              row_type = "ContextLink"
               view_name = "KLinksOfObject"
               tagged_component = "TaggedLink"
               object_filter= "0010"

@@ -19,7 +19,7 @@ import vsprintf from 'sprintf'
 // -Name                the name of the file
 // -uid                 the UID of the file. Used to delete it
 // -FileUUID            UUID of the file
-// -update_parent_data  call function to load files in the parent component
+// -doParentReload  call function to load files in the parent component
 //
 // Model (state)
 // *****************************************************************************
@@ -45,7 +45,7 @@ export class File extends React.Component {
       type: 'DELETE',
       cache: false,
       success: function(data) {
-        this.props.update_parent_data();
+        this.props.doParentReload();
       }.bind(this),
       error: function(xhr, status, err) {
         console.error("File 1", status, err.toString());
@@ -61,13 +61,6 @@ export class File extends React.Component {
         </td>
         <td width="100%" className="border">
           <Link to={"/EditFile/" + this.props.data.UID}> {this.props.data.Name}</Link>
-        </td>
-        <td width="100%" className="border">
-          {
-            this.props.data.FileUUID != null && this.props.data.FileUUID != '' ?
-              <Thumbnail key="b" src={this.props.data.FileUUID != '' ? "http://localhost:3300/uploads/"+this.props.data.FileUUID : null}/>
-              : null
-          }
         </td>
       </tr>
     )
