@@ -41,14 +41,6 @@ import AddTag_category from './Tag_category/AddTag_category'
 import EditTag_category from './Tag_category/EditTag_category'
 import ListTag_categorys from './Tag_category/ListTag_categorys'
 
-import AddGame_file from './Game_file/AddGame_file'
-import EditGame_file from './Game_file/EditGame_file'
-import ListGame_files from './Game_file/ListGame_files'
-
-import AddEngine_file from './Engine_file/AddEngine_file'
-import EditEngine_file from './Engine_file/EditEngine_file'
-import ListEngine_files from './Engine_file/ListEngine_files'
-
 import AddGame from './Game/AddGame'
 import EditGame from './Game/EditGame'
 import ListGames from './Game/ListGames'
@@ -91,14 +83,6 @@ render((
       <Route path="/ListTag_categorys/:offset" component={ListTag_categorys}/>
       <Route path="/AddTag_category" component={AddTag_category}/>
       <Route path="/EditTag_category/:id" component={EditTag_category}/>
-
-      <Route path="/ListGame_files/:offset" component={ListGame_files}/>
-      <Route path="/AddGame_file" component={AddGame_file}/>
-      <Route path="/EditGame_file/:id" component={EditGame_file}/>
-
-      <Route path="/ListEngine_files/:offset" component={ListEngine_files}/>
-      <Route path="/AddEngine_file" component={AddEngine_file}/>
-      <Route path="/EditEngine_file/:id" component={EditEngine_file}/>
 
       <Route path="/ListGames/:offset" component={ListGames}/>
       <Route path="/AddGame" component={AddGame}/>

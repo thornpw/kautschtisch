@@ -58,11 +58,11 @@
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
-	var _Data = __webpack_require__(575);
+	var _Data = __webpack_require__(573);
 
 	var _Data2 = _interopRequireDefault(_Data);
 
-	var _AddEngine = __webpack_require__(576);
+	var _AddEngine = __webpack_require__(574);
 
 	var _AddEngine2 = _interopRequireDefault(_AddEngine);
 
@@ -74,11 +74,11 @@
 
 	var _ListEngines2 = _interopRequireDefault(_ListEngines);
 
-	var _AddSystem = __webpack_require__(577);
+	var _AddSystem = __webpack_require__(575);
 
 	var _AddSystem2 = _interopRequireDefault(_AddSystem);
 
-	var _EditSystem = __webpack_require__(578);
+	var _EditSystem = __webpack_require__(576);
 
 	var _EditSystem2 = _interopRequireDefault(_EditSystem);
 
@@ -86,11 +86,11 @@
 
 	var _ListSystems2 = _interopRequireDefault(_ListSystems);
 
-	var _AddEngine_configuration = __webpack_require__(584);
+	var _AddEngine_configuration = __webpack_require__(582);
 
 	var _AddEngine_configuration2 = _interopRequireDefault(_AddEngine_configuration);
 
-	var _EditEngine_configuration = __webpack_require__(585);
+	var _EditEngine_configuration = __webpack_require__(583);
 
 	var _EditEngine_configuration2 = _interopRequireDefault(_EditEngine_configuration);
 
@@ -98,59 +98,59 @@
 
 	var _ListEngine_configurations2 = _interopRequireDefault(_ListEngine_configurations);
 
-	var _AddOrganisation = __webpack_require__(586);
+	var _AddOrganisation = __webpack_require__(584);
 
 	var _AddOrganisation2 = _interopRequireDefault(_AddOrganisation);
 
-	var _EditOrganisation = __webpack_require__(588);
+	var _EditOrganisation = __webpack_require__(586);
 
 	var _EditOrganisation2 = _interopRequireDefault(_EditOrganisation);
 
-	var _ListOrganisations = __webpack_require__(589);
+	var _ListOrganisations = __webpack_require__(587);
 
 	var _ListOrganisations2 = _interopRequireDefault(_ListOrganisations);
 
-	var _AddPicture = __webpack_require__(591);
+	var _AddPicture = __webpack_require__(589);
 
 	var _AddPicture2 = _interopRequireDefault(_AddPicture);
 
-	var _EditPicture = __webpack_require__(592);
+	var _EditPicture = __webpack_require__(590);
 
 	var _EditPicture2 = _interopRequireDefault(_EditPicture);
 
-	var _ListPictures = __webpack_require__(593);
+	var _ListPictures = __webpack_require__(591);
 
 	var _ListPictures2 = _interopRequireDefault(_ListPictures);
 
-	var _AddLink = __webpack_require__(595);
+	var _AddLink = __webpack_require__(593);
 
 	var _AddLink2 = _interopRequireDefault(_AddLink);
 
-	var _EditLink = __webpack_require__(596);
+	var _EditLink = __webpack_require__(594);
 
 	var _EditLink2 = _interopRequireDefault(_EditLink);
 
-	var _ListLinks = __webpack_require__(598);
+	var _ListLinks = __webpack_require__(596);
 
 	var _ListLinks2 = _interopRequireDefault(_ListLinks);
 
-	var _AddFile = __webpack_require__(600);
+	var _AddFile = __webpack_require__(598);
 
 	var _AddFile2 = _interopRequireDefault(_AddFile);
 
-	var _EditFile = __webpack_require__(601);
+	var _EditFile = __webpack_require__(599);
 
 	var _EditFile2 = _interopRequireDefault(_EditFile);
 
-	var _ListFiles = __webpack_require__(602);
+	var _ListFiles = __webpack_require__(600);
 
 	var _ListFiles2 = _interopRequireDefault(_ListFiles);
 
-	var _AddTag = __webpack_require__(604);
+	var _AddTag = __webpack_require__(602);
 
 	var _AddTag2 = _interopRequireDefault(_AddTag);
 
-	var _EditTag = __webpack_require__(605);
+	var _EditTag = __webpack_require__(603);
 
 	var _EditTag2 = _interopRequireDefault(_EditTag);
 
@@ -158,11 +158,11 @@
 
 	var _ListTags2 = _interopRequireDefault(_ListTags);
 
-	var _AddTag_category = __webpack_require__(606);
+	var _AddTag_category = __webpack_require__(604);
 
 	var _AddTag_category2 = _interopRequireDefault(_AddTag_category);
 
-	var _EditTag_category = __webpack_require__(607);
+	var _EditTag_category = __webpack_require__(605);
 
 	var _EditTag_category2 = _interopRequireDefault(_EditTag_category);
 
@@ -170,39 +170,15 @@
 
 	var _ListTag_categorys2 = _interopRequireDefault(_ListTag_categorys);
 
-	var _AddGame_file = __webpack_require__(608);
-
-	var _AddGame_file2 = _interopRequireDefault(_AddGame_file);
-
-	var _EditGame_file = __webpack_require__(609);
-
-	var _EditGame_file2 = _interopRequireDefault(_EditGame_file);
-
-	var _ListGame_files = __webpack_require__(573);
-
-	var _ListGame_files2 = _interopRequireDefault(_ListGame_files);
-
-	var _AddEngine_file = __webpack_require__(610);
-
-	var _AddEngine_file2 = _interopRequireDefault(_AddEngine_file);
-
-	var _EditEngine_file = __webpack_require__(611);
-
-	var _EditEngine_file2 = _interopRequireDefault(_EditEngine_file);
-
-	var _ListEngine_files = __webpack_require__(572);
-
-	var _ListEngine_files2 = _interopRequireDefault(_ListEngine_files);
-
-	var _AddGame = __webpack_require__(612);
+	var _AddGame = __webpack_require__(606);
 
 	var _AddGame2 = _interopRequireDefault(_AddGame);
 
-	var _EditGame = __webpack_require__(613);
+	var _EditGame = __webpack_require__(607);
 
 	var _EditGame2 = _interopRequireDefault(_EditGame);
 
-	var _ListGames = __webpack_require__(574);
+	var _ListGames = __webpack_require__(572);
 
 	var _ListGames2 = _interopRequireDefault(_ListGames);
 
@@ -241,12 +217,6 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: '/ListTag_categorys/:offset', component: _ListTag_categorys2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/AddTag_category', component: _AddTag_category2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/EditTag_category/:id', component: _EditTag_category2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/ListGame_files/:offset', component: _ListGame_files2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/AddGame_file', component: _AddGame_file2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/EditGame_file/:id', component: _EditGame_file2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/ListEngine_files/:offset', component: _ListEngine_files2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/AddEngine_file', component: _AddEngine_file2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/EditEngine_file/:id', component: _EditEngine_file2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/ListGames/:offset', component: _ListGames2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/AddGame', component: _AddGame2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/EditGame/:id', component: _EditGame2.default })
@@ -46180,11 +46150,7 @@
 
 	var _ListTag_categorys = __webpack_require__(569);
 
-	var _ListEngine_files = __webpack_require__(572);
-
-	var _ListGame_files = __webpack_require__(573);
-
-	var _ListGames = __webpack_require__(574);
+	var _ListGames = __webpack_require__(572);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -46208,14 +46174,6 @@
 	function clear_tag_category_filter() {
 	  (0, _ListTag_categorys.set_tag_category_name_filter)('');
 	  (0, _ListTag_categorys.set_tag_category_description_filter)('');
-	}
-
-	function clear_game_file_filter() {
-	  (0, _ListGame_files.set_game_file_filter)('');
-	}
-
-	function clear_engine_file_filter() {
-	  (0, _ListEngine_files.set_engine_file_filter)('');
 	}
 
 	function clear_game_filter() {
@@ -46254,21 +46212,47 @@
 	                { onClick: clear_game_filter, to: (0, _sprintf2.default)('/ListGames/%s', (0, _ListGames.get_game_initial_offset)()) },
 	                'Game'
 	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Panel,
+	          { header: 'Runtime', eventKey: '4' },
+	          _react2.default.createElement(
+	            _reactBootstrap.ListGroup,
+	            { fill: true },
+	            _react2.default.createElement(
+	              _reactBootstrap.ListGroupItem,
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { onClick: clear_system_filter, to: (0, _sprintf2.default)('/ListSystems/%s', (0, _ListSystems.get_system_initial_offset)()) },
+	                'System'
+	              )
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.ListGroupItem,
 	              null,
 	              _react2.default.createElement(
 	                _reactRouter.Link,
-	                { onClick: clear_game_file_filter, to: (0, _sprintf2.default)('/ListGame_files/%s', (0, _ListGame_files.get_game_file_initial_offset)()) },
-	                'Game file'
+	                { onClick: clear_engine_filter, to: (0, _sprintf2.default)('/ListEngines/%s', (0, _ListEngines.get_engine_initial_offset)()) },
+	                'Engine'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.ListGroupItem,
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { onClick: clear_engine_configuration_filter, to: (0, _sprintf2.default)('/ListEngine_configurations/%s', (0, _ListEngine_configurations.get_engine_configuration_initial_offset)()) },
+	                'Engine configuration'
 	              )
 	            )
 	          )
 	        ),
 	        _react2.default.createElement(
 	          _reactBootstrap.Panel,
-	          { header: 'Tag', eventKey: '2' },
+	          { header: 'Meta Data', eventKey: '2' },
 	          _react2.default.createElement(
 	            _reactBootstrap.ListGroup,
 	            { fill: true },
@@ -46289,67 +46273,7 @@
 	                { onClick: clear_tag_category_filter, to: (0, _sprintf2.default)('/ListTag_categorys/%s', (0, _ListTag_categorys.get_tag_category_initial_offset)()) },
 	                'Tag category'
 	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Panel,
-	          { header: 'System', eventKey: '3' },
-	          _react2.default.createElement(
-	            _reactBootstrap.ListGroup,
-	            { fill: true },
-	            _react2.default.createElement(
-	              _reactBootstrap.ListGroupItem,
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { onClick: clear_system_filter, to: (0, _sprintf2.default)('/ListSystems/%s', (0, _ListSystems.get_system_initial_offset)()) },
-	                'System'
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Panel,
-	          { header: 'Engine', eventKey: '4' },
-	          _react2.default.createElement(
-	            _reactBootstrap.ListGroup,
-	            { fill: true },
-	            _react2.default.createElement(
-	              _reactBootstrap.ListGroupItem,
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { onClick: clear_engine_filter, to: (0, _sprintf2.default)('/ListEngines/%s', (0, _ListEngines.get_engine_initial_offset)()) },
-	                'Engine'
-	              )
 	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.ListGroupItem,
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { onClick: clear_engine_configuration_filter, to: (0, _sprintf2.default)('/ListEngine_configurations/%s', (0, _ListEngine_configurations.get_engine_configuration_initial_offset)()) },
-	                'Engine configuration'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.ListGroupItem,
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { onClick: clear_engine_file_filter, to: (0, _sprintf2.default)('/ListEngine_files/%s', (0, _ListEngine_files.get_engine_file_initial_offset)()) },
-	                'Engine file'
-	              )
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Panel,
-	          { header: 'Organisations', eventKey: '5' },
-	          _react2.default.createElement(
-	            _reactBootstrap.ListGroup,
-	            { fill: true },
 	            _react2.default.createElement(
 	              _reactBootstrap.ListGroupItem,
 	              null,
@@ -60865,680 +60789,6 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.set_engine_file_filter = exports.get_engine_file_filter = exports.set_engine_file_limit = exports.set_engine_file_offset = exports.get_engine_file_limit = exports.get_engine_file_initial_limit = exports.get_engine_file_offset = exports.get_engine_file_initial_offset = undefined;
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var engine_file_initial_offset = 0;
-	var engine_file_initial_limit = 2;
-	var engine_file_filter = '';
-
-	var engine_file_offset = engine_file_initial_offset;
-	var engine_file_limit = engine_file_initial_limit;
-
-	function get_engine_file_initial_offset() {
-	  return engine_file_initial_offset;
-	}
-
-	function get_engine_file_offset() {
-	  return engine_file_offset;
-	}
-
-	function set_engine_file_offset(value) {
-	  engine_file_offset = parseInt(value);
-	}
-
-	function get_engine_file_initial_limit() {
-	  return engine_file_initial_limit;
-	}
-
-	function get_engine_file_limit() {
-	  return engine_file_limit;
-	}
-
-	function set_engine_file_limit(value) {
-	  engine_file_limit = parseInt(value);
-	}
-
-	function get_engine_file_filter() {
-	  return engine_file_filter;
-	}
-
-	function set_engine_file_filter(value) {
-	  engine_file_filter = value;
-	}
-
-	exports.get_engine_file_initial_offset = get_engine_file_initial_offset;
-	exports.get_engine_file_offset = get_engine_file_offset;
-	exports.get_engine_file_initial_limit = get_engine_file_initial_limit;
-	exports.get_engine_file_limit = get_engine_file_limit;
-	exports.set_engine_file_offset = set_engine_file_offset;
-	exports.set_engine_file_limit = set_engine_file_limit;
-	exports.get_engine_file_filter = get_engine_file_filter;
-	exports.set_engine_file_filter = set_engine_file_filter;
-
-	// Engine_file
-	// -----------------------------------------------------------------------------
-
-	var Engine_file = _react2.default.createClass({
-	  displayName: 'Engine_file',
-
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'tr',
-	      { className: 'engine_file' },
-	      _react2.default.createElement(
-	        'td',
-	        { className: 'border' },
-	        _react2.default.createElement(
-	          'button',
-	          { className: 'button-cancel', onClick: this.props.handleDelete.bind(null, this.props.engine_file.id) },
-	          'Delete'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'td',
-	        { width: '100%', className: 'border' },
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/EditEngine_file/' + this.props.engine_file.id },
-	          ' ',
-	          this.props.engine_file.name
-	        )
-	      )
-	    );
-	  }
-	});
-
-	// Engine_file List
-	// -----------------------------------------------------------------------------
-	exports.default = _react2.default.createClass({
-	  displayName: 'ListEngine_files',
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      engine_files: [],
-	      max_page: 0,
-	      actual_page: 0,
-	      total_rows: 0,
-	      new_filter: ''
-	    };
-	  },
-	  onFilterChange: function onFilterChange(e) {
-	    this.setState({ offset: 0 });
-	    set_engine_file_offset(0);
-	    set_engine_file_filter(this.state.new_filter);
-	    this.load_number_of_engine_files();
-	    this.load_engine_files();
-	  },
-	  onFilterClear: function onFilterClear(e) {
-	    this.setState({ offset: 0, new_filter: '' });
-	    set_engine_file_offset(0);
-	    set_engine_file_filter('');
-	    this.load_number_of_engine_files();
-	    this.load_engine_files();
-	  },
-	  onNewFilterChange: function onNewFilterChange(e) {
-	    this.setState({ new_filter: e.target.value });
-	  },
-	  load_number_of_engine_files: function load_number_of_engine_files() {
-	    $.ajax({
-	      url: encodeURI((0, _sprintf2.default)('http://localhost:3300/api/engine_file/count/%s', this.get_filter())),
-	      dataType: 'json',
-	      cache: false,
-	      success: function (data) {
-	        this.setState({ total_rows: parseInt(data[0].number), max_page: Math.floor(parseInt(data[0].number) / get_engine_file_limit()) });
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error(this.props.url, status, err.toString());
-	      }.bind(this)
-	    });
-	  },
-
-	  get_filter: function get_filter() {
-	    var _filter = get_engine_file_filter();
-
-	    if (_filter == '') {
-	      return '<EMPTY>';
-	    } else {
-	      return _filter;
-	    }
-	  },
-	  load_engine_files: function load_engine_files() {
-	    $.ajax({
-	      url: (0, _sprintf2.default)("http://localhost:3300/api/engine_file/%s/%s/%s", get_engine_file_offset(), get_engine_file_limit(), this.get_filter()),
-	      dataType: 'json',
-	      cache: false,
-	      success: function (data) {
-	        this.setState({ engine_files: data });
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error(this.props.url, status, err.toString());
-	      }.bind(this)
-	    });
-	    this.setState({ actual_page: Math.floor(get_engine_file_offset() / get_engine_file_limit()) });
-	  },
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    if (!(get_engine_file_filter == this.state.new_filter)) {
-	      this.setState({ new_filter: get_engine_file_filter() });
-	      this.load_number_of_engine_files();
-	      this.load_engine_files();
-	    }
-
-	    if (!(nextProps.params.offset == this.props.params.offset)) {
-	      set_engine_file_offset(nextProps.params.offset);
-	      this.load_number_of_engine_files();
-	      this.load_engine_files();
-	    }
-	  },
-	  componentDidMount: function componentDidMount() {
-	    this.load_number_of_engine_files();
-	    this.load_engine_files();
-	  },
-	  createEngine_file: function createEngine_file(items) {
-	    var output = [];
-	    for (var i = 0; i < items.length; i++) {
-	      output.push(_react2.default.createElement(Engine_file, { key: i, engine_file: items[i], handleDelete: this.handleDelete }));
-	    }
-	    return output;
-	  },
-	  handleSelect: function handleSelect(eventKey) {
-	    this.setState({
-	      activePage: eventKey
-	    });
-	    set_engine_file_offset((parseInt(eventKey) - 1) * get_engine_file_limit());
-	    this.load_number_of_engine_files();
-	    this.load_engine_files();
-	  },
-
-	  handleDelete: function handleDelete(id_to_delete) {
-	    $.ajax({
-	      url: "http://localhost:3300/api/db/KEngine_file/" + id_to_delete,
-	      dataType: 'json',
-	      type: 'DELETE',
-	      cache: false,
-	      success: function (data) {
-	        this.load_number_of_engine_files();
-	        this.load_engine_files();
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error("http://localhost:3300/api/engine_file/", status, err.toString());
-	      }.bind(this)
-	    });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Panel,
-	        { header: 'Engine files' },
-	        _react2.default.createElement(
-	          _reactBootstrap.Table,
-	          { striped: true, bordered: true, hover: true },
-	          _react2.default.createElement(
-	            'thead',
-	            null,
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement('th', null),
-	              _react2.default.createElement(
-	                'th',
-	                null,
-	                _react2.default.createElement(
-	                  'table',
-	                  null,
-	                  _react2.default.createElement(
-	                    'tbody',
-	                    null,
-	                    _react2.default.createElement(
-	                      'tr',
-	                      null,
-	                      _react2.default.createElement(
-	                        'td',
-	                        null,
-	                        'Name'
-	                      ),
-	                      _react2.default.createElement('td', { width: '4px' }),
-	                      _react2.default.createElement(
-	                        'td',
-	                        null,
-	                        _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Search for', onChange: this.onNewFilterChange, value: this.state.new_filter })
-	                      ),
-	                      _react2.default.createElement('td', { width: '4px' }),
-	                      _react2.default.createElement(
-	                        'td',
-	                        null,
-	                        _react2.default.createElement(
-	                          _reactBootstrap.Button,
-	                          { onClick: this.onFilterChange },
-	                          'Search'
-	                        )
-	                      ),
-	                      _react2.default.createElement('td', { width: '4px' }),
-	                      _react2.default.createElement(
-	                        'td',
-	                        null,
-	                        _react2.default.createElement(
-	                          _reactBootstrap.Button,
-	                          { onClick: this.onFilterClear },
-	                          'Clear'
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'tbody',
-	            null,
-	            this.createEngine_file(this.state.engine_files)
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'pagination' },
-	          _react2.default.createElement(_reactBootstrap.Pagination, {
-	            prev: true,
-	            next: true,
-	            first: true,
-	            last: true,
-	            ellipsis: true,
-	            boundaryLinks: true,
-	            items: Math.ceil(this.state.total_rows / get_engine_file_limit()),
-	            maxButtons: 5,
-	            activePage: this.state.activePage,
-	            onSelect: this.handleSelect
-	          })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'form-group' },
-	          ' '
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ButtonToolbar,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.ButtonGroup,
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/AddEngine_file' },
-	              _react2.default.createElement(
-	                _reactBootstrap.Button,
-	                { type: 'submit' },
-	                'Add new engine_file'
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 573 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.set_game_file_filter = exports.get_game_file_filter = exports.set_game_file_limit = exports.set_game_file_offset = exports.get_game_file_limit = exports.get_game_file_initial_limit = exports.get_game_file_offset = exports.get_game_file_initial_offset = undefined;
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var game_file_initial_offset = 0;
-	var game_file_initial_limit = 2;
-	var game_file_filter = '';
-
-	var game_file_offset = game_file_initial_offset;
-	var game_file_limit = game_file_initial_limit;
-
-	function get_game_file_initial_offset() {
-	  return game_file_initial_offset;
-	}
-
-	function get_game_file_offset() {
-	  return game_file_offset;
-	}
-
-	function set_game_file_offset(value) {
-	  game_file_offset = parseInt(value);
-	}
-
-	function get_game_file_initial_limit() {
-	  return game_file_initial_limit;
-	}
-
-	function get_game_file_limit() {
-	  return game_file_limit;
-	}
-
-	function set_game_file_limit(value) {
-	  game_file_limit = parseInt(value);
-	}
-
-	function get_game_file_filter() {
-	  return game_file_filter;
-	}
-
-	function set_game_file_filter(value) {
-	  game_file_filter = value;
-	}
-
-	exports.get_game_file_initial_offset = get_game_file_initial_offset;
-	exports.get_game_file_offset = get_game_file_offset;
-	exports.get_game_file_initial_limit = get_game_file_initial_limit;
-	exports.get_game_file_limit = get_game_file_limit;
-	exports.set_game_file_offset = set_game_file_offset;
-	exports.set_game_file_limit = set_game_file_limit;
-	exports.get_game_file_filter = get_game_file_filter;
-	exports.set_game_file_filter = set_game_file_filter;
-
-	// Game_file
-	// -----------------------------------------------------------------------------
-
-	var Game_file = _react2.default.createClass({
-	  displayName: 'Game_file',
-
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'tr',
-	      { className: 'game_file' },
-	      _react2.default.createElement(
-	        'td',
-	        { className: 'border' },
-	        _react2.default.createElement(
-	          'button',
-	          { className: 'button-cancel', onClick: this.props.handleDelete.bind(null, this.props.game_file.id) },
-	          'Delete'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'td',
-	        { width: '100%', className: 'border' },
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/EditGame_file/' + this.props.game_file.id },
-	          ' ',
-	          this.props.game_file.name
-	        )
-	      )
-	    );
-	  }
-	});
-
-	// Game_file List
-	// -----------------------------------------------------------------------------
-	exports.default = _react2.default.createClass({
-	  displayName: 'ListGame_files',
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      game_files: [],
-	      max_page: 0,
-	      actual_page: 0,
-	      total_rows: 0,
-	      new_filter: ''
-	    };
-	  },
-	  onFilterChange: function onFilterChange(e) {
-	    this.setState({ offset: 0 });
-	    set_game_file_offset(0);
-	    set_game_file_filter(this.state.new_filter);
-	    this.load_number_of_game_files();
-	    this.load_game_files();
-	  },
-	  onFilterClear: function onFilterClear(e) {
-	    this.setState({ offset: 0, new_filter: '' });
-	    set_game_file_offset(0);
-	    set_game_file_filter('');
-	    this.load_number_of_game_files();
-	    this.load_game_files();
-	  },
-	  onNewFilterChange: function onNewFilterChange(e) {
-	    this.setState({ new_filter: e.target.value });
-	  },
-	  load_number_of_game_files: function load_number_of_game_files() {
-	    $.ajax({
-	      url: encodeURI((0, _sprintf2.default)('http://localhost:3300/api/game_file/count/%s', this.get_filter())),
-	      dataType: 'json',
-	      cache: false,
-	      success: function (data) {
-	        this.setState({ total_rows: parseInt(data[0].number), max_page: Math.floor(parseInt(data[0].number) / get_game_file_limit()) });
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error(this.props.url, status, err.toString());
-	      }.bind(this)
-	    });
-	  },
-
-	  get_filter: function get_filter() {
-	    var _filter = get_game_file_filter();
-
-	    if (_filter == '') {
-	      return '<EMPTY>';
-	    } else {
-	      return _filter;
-	    }
-	  },
-	  load_game_files: function load_game_files() {
-	    $.ajax({
-	      url: (0, _sprintf2.default)("http://localhost:3300/api/game_file/%s/%s/%s", get_game_file_offset(), get_game_file_limit(), this.get_filter()),
-	      dataType: 'json',
-	      cache: false,
-	      success: function (data) {
-	        this.setState({ game_files: data });
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error(this.props.url, status, err.toString());
-	      }.bind(this)
-	    });
-	    this.setState({ actual_page: Math.floor(get_game_file_offset() / get_game_file_limit()) });
-	  },
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    if (!(get_game_file_filter == this.state.new_filter)) {
-	      this.setState({ new_filter: get_game_file_filter() });
-	      this.load_number_of_game_files();
-	      this.load_game_files();
-	    }
-
-	    if (!(nextProps.params.offset == this.props.params.offset)) {
-	      set_game_file_offset(nextProps.params.offset);
-	      this.load_number_of_game_files();
-	      this.load_game_files();
-	    }
-	  },
-	  componentDidMount: function componentDidMount() {
-	    this.load_number_of_game_files();
-	    this.load_game_files();
-	  },
-	  createGame_file: function createGame_file(items) {
-	    var output = [];
-	    for (var i = 0; i < items.length; i++) {
-	      output.push(_react2.default.createElement(Game_file, { key: i, game_file: items[i], handleDelete: this.handleDelete }));
-	    }
-	    return output;
-	  },
-	  handleSelect: function handleSelect(eventKey) {
-	    this.setState({
-	      activePage: eventKey
-	    });
-	    set_game_file_offset((parseInt(eventKey) - 1) * get_game_file_limit());
-	    this.load_number_of_game_files();
-	    this.load_game_files();
-	  },
-
-	  handleDelete: function handleDelete(id_to_delete) {
-	    $.ajax({
-	      url: "http://localhost:3300/api/db/KGame_file/" + id_to_delete,
-	      dataType: 'json',
-	      type: 'DELETE',
-	      cache: false,
-	      success: function (data) {
-	        this.load_number_of_game_files();
-	        this.load_game_files();
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error("/api/game_file/", status, err.toString());
-	      }.bind(this)
-	    });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Panel,
-	        { header: 'Game files' },
-	        _react2.default.createElement(
-	          _reactBootstrap.Table,
-	          { striped: true, bordered: true, hover: true },
-	          _react2.default.createElement(
-	            'thead',
-	            null,
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement('th', null),
-	              _react2.default.createElement(
-	                'th',
-	                null,
-	                _react2.default.createElement(
-	                  'table',
-	                  null,
-	                  _react2.default.createElement(
-	                    'tbody',
-	                    null,
-	                    _react2.default.createElement(
-	                      'tr',
-	                      null,
-	                      _react2.default.createElement(
-	                        'td',
-	                        null,
-	                        'Name'
-	                      ),
-	                      _react2.default.createElement('td', { width: '4px' }),
-	                      _react2.default.createElement(
-	                        'td',
-	                        null,
-	                        _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Search for', onChange: this.onNewFilterChange, value: this.state.new_filter })
-	                      ),
-	                      _react2.default.createElement('td', { width: '4px' }),
-	                      _react2.default.createElement(
-	                        'td',
-	                        null,
-	                        _react2.default.createElement(
-	                          _reactBootstrap.Button,
-	                          { onClick: this.onFilterChange },
-	                          'Search'
-	                        )
-	                      ),
-	                      _react2.default.createElement('td', { width: '4px' }),
-	                      _react2.default.createElement(
-	                        'td',
-	                        null,
-	                        _react2.default.createElement(
-	                          _reactBootstrap.Button,
-	                          { onClick: this.onFilterClear },
-	                          'Clear'
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'tbody',
-	            null,
-	            this.createGame_file(this.state.game_files)
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'pagination' },
-	          _react2.default.createElement(_reactBootstrap.Pagination, {
-	            prev: true,
-	            next: true,
-	            first: true,
-	            last: true,
-	            ellipsis: true,
-	            boundaryLinks: true,
-	            items: Math.ceil(this.state.total_rows / get_game_file_limit()),
-	            maxButtons: 5,
-	            activePage: this.state.activePage,
-	            onSelect: this.handleSelect
-	          })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'form-group' },
-	          ' '
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.ButtonToolbar,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.ButtonGroup,
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/AddGame_file' },
-	              _react2.default.createElement(
-	                _reactBootstrap.Button,
-	                { type: 'submit' },
-	                'Add new game_file'
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 574 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
 	exports.set_game_filter = exports.get_game_filter = exports.set_game_limit = exports.set_game_offset = exports.get_game_limit = exports.get_game_initial_limit = exports.get_game_offset = exports.get_game_initial_offset = undefined;
 
 	var _react = __webpack_require__(1);
@@ -61868,7 +61118,7 @@
 	});
 
 /***/ },
-/* 575 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61896,7 +61146,7 @@
 	});
 
 /***/ },
-/* 576 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62064,7 +61314,7 @@
 	});
 
 /***/ },
-/* 577 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62189,7 +61439,7 @@
 	});
 
 /***/ },
-/* 578 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62206,7 +61456,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(579);
+	var _superagent = __webpack_require__(577);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -62339,7 +61589,7 @@
 	});
 
 /***/ },
-/* 579 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -62356,9 +61606,9 @@
 	  root = this;
 	}
 
-	var Emitter = __webpack_require__(580);
-	var requestBase = __webpack_require__(581);
-	var isObject = __webpack_require__(582);
+	var Emitter = __webpack_require__(578);
+	var requestBase = __webpack_require__(579);
+	var isObject = __webpack_require__(580);
 
 	/**
 	 * Noop.
@@ -62370,7 +61620,7 @@
 	 * Expose `request`.
 	 */
 
-	var request = module.exports = __webpack_require__(583).bind(null, Request);
+	var request = module.exports = __webpack_require__(581).bind(null, Request);
 
 	/**
 	 * Determine XHR.
@@ -63321,7 +62571,7 @@
 
 
 /***/ },
-/* 580 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -63490,13 +62740,13 @@
 
 
 /***/ },
-/* 581 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Module of mixed-in functions shared between node and client code
 	 */
-	var isObject = __webpack_require__(582);
+	var isObject = __webpack_require__(580);
 
 	/**
 	 * Clear previous timeout.
@@ -63868,7 +63118,7 @@
 
 
 /***/ },
-/* 582 */
+/* 580 */
 /***/ function(module, exports) {
 
 	/**
@@ -63887,7 +63137,7 @@
 
 
 /***/ },
-/* 583 */
+/* 581 */
 /***/ function(module, exports) {
 
 	// The node and browser modules expose versions of this with the
@@ -63925,7 +63175,7 @@
 
 
 /***/ },
-/* 584 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64050,7 +63300,7 @@
 	});
 
 /***/ },
-/* 585 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64067,7 +63317,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(579);
+	var _superagent = __webpack_require__(577);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -64195,7 +63445,7 @@
 	});
 
 /***/ },
-/* 586 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64214,7 +63464,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _OrganisationProperties = __webpack_require__(587);
+	var _OrganisationProperties = __webpack_require__(585);
 
 	var _sprintf = __webpack_require__(490);
 
@@ -64337,7 +63587,7 @@
 	exports.default = AddOrganisation;
 
 /***/ },
-/* 587 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64456,7 +63706,7 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 588 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64475,7 +63725,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _OrganisationProperties = __webpack_require__(587);
+	var _OrganisationProperties = __webpack_require__(585);
 
 	var _PagedMediaTable = __webpack_require__(495);
 
@@ -64664,7 +63914,7 @@
 	exports.default = EditOrganisation;
 
 /***/ },
-/* 589 */
+/* 587 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64683,7 +63933,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _Organisation = __webpack_require__(590);
+	var _Organisation = __webpack_require__(588);
 
 	var _ObjectList = __webpack_require__(545);
 
@@ -64804,7 +64054,7 @@
 	exports.default = ListOrganisations;
 
 /***/ },
-/* 590 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64922,7 +64172,7 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 591 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65103,7 +64353,7 @@
 	exports.default = AddPicture;
 
 /***/ },
-/* 592 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65354,7 +64604,7 @@
 	exports.default = EditPicture;
 
 /***/ },
-/* 593 */
+/* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65373,7 +64623,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _Picture = __webpack_require__(594);
+	var _Picture = __webpack_require__(592);
 
 	var _ObjectList = __webpack_require__(545);
 
@@ -65511,7 +64761,7 @@
 	exports.default = ListPictures;
 
 /***/ },
-/* 594 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65634,7 +64884,7 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 595 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65794,7 +65044,7 @@
 	exports.default = AddLink;
 
 /***/ },
-/* 596 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65822,9 +65072,9 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _kpagination = __webpack_require__(597);
+	var _kpagination = __webpack_require__(595);
 
-	var _ListLinks = __webpack_require__(598);
+	var _ListLinks = __webpack_require__(596);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -66010,7 +65260,7 @@
 	exports.default = EditLink;
 
 /***/ },
-/* 597 */
+/* 595 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -66145,7 +65395,7 @@
 	exports.kpagination = kpagination;
 
 /***/ },
-/* 598 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66164,7 +65414,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _URLLink = __webpack_require__(599);
+	var _URLLink = __webpack_require__(597);
 
 	var _ObjectList = __webpack_require__(545);
 
@@ -66286,7 +65536,7 @@
 	exports.default = ListLinks;
 
 /***/ },
-/* 599 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66415,7 +65665,7 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 600 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66580,7 +65830,7 @@
 	exports.default = AddFile;
 
 /***/ },
-/* 601 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66815,7 +66065,7 @@
 	exports.default = EditFile;
 
 /***/ },
-/* 602 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66834,7 +66084,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _File = __webpack_require__(603);
+	var _File = __webpack_require__(601);
 
 	var _ObjectList = __webpack_require__(545);
 
@@ -66955,7 +66205,7 @@
 	exports.default = ListFiles;
 
 /***/ },
-/* 603 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67073,7 +66323,7 @@
 	}(_react2.default.Component);
 
 /***/ },
-/* 604 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67198,7 +66448,7 @@
 	});
 
 /***/ },
-/* 605 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67215,7 +66465,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(579);
+	var _superagent = __webpack_require__(577);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -67343,7 +66593,7 @@
 	});
 
 /***/ },
-/* 606 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67485,7 +66735,7 @@
 	});
 
 /***/ },
-/* 607 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67502,7 +66752,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(579);
+	var _superagent = __webpack_require__(577);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -67647,7 +66897,7 @@
 	});
 
 /***/ },
-/* 608 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67672,551 +66922,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListGame_files = __webpack_require__(573);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'AddGame_file',
-
-	  getInitialState: function getInitialState() {
-	    return { name: '', name_game_file: '' };
-	  },
-	  onNameChange: function onNameChange(e) {
-	    this.setState({ name: e.target.value });
-	  },
-	  handleAdd: function handleAdd(e) {
-	    e.preventDefault();
-	    // add new game_file to memory
-	    // -------------------------------------------------------------------------
-	    var _new = { 'name': this.state.name };
-
-	    // send new game_file to the db
-	    // -------------------------------------------------------------------------
-	    $.ajax({
-	      url: 'http://localhost:3300/api/game_file',
-	      dataType: 'json',
-	      type: 'POST',
-	      data: _new,
-	      success: function (data) {
-	        this.setState({ 'name': '' });
-	        window.location.replace((0, _sprintf2.default)("http://localhost:3300/#/ListGame_files/%s", (0, _ListGame_files.get_game_file_offset)()));
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error('/api/game_file', status, err.toString());
-	      }.bind(this)
-	    });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Panel,
-	        { header: 'Add new game_file' },
-	        _react2.default.createElement(
-	          _reactBootstrap.Form,
-	          { onSubmit: this.handleAdd, horizontal: true },
-	          _react2.default.createElement(
-	            _reactBootstrap.FormGroup,
-	            { controlId: 'name' },
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { componentClass: _reactBootstrap.ControlLabel, sm: 2 },
-	              'Name'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { sm: 10 },
-	              _react2.default.createElement(_reactBootstrap.FormControl, { onChange: this.onNameChange, value: this.state.name })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.FormGroup,
-	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { smOffset: 2, sm: 10 },
-	              _react2.default.createElement(
-	                _reactBootstrap.ButtonToolbar,
-	                null,
-	                _react2.default.createElement(
-	                  _reactBootstrap.ButtonGroup,
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactBootstrap.Button,
-	                    { type: 'submit', bsStyle: 'success' },
-	                    'Ok'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  _reactBootstrap.ButtonGroup,
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: (0, _sprintf2.default)('/ListGame_files/%s', (0, _ListGame_files.get_game_file_offset)()) },
-	                    _react2.default.createElement(
-	                      _reactBootstrap.Button,
-	                      null,
-	                      'Cancel'
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 609 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _superagent = __webpack_require__(579);
-
-	var _superagent2 = _interopRequireDefault(_superagent);
-
-	var _Select = __webpack_require__(494);
-
-	var _Select2 = _interopRequireDefault(_Select);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	var _ListGame_files = __webpack_require__(573);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function logChange(val) {
-	  console.log("Selected: " + val);
-	}
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'EditGame_file',
-
-	  getInitialState: function getInitialState() {
-	    return { name: '' };
-	  },
-	  componentDidMount: function componentDidMount() {
-	    this.loadGame_file();
-	  },
-	  onNameChange: function onNameChange(e) {
-	    this.setState({ name: e.target.value });
-	  },
-	  loadGame_file: function loadGame_file() {
-	    // load new game_file from the DB
-	    // -------------------------------------------------------------------------
-	    $.ajax({
-	      url: 'http://localhost:3300/api/KGame_file/' + this.props.params.id,
-	      dataType: 'json',
-	      type: 'GET',
-	      success: function (data) {
-	        this.setState({ 'name': data[0].name });
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error('/api/game_file', status, err.toString());
-	      }.bind(this)
-	    });
-	  },
-	  handleEdit: function handleEdit() {
-	    // edit game_file
-	    // -------------------------------------------------------------------------
-	    var _edit = { "name": this.state.name };
-	    var _id = this.props.params.id;
-
-	    $.ajax({
-	      url: 'http://localhost:3300/api/game_file/' + _id,
-	      contentType: 'application/json; charset=UTF-8',
-	      type: 'PUT',
-	      data: JSON.stringify(_edit),
-	      success: function success(data) {
-	        window.location.replace((0, _sprintf2.default)("http://localhost:3300/#/ListGame_files/%s", (0, _ListGame_files.get_game_file_offset)()));
-	      },
-	      error: function error(xhr, status, err) {
-	        console.log(status, xhr, err);
-	        console.error('/api/game_file', status, err.toString());
-	      }
-	    });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Panel,
-	        { header: 'Edit game_file' },
-	        _react2.default.createElement(
-	          _reactBootstrap.Form,
-	          { horizontal: true },
-	          _react2.default.createElement(
-	            _reactBootstrap.FormGroup,
-	            { controlId: 'name' },
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { componentClass: _reactBootstrap.ControlLabel, sm: 2 },
-	              'Name'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { sm: 10 },
-	              _react2.default.createElement(_reactBootstrap.FormControl, { onChange: this.onNameChange, value: this.state.name })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.FormGroup,
-	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { smOffset: 2, sm: 10 },
-	              _react2.default.createElement(
-	                _reactBootstrap.ButtonToolbar,
-	                null,
-	                _react2.default.createElement(
-	                  _reactBootstrap.ButtonGroup,
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactBootstrap.Button,
-	                    { onClick: this.handleEdit },
-	                    'Ok'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  _reactBootstrap.ButtonGroup,
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: (0, _sprintf2.default)('http://localhost:3300/ListGame_files/%s', (0, _ListGame_files.get_game_file_offset)()) },
-	                    _react2.default.createElement(
-	                      _reactBootstrap.Button,
-	                      null,
-	                      'Cancel'
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 610 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _Select = __webpack_require__(494);
-
-	var _Select2 = _interopRequireDefault(_Select);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	var _ListEngine_files = __webpack_require__(572);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'AddEngine_file',
-
-	  getInitialState: function getInitialState() {
-	    return { name: '', name_engine_file: '' };
-	  },
-	  onNameChange: function onNameChange(e) {
-	    this.setState({ name: e.target.value });
-	  },
-	  handleAdd: function handleAdd(e) {
-	    e.preventDefault();
-	    // add new engine_file to memory
-	    // -------------------------------------------------------------------------
-	    var _new = { 'name': this.state.name };
-
-	    // send new engine_file to the db
-	    // -------------------------------------------------------------------------
-	    $.ajax({
-	      url: 'http://localhost:3300/api/engine_file',
-	      dataType: 'json',
-	      type: 'POST',
-	      data: _new,
-	      success: function (data) {
-	        this.setState({ 'name': '' });
-	        window.location.replace((0, _sprintf2.default)("http://localhost:3300/#/ListEngine_files/%s", (0, _ListEngine_files.get_engine_file_offset)()));
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error('http://localhost:3300/api/engine_file', status, err.toString());
-	      }.bind(this)
-	    });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Panel,
-	        { header: 'Add new engine_file' },
-	        _react2.default.createElement(
-	          _reactBootstrap.Form,
-	          { onSubmit: this.handleAdd, horizontal: true },
-	          _react2.default.createElement(
-	            _reactBootstrap.FormGroup,
-	            { controlId: 'name' },
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { componentClass: _reactBootstrap.ControlLabel, sm: 2 },
-	              'Name'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { sm: 10 },
-	              _react2.default.createElement(_reactBootstrap.FormControl, { onChange: this.onNameChange, value: this.state.name })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.FormGroup,
-	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { smOffset: 2, sm: 10 },
-	              _react2.default.createElement(
-	                _reactBootstrap.ButtonToolbar,
-	                null,
-	                _react2.default.createElement(
-	                  _reactBootstrap.ButtonGroup,
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactBootstrap.Button,
-	                    { type: 'submit', bsStyle: 'success' },
-	                    'Ok'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  _reactBootstrap.ButtonGroup,
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: (0, _sprintf2.default)('/ListEngine_files/%s', (0, _ListEngine_files.get_engine_file_offset)()) },
-	                    _react2.default.createElement(
-	                      _reactBootstrap.Button,
-	                      null,
-	                      'Cancel'
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 611 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _superagent = __webpack_require__(579);
-
-	var _superagent2 = _interopRequireDefault(_superagent);
-
-	var _Select = __webpack_require__(494);
-
-	var _Select2 = _interopRequireDefault(_Select);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	var _ListEngine_files = __webpack_require__(572);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: 'EditEngine_file',
-
-	  getInitialState: function getInitialState() {
-	    return { name: '' };
-	  },
-	  componentDidMount: function componentDidMount() {
-	    this.loadEngine_file();
-	  },
-	  onNameChange: function onNameChange(e) {
-	    this.setState({ name: e.target.value });
-	  },
-	  loadEngine_file: function loadEngine_file() {
-	    // load new engine_file from the DB
-	    // -------------------------------------------------------------------------
-	    $.ajax({
-	      url: 'http://localhost:3300/api/db/KEngine_file/' + this.props.params.id,
-	      dataType: 'json',
-	      type: 'GET',
-	      success: function (data) {
-	        this.setState({ 'name': data[0].name });
-	      }.bind(this),
-	      error: function (xhr, status, err) {
-	        console.error('http://localhost:3300/api/engine_file', status, err.toString());
-	      }.bind(this)
-	    });
-	  },
-	  handleEdit: function handleEdit() {
-	    // edit engine_file
-	    // -------------------------------------------------------------------------
-	    var _edit = { "name": this.state.name };
-	    var _id = this.props.params.id;
-
-	    $.ajax({
-	      url: 'http://localhost:3300/api/engine_file/' + _id,
-	      contentType: 'application/json; charset=UTF-8',
-	      type: 'PUT',
-	      data: JSON.stringify(_edit),
-	      success: function success(data) {
-	        window.location.replace((0, _sprintf2.default)("/#/ListEngine_files/%s", (0, _ListEngine_files.get_engine_file_offset)()));
-	      },
-	      error: function error(xhr, status, err) {
-	        console.log(status, xhr, err);
-	        console.error('/api/engine_file', status, err.toString());
-	      }
-	    });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        _reactBootstrap.Panel,
-	        { header: 'Edit engine_file' },
-	        _react2.default.createElement(
-	          _reactBootstrap.Form,
-	          { horizontal: true },
-	          _react2.default.createElement(
-	            _reactBootstrap.FormGroup,
-	            { controlId: 'name' },
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { componentClass: _reactBootstrap.ControlLabel, sm: 2 },
-	              'Name'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { sm: 10 },
-	              _react2.default.createElement(_reactBootstrap.FormControl, { onChange: this.onNameChange, value: this.state.name })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.FormGroup,
-	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { smOffset: 2, sm: 10 },
-	              _react2.default.createElement(
-	                _reactBootstrap.ButtonToolbar,
-	                null,
-	                _react2.default.createElement(
-	                  _reactBootstrap.ButtonGroup,
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactBootstrap.Button,
-	                    { onClick: this.handleEdit },
-	                    'Ok'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  _reactBootstrap.ButtonGroup,
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: (0, _sprintf2.default)('/ListEngine_files/%s', (0, _ListEngine_files.get_engine_file_offset)()) },
-	                    _react2.default.createElement(
-	                      _reactBootstrap.Button,
-	                      null,
-	                      'Cancel'
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-/***/ },
-/* 612 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _reactBootstrap = __webpack_require__(237);
-
-	var _Select = __webpack_require__(494);
-
-	var _Select2 = _interopRequireDefault(_Select);
-
-	var _sprintf = __webpack_require__(490);
-
-	var _sprintf2 = _interopRequireDefault(_sprintf);
-
-	var _ListGames = __webpack_require__(574);
+	var _ListGames = __webpack_require__(572);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68316,7 +67022,7 @@
 	});
 
 /***/ },
-/* 613 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -68333,7 +67039,7 @@
 
 	var _reactBootstrap = __webpack_require__(237);
 
-	var _superagent = __webpack_require__(579);
+	var _superagent = __webpack_require__(577);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
@@ -68341,7 +67047,7 @@
 
 	var _Select2 = _interopRequireDefault(_Select);
 
-	var _ListGame2Tags = __webpack_require__(614);
+	var _ListGame2Tags = __webpack_require__(608);
 
 	var _ListGame2Tags2 = _interopRequireDefault(_ListGame2Tags);
 
@@ -68349,7 +67055,7 @@
 
 	var _sprintf2 = _interopRequireDefault(_sprintf);
 
-	var _ListGames = __webpack_require__(574);
+	var _ListGames = __webpack_require__(572);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68481,7 +67187,7 @@
 	});
 
 /***/ },
-/* 614 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
